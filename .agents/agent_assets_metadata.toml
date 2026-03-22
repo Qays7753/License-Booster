@@ -1,0 +1,8 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "qmGlGCja_lic1QBKmhiCG"
+uri = "file://artifacts/formalization-landing/public/License-Booster-Code.md"
+type = "text"
+title = "License Booster — كامل كود المشروع"
