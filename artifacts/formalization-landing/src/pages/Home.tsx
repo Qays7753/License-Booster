@@ -45,6 +45,259 @@ function Counter({ from, to, duration = 2, suffix = "" }: { from: number, to: nu
   return <span ref={ref} className="tabular-nums inline-block" dir="ltr">{count.toLocaleString('en-US')}{suffix}</span>;
 }
 
+const ENCOURAGEMENTS = [
+  "رائع! إجابتك مهمة جداً 💪",
+  "ممتاز! استمر، أنت في منتصف الطريق 🌟",
+  "أحسنت! كل خطوة تقربك أكثر 🎯",
+  "جيد جداً! سؤال واحد فقط تبقى ✨",
+  "تقريباً انتهينا! 🏁",
+];
+
+const QUESTION_ICONS = ["🧠", "🚧", "💭", "🎯", "🔄", "📊"];
+
+function SurveySection() {
+  const [surveyStep, setSurveyStep] = useState(1);
+  const [surveyAnswers, setSurveyAnswers] = useState<Record<number, string>>({});
+  const [surveyCompleted, setSurveyCompleted] = useState(false);
+  const [showEncouragement, setShowEncouragement] = useState(false);
+  const [encouragementText, setEncouragementText] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [selectedOption, setSelectedOption] = useState<string | null>(null);
+
+  const questions = [
+    {
+      question: "هل تعرف الفرق بين تسجيل المشروع وترخيصه؟",
+      subtitle: "لا يوجد إجابة خاطئة — فقط أخبرنا بصدق",
+      options: [
+        { text: "نعم، واضح لديّ الفرق تماماً", emoji: "✅" },
+        { text: "أعرف بشكل عام لكن ليس بالتفصيل", emoji: "🤔" },
+        { text: "لا أعرف الفرق", emoji: "❓" },
+      ],
+    },
+    {
+      question: "ما أكبر عائق يمنعك من تسجيل مشروعك؟",
+      subtitle: "اختر الأقرب لواقعك",
+      options: [
+        { text: "التكلفة والرسوم", emoji: "💸" },
+        { text: "تعقيد الإجراءات وكثرة الجهات", emoji: "🌀" },
+        { text: "لا أعرف من أين أبدأ", emoji: "🗺️" },
+        { text: "الخوف من الالتزامات الضريبية", emoji: "😰" },
+        { text: "أعتقد أن مشروعي لا يحتاج تسجيلاً", emoji: "🤷" },
+      ],
+    },
+    {
+      question: "هل فكرت في تسجيل مشروعك خلال السنة الماضية؟",
+      subtitle: "إجابتك تساعدنا نفهم أين أنت في المسار",
+      options: [
+        { text: "نعم وبدأت بالفعل", emoji: "🚀" },
+        { text: "نعم لكن لم أبدأ بعد", emoji: "⏳" },
+        { text: "لم أفكر في ذلك", emoji: "💤" },
+      ],
+    },
+    {
+      question: "بعد اطلاعك على هذه المعلومات، ما احتمال أن تتخذ خطوة نحو التسجيل؟",
+      subtitle: "صراحتك تساعدنا نحسّن المحتوى",
+      options: [
+        { text: "مرتفع جداً — سأبدأ قريباً", emoji: "🔥" },
+        { text: "مرتفع — أفكر جدياً", emoji: "💡" },
+        { text: "غير متأكد بعد", emoji: "🌤️" },
+        { text: "منخفض — ما زلت أتردد", emoji: "🌧️" },
+      ],
+    },
+    {
+      question: "ما الذي تغيّر في فهمك بعد زيارة هذه الصفحة؟",
+      subtitle: "رأيك يُشكّل المحتوى القادم",
+      options: [
+        { text: "فهمت الفرق بين التسجيل والترخيص", emoji: "💡" },
+        { text: "عرفت من أين أبدأ", emoji: "🗺️" },
+        { text: "شعرت أن الخطوة ممكنة وأبسط مما توقعت", emoji: "😌" },
+        { text: "لم يتغير شيء كبير", emoji: "😐" },
+      ],
+    },
+    {
+      question: "كيف تصف وضع مشروعك حالياً؟",
+      subtitle: "آخر سؤال — شكراً على صبرك!",
+      options: [
+        { text: "مسجل ومرخص بالكامل", emoji: "🏆" },
+        { text: "مسجل جزئياً والملف غير مكتمل", emoji: "📋" },
+        { text: "غير مسجل وأعمل حالياً", emoji: "⚡" },
+        { text: "ما زلت في مرحلة التفكير والتخطيط", emoji: "🌱" },
+      ],
+    },
+  ];
+
+  const submitSurvey = async (answers: Record<number, string>) => {
+    setIsSubmitting(true);
+    try {
+      await fetch("/api/survey", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          q1: answers[1], q2: answers[2], q3: answers[3],
+          q4: answers[4], q5: answers[5], q6: answers[6],
+        }),
+      });
+    } catch {
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
+  const handleAnswer = async (answer: string) => {
+    setSelectedOption(answer);
+    const newAnswers = { ...surveyAnswers, [surveyStep]: answer };
+    setSurveyAnswers(newAnswers);
+
+    await new Promise(r => setTimeout(r, 280));
+    setSelectedOption(null);
+
+    if (surveyStep < questions.length) {
+      if (surveyStep < ENCOURAGEMENTS.length) {
+        setEncouragementText(ENCOURAGEMENTS[surveyStep - 1]);
+        setShowEncouragement(true);
+        setTimeout(() => setShowEncouragement(false), 1800);
+      }
+      setSurveyStep(prev => prev + 1);
+    } else {
+      await submitSurvey(newAnswers);
+      setSurveyCompleted(true);
+    }
+  };
+
+  const scrollToSection = (id: string) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  if (surveyCompleted) {
+    return (
+      <motion.div
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        className="bg-white rounded-3xl shadow-xl p-8 md:p-14 text-center border border-border relative overflow-hidden"
+      >
+        <div className="absolute inset-0 bg-gradient-to-br from-accent/5 via-transparent to-primary/5 pointer-events-none" />
+        <div className="relative z-10">
+          <div className="text-7xl mb-6 animate-bounce">🎉</div>
+          <h3 className="text-3xl md:text-4xl font-extrabold mb-4 text-foreground">
+            شكراً جزيلاً على مشاركتك!
+          </h3>
+          <p className="text-lg md:text-xl text-muted-foreground mb-3 max-w-lg mx-auto leading-relaxed">
+            إجاباتك وصلت بنجاح وستساعدنا على تقديم محتوى أفضل وأكثر فائدة لأصحاب المشاريع في الأردن.
+          </p>
+          <p className="text-base text-accent font-semibold mb-10">
+            أنت جزء من التغيير 💪
+          </p>
+          <Button
+            size="lg"
+            className="text-lg h-14 px-10 rounded-full bg-accent hover:bg-accent/90 text-white shadow-lg"
+            onClick={() => scrollToSection("find-path")}
+          >
+            اكتشف مسارك المناسب ←
+          </Button>
+        </div>
+      </motion.div>
+    );
+  }
+
+  const currentQ = questions[surveyStep - 1];
+  const progressPct = ((surveyStep - 1) / questions.length) * 100;
+
+  return (
+    <div className="relative">
+      {showEncouragement && (
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0 }}
+          className="absolute -top-14 left-0 right-0 text-center z-20"
+        >
+          <span className="inline-block bg-primary text-primary-foreground font-bold text-base px-5 py-2.5 rounded-full shadow-lg">
+            {encouragementText}
+          </span>
+        </motion.div>
+      )}
+
+      <div className="bg-white rounded-3xl shadow-xl border border-border overflow-hidden">
+        <div className="gradient-primary p-5 md:p-6">
+          <div className="flex items-center justify-between mb-3">
+            <div className="flex items-center gap-2">
+              <span className="text-2xl">{QUESTION_ICONS[surveyStep - 1]}</span>
+              <span className="text-sm font-bold text-primary-foreground/90">
+                سؤال {surveyStep} من {questions.length}
+              </span>
+            </div>
+            {surveyStep > 1 && (
+              <button
+                onClick={() => setSurveyStep(prev => prev - 1)}
+                className="text-sm font-semibold text-primary-foreground/70 hover:text-primary-foreground flex items-center gap-1 transition-colors"
+              >
+                <ArrowRight className="w-4 h-4" /> رجوع
+              </button>
+            )}
+          </div>
+          <div className="w-full bg-white/20 rounded-full h-2.5">
+            <motion.div
+              className="bg-accent h-2.5 rounded-full"
+              initial={{ width: 0 }}
+              animate={{ width: `${progressPct}%` }}
+              transition={{ duration: 0.4, ease: "easeOut" }}
+            />
+          </div>
+          <div className="flex justify-between mt-1.5">
+            {questions.map((_, i) => (
+              <div
+                key={i}
+                className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                  i < surveyStep - 1 ? "bg-accent" : i === surveyStep - 1 ? "bg-white" : "bg-white/30"
+                }`}
+              />
+            ))}
+          </div>
+        </div>
+
+        <motion.div
+          key={surveyStep}
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.3 }}
+          className="p-6 md:p-10"
+        >
+          <p className="text-sm text-accent font-semibold mb-2 text-center">{currentQ.subtitle}</p>
+          <h3 className="text-2xl md:text-3xl font-extrabold mb-8 text-center text-foreground leading-relaxed">
+            {currentQ.question}
+          </h3>
+
+          <div className="flex flex-col gap-3">
+            {currentQ.options.map((opt, idx) => (
+              <motion.button
+                key={idx}
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+                onClick={() => handleAnswer(opt.text)}
+                className={`p-4 md:p-5 rounded-2xl border-2 transition-all text-right font-semibold text-base md:text-lg flex items-center gap-4 group
+                  ${selectedOption === opt.text
+                    ? "border-accent bg-accent/10 scale-[1.02]"
+                    : "border-border bg-background hover:border-accent/60 hover:bg-accent/5"
+                  }`}
+              >
+                <span className="text-2xl shrink-0 group-hover:scale-110 transition-transform">
+                  {opt.emoji}
+                </span>
+                <span className="flex-1 text-foreground">{opt.text}</span>
+                <ArrowLeft className={`w-4 h-4 shrink-0 transition-all text-muted-foreground group-hover:text-accent group-hover:-translate-x-1 ${selectedOption === opt.text ? "text-accent" : ""}`} />
+              </motion.button>
+            ))}
+          </div>
+
+          <p className="text-center text-sm text-muted-foreground mt-6">
+            اضغط على أي خيار للانتقال للسؤال التالي تلقائياً
+          </p>
+        </motion.div>
+      </div>
+    </div>
+  );
+}
+
 export default function Home() {
   // Enforce RTL direction for the page
   useEffect(() => {
@@ -302,6 +555,15 @@ export default function Home() {
         </div>
       </section>
 
+      {/* MOTIVATIONAL QUOTE BAND */}
+      <div className="bg-accent/10 border-y border-accent/20 py-8 px-4">
+        <div className="container mx-auto max-w-4xl text-center">
+          <p className="text-xl md:text-2xl font-bold text-foreground leading-relaxed">
+            "وقتك هو رأس مالك. دعنا نحوّل الإجراءات من رحلة مرهقة إلى مسار واضح بخطوات محددة."
+          </p>
+        </div>
+      </div>
+
       {/* BENEFITS SECTION */}
       <section className="py-20 md:py-32 bg-secondary" id="benefits">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
@@ -552,6 +814,18 @@ export default function Home() {
                 {
                   q: "الإجراءات طويلة والوقت ليس في صالحي",
                   a: "وقتك رأس مالك فعلاً. ما نعرفه أن التعقيد وكثرة الجهات من أسباب العزوف، لذلك تهدف هذه الصفحة إلى اختصار الالتباس، لا زيادته، لتبدأ من النقطة الصحيحة."
+                },
+                {
+                  q: "أخاف أن التسجيل يعني رقابة دائمة وتدقيق مستمر",
+                  a: "هذا قلق شائع جداً. لكن الحقيقة أن الرقابة موجودة حتى بدون تسجيل، والفرق أن التسجيل يعطيك وضوحاً يحميك: تعرف التزاماتك من البداية، وتتعامل مع المتطلبات بثقة بدلاً من القلق الدائم. التنظيم لا يعني مطاردة — يعني حماية وحق."
+                },
+                {
+                  q: "أنا خارج عمان، هل تنطبق عليّ نفس الإجراءات؟",
+                  a: "المسار الأساسي متشابه لكن بعض التفاصيل تختلف حسب المحافظة والبلدية المختصة. مكانك لا يجب أن يحدد سقف مشروعك. ابدأ بالمعلومات المتاحة وتواصل مع الجهة المختصة في منطقتك لمعرفة الخصوصيات المحلية."
+                },
+                {
+                  q: "أخاف أن التسجيل يؤثر على المساعدات التي أتلقاها",
+                  a: "هذا مخاوف حقيقية تستحق الاهتمام. الأهم هو أن تفهم القواعد بدقة قبل اتخاذ القرار. الأمان الحقيقي هو دخل مستقل ومستقر من مشروع يكبر — ابحث عن المسار الذي يضمن انتقالاً آمناً يناسب وضعك."
                 }
               ].map((faq, index) => (
                 <AccordionItem key={index} value={`item-${index}`} className="border-b border-border last:border-0 px-6 py-2">
@@ -695,6 +969,16 @@ export default function Home() {
                   مشروعك ليس أقل قيمة لأنه بدأ من البيت. المهم أن تعرف المسار الذي يناسبه حتى يتحرك بأمان ويكبر بدون تعطيل.
                 </p>
               </motion.div>
+
+              <motion.div variants={fadeUpVariant} className="mt-6 p-6 bg-primary/5 border border-primary/20 rounded-2xl flex gap-4 items-start">
+                <div className="text-3xl shrink-0">👩‍💼</div>
+                <div>
+                  <h4 className="text-lg font-bold text-foreground mb-2">لصاحبة المشروع المنزلي</h4>
+                  <p className="text-muted-foreground leading-relaxed">
+                    مشروعك ليس هواية — هو مستقبل. القيود الاجتماعية والأعباء اليومية حقيقية، لكن التسجيل يحمي جهدك ويفتح لك فرصاً بشروط تناسب واقعك. ابدئي بخطوات صغيرة ومحسوبة.
+                  </p>
+                </div>
+              </motion.div>
             </motion.div>
           </div>
         </div>
@@ -747,6 +1031,60 @@ export default function Home() {
               </motion.div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* HIDDEN COST OF DELAY SECTION */}
+      <section className="py-20 md:py-28 bg-primary text-primary-foreground" id="hidden-cost">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
+          <motion.div 
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeUpVariant}
+            className="text-center mb-16"
+          >
+            <h2 className="text-3xl md:text-5xl font-bold mb-4">التأجيل ليس قراراً محايداً</h2>
+            <p className="text-lg md:text-xl text-primary-foreground/80 max-w-2xl mx-auto">
+              كل يوم يمضي خارج التنظيم له ثمن حقيقي، حتى لو لم تشعر به الآن
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              { icon: "💸", title: "تمويل يصعب الوصول إليه", desc: "البنوك والجهات التمويلية تشترط وضعاً رسمياً. كل يوم تأجيل يبعدك عن فرص تمويل قد تغير مسار مشروعك." },
+              { icon: "📉", title: "سوق أضيق", desc: "الشركات الأكبر والجهات الرسمية تتعامل مع مشاريع مسجلة. أنت تبقى محصوراً في دائرة محدودة من الزبائن." },
+              { icon: "⚠️", title: "مخاطر بلا مظلة حماية", desc: "أي نزاع تجاري أو شكوى أو تفتيش مفاجئ قد يوقف نشاطك بالكامل لأن وضعك غير منظم." },
+              { icon: "🚫", title: "سقف نمو منخفض", desc: "مهما كانت جودة منتجك، يبقى نموك محدوداً بشبكتك الشخصية فقط بدلاً من الأسواق الأوسع." }
+            ].map((cost, idx) => (
+              <motion.div 
+                key={idx}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: idx * 0.1, duration: 0.5 }}
+                className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:bg-white/15 transition-colors"
+              >
+                <div className="text-4xl mb-4">{cost.icon}</div>
+                <h3 className="text-xl font-bold mb-3 text-accent">{cost.title}</h3>
+                <p className="text-primary-foreground/80 text-base leading-relaxed">{cost.desc}</p>
+              </motion.div>
+            ))}
+          </div>
+
+          <motion.div 
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            className="mt-12 text-center"
+          >
+            <p className="text-xl md:text-2xl font-bold text-accent">
+              لا تدع تكلفة البداية تحرمك من مكاسب الاستقرار.
+            </p>
+            <p className="mt-2 text-primary-foreground/70 text-lg">
+              خطوة منظمة اليوم ولو كانت صغيرة تفتح أبواباً لا يصل إليها العمل غير الرسمي.
+            </p>
+          </motion.div>
         </div>
       </section>
 
@@ -923,6 +1261,43 @@ export default function Home() {
                 </AccordionItem>
               ))}
             </Accordion>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* SURVEY SECTION */}
+      <section className="py-20 md:py-32 bg-gradient-to-b from-[#EEF2FF] to-[#F5F7FF]" id="survey">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-2xl">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeUpVariant}
+            className="text-center mb-14"
+          >
+            <span className="inline-block bg-accent/10 text-accent font-bold text-sm px-4 py-1.5 rounded-full mb-4">
+              📊 استبيان قصير
+            </span>
+            <h2 className="text-3xl md:text-5xl font-extrabold text-foreground mb-5 leading-tight">
+              رأيك يصنع الفرق
+            </h2>
+            <p className="text-lg md:text-xl text-muted-foreground max-w-lg mx-auto leading-relaxed">
+              6 أسئلة بسيطة — إجاباتك تساعدنا نفهم واقع أصحاب المشاريع ونطور محتوى أفيد لك ولغيرك
+            </p>
+            <div className="flex items-center justify-center gap-6 mt-6 text-sm text-muted-foreground">
+              <span className="flex items-center gap-1.5">⏱️ أقل من دقيقتين</span>
+              <span className="flex items-center gap-1.5">🔒 مجهول الهوية تماماً</span>
+              <span className="flex items-center gap-1.5">💡 بدون تسجيل</span>
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+          >
+            <SurveySection />
           </motion.div>
         </div>
       </section>
