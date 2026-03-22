@@ -1,0 +1,14 @@
+packages:
+  "framer-motion": "For premium scroll animations and smooth page transitions"
+  "clsx": "Utility for constructing className strings conditionally"
+  "tailwind-merge": "Utility function to efficiently merge Tailwind CSS classes in JS"
+
+images:
+  - path: "artifacts/formalization-landing/public/images/hero-bg.png"
+    description: "Subtle abstract geometric gradient background in deep blue and teal colors, very clean, professional and minimal, suitable for overlaying text"
+    aspect_ratio: "16:9"
+
+notes:
+  - This is a pure static frontend landing page with no backend dependencies.
+  - The application is entirely in Arabic and strictly uses RTL layout.
+  - No organization names or logos are included per the requirements.
