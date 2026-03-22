@@ -681,6 +681,21 @@ export default function Home() {
                 title: "حماية أكبر من كلفة البقاء غير الرسمي",
                 desc: "عدم التسجيل ليس وضعاً محايداً. هو قد يعني غياب الحماية القانونية وضعف الوصول إلى الخدمات في وقت الحاجة.",
               },
+              {
+                icon: "💡",
+                title: "اختبار أفكارك بمخاطرة أقل",
+                desc: "التسجيل يتيح لك تجربة أفكارك التجارية بشكل رسمي ومنظم، مما يساعدك على تحديد جدواها قبل الاستثمار الكبير.",
+              },
+              {
+                icon: "🕐",
+                title: "مرونة أكبر في إدارة وقتك",
+                desc: "المشروع المنظم يمنحك صلاحيات أوسع في التعامل مع العملاء والشركاء، وأساساً أقوى لتنظيم ساعات عملك وأولوياتك.",
+              },
+              {
+                icon: "📊",
+                title: "نمو مهني حقيقي وملموس",
+                desc: "التسجيل يحوّلك من موظف إلى صاحب عمل فعلي. تكتسب خبرة في التسويق والمحاسبة وإدارة الأعمال، مما يزيد قيمتك في السوق.",
+              },
             ].map((benefit, index) => (
               <motion.div
                 key={index}
@@ -1102,6 +1117,116 @@ export default function Home() {
         </div>
       </section>
 
+      {/* LEGAL FORMS SECTION */}
+      <section className="py-20 md:py-32 bg-background" id="legal-forms">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeUpVariant}
+            className="text-center mb-16"
+          >
+            <span className="inline-block bg-primary/10 text-primary font-bold text-sm px-4 py-1.5 rounded-full mb-4">
+              📋 دليل الأشكال القانونية
+            </span>
+            <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
+              ما الشكل القانوني المناسب لمشروعك؟
+            </h2>
+            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
+              لا يوجد شكل قانوني واحد يناسب الجميع. اختيار الشكل الصحيح منذ البداية يوفر عليك وقتاً وجهداً كبيراً لاحقاً.
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              {
+                icon: "👤",
+                title: "المؤسسة الفردية",
+                badge: "الأبسط والأسرع",
+                badgeColor: "bg-green-100 text-green-700",
+                desc: "مسجّلة باسم شخص طبيعي واحد. الأنسب للبدايات الصغيرة والأنشطة الفردية. يشترط أن يكون صاحبها قد أتم الثامنة عشرة.",
+                detail: "صاحبها يتحمل المسؤولية الشخصية الكاملة",
+              },
+              {
+                icon: "🤝",
+                title: "شركة التضامن / التوصية البسيطة",
+                badge: "للمشاريع المشتركة",
+                badgeColor: "bg-blue-100 text-blue-700",
+                desc: "تفتح المجال لتسجيل المشروع مع شركاء. عدد الشركاء من 2 إلى 20. لا يشترط قانون الشركات حداً أدنى لرأس المال.",
+                detail: "قواعد خاصة لتسمية الشركة وتوزيع المسؤوليات",
+              },
+              {
+                icon: "🏬",
+                title: "الشركة ذات المسؤولية المحدودة",
+                badge: "الأكثر شيوعاً",
+                badgeColor: "bg-accent/15 text-accent",
+                desc: "يمكن تأسيسها من شريك واحد أو أكثر. الحد الأدنى لرأس المال دينار واحد ما لم يتطلب النشاط أكثر. مسؤولية الشركاء بحدود مساهمتهم فقط.",
+                detail: "تفصل بين مسؤولية الشركة ومسؤولية صاحبها",
+              },
+              {
+                icon: "🏛️",
+                title: "الشركة المساهمة الخاصة",
+                badge: "للمشاريع المتوسطة",
+                badgeColor: "bg-purple-100 text-purple-700",
+                desc: "تتألف من شخصين أو أكثر. رأس المال المصرح والمكتتب به لا يقل عن 50,000 دينار أردني.",
+                detail: "يجوز تأسيسها من شخص واحد بتنسيب مبرر",
+              },
+              {
+                icon: "📈",
+                title: "الشركة المساهمة العامة",
+                badge: "للمشاريع الكبيرة",
+                badgeColor: "bg-red-100 text-red-700",
+                desc: "رأس المال المصرح به لا يقل عن 500,000 دينار. رأس المال المكتتب به لا يقل عن 100,000 دينار أو 20% من المصرح به أيهما أكثر.",
+                detail: "أكثر من مؤسس، مع إمكانية التأسيس من شخص واحد بشروط",
+              },
+              {
+                icon: "🌍",
+                title: "فرع الشركة الأجنبية",
+                badge: "للشركات الخارجية",
+                badgeColor: "bg-gray-100 text-gray-700",
+                desc: "مخصص للشركات المسجلة خارج المملكة. الشركة العاملة تُسجّل بموجب عطاء أو ترخيص. الشركة غير العاملة لا تمارس أي نشاط داخل المملكة.",
+                detail: "مسار مختلف عن مسار الشركات المحلية",
+              },
+            ].map((form, idx) => (
+              <motion.div
+                key={idx}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: idx * 0.1, duration: 0.5 }}
+                className="bg-card rounded-2xl p-7 shadow-sm border border-border hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col gap-4"
+              >
+                <div className="flex items-start justify-between gap-3">
+                  <span className="text-4xl">{form.icon}</span>
+                  <span className={`text-xs font-bold px-3 py-1.5 rounded-full shrink-0 ${form.badgeColor}`}>
+                    {form.badge}
+                  </span>
+                </div>
+                <h3 className="text-xl font-bold text-foreground leading-snug">{form.title}</h3>
+                <p className="text-muted-foreground text-base leading-relaxed flex-grow">{form.desc}</p>
+                <div className="border-t border-border pt-4 text-sm text-primary font-medium flex items-center gap-2">
+                  <span className="text-accent">ℹ️</span>
+                  {form.detail}
+                </div>
+              </motion.div>
+            ))}
+          </div>
+
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            className="mt-12 bg-primary/5 border border-primary/20 rounded-2xl p-6 text-center"
+          >
+            <p className="text-primary font-medium text-lg">
+              اختيار الشكل القانوني يعتمد على طبيعة نشاطك وحجمه ووجود شركاء ومستوى المخاطرة التي تتحملها.
+              لا يوجد خيار "أفضل" بشكل مطلق — يوجد خيار "أنسب" لحالتك.
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
       {/* HOME-BASED BUSINESS SECTION */}
       <section className="py-20 md:py-32 bg-[#FDF8F5]" id="home-based">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
@@ -1354,16 +1479,24 @@ export default function Home() {
           <div className="space-y-6 md:space-y-8 relative before:absolute before:inset-0 before:ml-[50%] before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-1 before:bg-gradient-to-b before:from-transparent before:via-border before:to-transparent">
             {[
               {
-                title: "اختيار الشكل القانوني",
-                desc: "ينتقل مشروعك إلى شكل قانوني أوضح يناسب نشاطك وحجمه (مثل مؤسسة فردية أو شركة ذات مسؤولية محدودة).",
+                title: "تسجيل الشكل القانوني",
+                desc: "الخطوة الأولى هي تحديد الشكل القانوني المناسب لمشروعك (مؤسسة فردية، شركة ذات مسؤولية محدودة، أو غيرها) وتسجيله لدى الجهة المختصة. هذا يمنح مشروعك هويته الرسمية.",
               },
               {
-                title: "استكمال الرخصة",
-                desc: "تستكمل الرخصة أو الموافقات المطلوبة بحسب نشاطك وموقعك لضمان عملك ضمن الإطار القانوني السليم.",
+                title: "خدمات ما بعد التسجيل",
+                desc: "بعد تسجيل الكيان قد تكون هناك خطوات تكميلية مطلوبة حسب نشاطك: كالانتساب لغرفة التجارة أو الصناعة، والتسجيل لدى الضمان الاجتماعي، والتسجيل الضريبي، وتسجيل الاسم التجاري عند الحاجة.",
               },
               {
-                title: "الالتزامات المناسبة لك",
-                desc: "تبدأ الالتزامات التي تنطبق على حالتك: مثل الرقم الضريبي، أو شمول العمال بالضمان الاجتماعي إذا وجدوا.",
+                title: "موافقات الموقع",
+                desc: "التأكد من أن الموقع الذي ستعمل منه مناسب للنشاط: هل تصنيف الأرض أو المبنى يسمح بهذا النوع من الأعمال؟ وهل يحتاج موافقة بيئية أو تنظيمية؟ الموقع يؤثر مباشرة على المسار وعدد الخطوات.",
+              },
+              {
+                title: "الموافقات القطاعية",
+                desc: "بعض الأنشطة تحتاج موافقة من الجهة المختصة بالقطاع قبل الانتهاء من الترخيص، مثل الصحة للأنشطة الغذائية، أو جهات تقنية لأنشطة الاتصالات. هذه الموافقات تأتي في الغالب بعد التسجيل وقبل رخصة المهن.",
+              },
+              {
+                title: "رخصة المهن",
+                desc: "المحطة الأخيرة هي رخصة مزاولة النشاط من الموقع. داخل حدود أمانة عمان تصدر من الأمانة، وخارجها من البلدية المعنية. هذه هي الرخصة التي تسمح لك بالعمل فعلياً ضمن الإطار القانوني الكامل.",
               },
             ].map((step, index) => (
               <motion.div
@@ -1530,6 +1663,14 @@ export default function Home() {
                 {
                   q: "من أين أبدأ إذا أردت تنظيم مشروعي؟",
                   a: "الخطوة الأولى هي تحديد نوع نشاطك والشكل القانوني المناسب له، ثم التعرف على الجهة المختصة بنشاطك سواء كانت وزارة الصناعة والتجارة أو البلدية أو غيرها. من المهم أن تسير في المسار الصحيح منذ البداية لتجنب التعقيدات اللاحقة.",
+                },
+                {
+                  q: "هل استخراج السجل يعني أنني جاهز للعمل فوراً؟",
+                  a: "ليس بالضرورة. التسجيل يمنح مشروعك الهوية القانونية، لكن قد تبقى خطوات لازمة قبل الممارسة الفعلية: كالانتساب لغرفة التجارة أو الصناعة بحسب النشاط، والتسجيل في الضمان الاجتماعي، والتسجيل الضريبي، وأحياناً موافقات الموقع أو موافقات قطاعية، ثم رخصة المهن. التسجيل خطوة أولى مهمة لكنها ليست الأخيرة.",
+                },
+                {
+                  q: "ما الفرق بين موافقات الموقع والموافقات القطاعية؟",
+                  a: "موافقات الموقع تتعلق بالمكان نفسه: هل تصنيف الأرض أو المبنى يسمح بهذا النشاط؟ وهل يحتاج موافقة بيئية؟ أما الموافقات القطاعية فتأتي من الجهة المختصة بالنشاط ذاته، مثل وزارة الصحة للأنشطة الغذائية أو الطبية. الموافقتان مستقلتان وقد تحتاج إلى كليهما أو أحدهما فقط، وذلك يعتمد على طبيعة نشاطك.",
                 },
               ].map((faq, index) => (
                 <AccordionItem
