@@ -1,6 +1,15 @@
 import { useEffect, useState, useRef } from "react";
 import { motion, useScroll, useSpring, useInView } from "framer-motion";
-import { ChevronDown, ArrowLeft, ArrowRight, Check, X } from "lucide-react";
+import {
+  ArrowLeft, ArrowRight,
+  Building2, Globe, Banknote, Scale, TrendingUp, ShieldCheck,
+  Lightbulb, Clock, BarChart3,
+  Landmark, MapPin, Receipt, HandshakeIcon,
+  TrendingDown, ArrowDownRight, AlertTriangle, Ban,
+  Star, CheckCircle2, Sparkles,
+  FileText, FileCheck2, Home as HomeIcon, User, Users, Store,
+  Package, Utensils, ShoppingBag, Monitor, Scissors, Lock, Info, Compass,
+} from "lucide-react";
 import {
   Accordion,
   AccordionContent,
@@ -61,14 +70,12 @@ function Counter({
 }
 
 const ENCOURAGEMENTS = [
-  "رائع! إجابتك مهمة جداً 💪",
-  "ممتاز! استمر، أنت في منتصف الطريق 🌟",
-  "أحسنت! كل خطوة تقربك أكثر 🎯",
-  "جيد جداً! سؤال واحد فقط تبقى ✨",
-  "تقريباً انتهينا! 🏁",
+  "رائع! إجابتك مهمة جداً",
+  "ممتاز! استمر، أنت في منتصف الطريق",
+  "أحسنت! كل خطوة تقربك أكثر",
+  "جيد جداً! سؤال واحد فقط تبقى",
+  "تقريباً انتهينا!",
 ];
-
-const QUESTION_ICONS = ["🧠", "🚧", "💭", "🎯", "🔄", "📊"];
 
 function SurveySection() {
   const [surveyStep, setSurveyStep] = useState(1);
@@ -199,7 +206,7 @@ function SurveySection() {
       >
         <div className="absolute inset-0 bg-gradient-to-br from-accent/5 via-transparent to-primary/5 pointer-events-none" />
         <div className="relative z-10">
-          <div className="text-7xl mb-6 animate-bounce">🎉</div>
+          <div className="w-20 h-20 rounded-full bg-success/15 flex items-center justify-center mx-auto mb-6"><CheckCircle2 className="w-10 h-10 text-success animate-bounce" /></div>
           <h3 className="text-3xl md:text-4xl font-extrabold mb-4 text-foreground">
             شكراً جزيلاً على مشاركتك!
           </h3>
@@ -208,7 +215,7 @@ function SurveySection() {
             المشاريع في الأردن.
           </p>
           <p className="text-base text-accent font-semibold mb-10">
-            أنت جزء من التغيير 💪
+            أنت جزء من التغيير 
           </p>
           <Button
             size="lg"
@@ -244,7 +251,7 @@ function SurveySection() {
         <div className="gradient-primary p-5 md:p-6">
           <div className="flex items-center justify-between mb-3">
             <div className="flex items-center gap-2">
-              <span className="text-2xl">{QUESTION_ICONS[surveyStep - 1]}</span>
+              <div className="w-7 h-7 rounded-full bg-white/20 flex items-center justify-center text-xs font-bold">{surveyStep}</div>
               <span className="text-sm font-bold text-primary-foreground/90">
                 سؤال {surveyStep} من {questions.length}
               </span>
@@ -270,13 +277,12 @@ function SurveySection() {
             {questions.map((_, i) => (
               <div
                 key={i}
-                className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                  i < surveyStep - 1
+                className={`w-2 h-2 rounded-full transition-all duration-300 ${i < surveyStep - 1
                     ? "bg-accent"
                     : i === surveyStep - 1
                       ? "bg-white"
                       : "bg-white/30"
-                }`}
+                  }`}
               />
             ))}
           </div>
@@ -304,10 +310,9 @@ function SurveySection() {
                 whileTap={{ scale: 0.98 }}
                 onClick={() => handleAnswer(opt.text)}
                 className={`p-4 md:p-5 rounded-2xl border-2 transition-all text-right font-semibold text-base md:text-lg flex items-center gap-4 group
-                  ${
-                    selectedOption === opt.text
-                      ? "border-accent bg-accent/10 scale-[1.02]"
-                      : "border-border bg-background hover:border-accent/60 hover:bg-accent/5"
+                  ${selectedOption === opt.text
+                    ? "border-accent bg-accent/10 scale-[1.02]"
+                    : "border-border bg-background hover:border-accent/60 hover:bg-accent/5"
                   }`}
               >
                 <span className="text-2xl shrink-0 group-hover:scale-110 transition-transform">
@@ -485,11 +490,46 @@ export default function Home() {
       {/* HERO SECTION */}
       <section className="relative pt-20 pb-32 md:pt-32 md:pb-48 overflow-hidden gradient-primary text-primary-foreground">
         {/* Background Overlay */}
-        <div className="absolute inset-0 z-0 opacity-20 mix-blend-overlay">
+        <div className="absolute inset-0 z-0 opacity-10 mix-blend-overlay">
           <img
             src={`${import.meta.env.BASE_URL}images/hero-bg.png`}
             alt="Hero Background"
             className="w-full h-full object-cover"
+          />
+        </div>
+
+        {/* Floating Orbs */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
+          <div
+            className="absolute top-[15%] right-[8%] w-72 h-72 rounded-full"
+            style={{
+              background: "radial-gradient(circle, hsl(var(--accent)/0.35) 0%, transparent 70%)",
+              animation: "float-orb 7s ease-in-out infinite",
+              filter: "blur(2px)",
+            }}
+          />
+          <div
+            className="absolute bottom-[20%] left-[5%] w-56 h-56 rounded-full"
+            style={{
+              background: "radial-gradient(circle, rgba(255,255,255,0.12) 0%, transparent 70%)",
+              animation: "float-orb-slow 9s ease-in-out infinite",
+              filter: "blur(1px)",
+            }}
+          />
+          <div
+            className="absolute top-[55%] left-[30%] w-40 h-40 rounded-full"
+            style={{
+              background: "radial-gradient(circle, hsl(var(--accent)/0.2) 0%, transparent 70%)",
+              animation: "float-orb 11s ease-in-out infinite 2s",
+              filter: "blur(1px)",
+            }}
+          />
+          <div
+            className="absolute top-[10%] left-[20%] w-24 h-24 rounded-full"
+            style={{
+              background: "radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 70%)",
+              animation: "float-orb-slow 6s ease-in-out infinite 1s",
+            }}
           />
         </div>
 
@@ -500,63 +540,67 @@ export default function Home() {
             variants={staggerContainer}
             className="space-y-8"
           >
+            {/* Badge */}
+            <motion.div variants={fadeUpVariant}>
+              <span className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 text-white/90 text-sm font-bold px-5 py-2 rounded-full">
+                <Sparkles className="w-4 h-4 text-accent" />
+                دليلك نحو مشروع منظم ومحمي في الأردن
+              </span>
+            </motion.div>
+
             <motion.h1
               variants={fadeUpVariant}
-              className="text-4xl md:text-5xl lg:text-7xl font-extrabold leading-tight md:leading-[1.2] text-balance"
+              className="text-4xl md:text-5xl lg:text-7xl font-extrabold leading-tight md:leading-[1.15] text-balance"
             >
-              مشروعك يستحق أن يكون واضحاً ومحميّاً وقابلاً للنمو
+              مشروعك يستحق أن يكون{" "}
+              <span className="gradient-text-primary">
+                واضحاً ومحميّاً وقابلاً للنمو
+              </span>
             </motion.h1>
 
             <motion.p
               variants={fadeUpVariant}
-              className="text-lg md:text-2xl font-sans text-primary-foreground/90 max-w-3xl mx-auto leading-relaxed"
+              className="text-lg md:text-2xl font-sans text-primary-foreground/85 max-w-3xl mx-auto leading-relaxed"
             >
-              التسجيل والترخيص ليسا عبئاً إضافياً فقط. إنهما خطوة تنظّم شغلك
-              وتفتح لك فرصاً أوسع.
+              التسجيل والترخيص ليسا عبئاً — إنهما الخطوة التي تنظّم شغلك وتفتح
+              لك أسواقاً وفرصاً أوسع بكثير.
             </motion.p>
 
-            <motion.p
-              variants={fadeUpVariant}
-              className="text-base md:text-xl font-medium text-accent opacity-90 max-w-2xl mx-auto"
-            >
-              صحيح أنك تبيع اليوم، لكن التنظيم هو ما يساعدك على البيع الأكبر
-              لاحقاً.
-            </motion.p>
-
+            {/* Single strong CTA */}
             <motion.div
               variants={fadeUpVariant}
-              className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-8"
+              className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-6"
             >
               <Button
                 size="lg"
-                className="w-full sm:w-auto text-lg h-14 px-8 rounded-xl bg-accent hover:bg-accent/90 text-white shadow-[0_0_20px_rgba(230,126,34,0.4)] transition-all hover:-translate-y-1"
+                className="btn-shimmer w-full sm:w-auto text-xl h-16 px-12 rounded-2xl text-white font-bold shadow-[0_0_30px_rgba(230,126,34,0.5)] transition-all hover:-translate-y-1.5 hover:shadow-[0_0_50px_rgba(230,126,34,0.7)] border-0"
                 onClick={() => scrollToSection("find-path")}
               >
-                اكتشف مسارك
+                اكتشف مسارك المناسب ←
               </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="w-full sm:w-auto text-lg h-14 px-8 rounded-xl border-2 border-white/30 text-white hover:bg-white/10 hover:border-white/50 transition-all bg-transparent"
+              <button
+                className="text-white/70 hover:text-white text-base underline underline-offset-4 transition-colors"
                 onClick={() => scrollToSection("reg-vs-license")}
               >
                 افهم الفرق بين التسجيل والترخيص
-              </Button>
-              <Button
-                size="lg"
-                variant="ghost"
-                className="w-full sm:w-auto text-lg h-14 px-8 rounded-xl text-white/80 hover:text-white hover:bg-white/5 transition-all"
-                onClick={() => scrollToSection("cta")}
-              >
-                ابدأ بخطوة واضحة
-              </Button>
+              </button>
             </motion.div>
 
-            <motion.div variants={fadeUpVariant} className="pt-8">
-              <p className="text-sm md:text-base text-primary-foreground/60 max-w-2xl mx-auto bg-black/10 p-4 rounded-lg backdrop-blur-sm">
-                هذه الصفحة إرشادية. التفاصيل الدقيقة تختلف بحسب النشاط، والموقع،
-                والشكل القانوني، ووجود عمّال أو شركاء.
-              </p>
+            {/* Trust signals */}
+            <motion.div
+              variants={fadeUpVariant}
+              className="flex flex-wrap items-center justify-center gap-6 pt-4 text-sm text-white/60"
+            >
+              {[
+                { icon: CheckCircle2, text: "محتوى إرشادي مجاني" },
+                { icon: CheckCircle2, text: "بدون تسجيل" },
+                { icon: CheckCircle2, text: "مخصص للسوق الأردني" },
+              ].map((item, i) => (
+                <span key={i} className="flex items-center gap-1.5">
+                  <item.icon className="w-4 h-4 text-accent/80" />
+                  {item.text}
+                </span>
+              ))}
             </motion.div>
           </motion.div>
         </div>
@@ -597,11 +641,7 @@ export default function Home() {
                 suffix: "%",
                 desc: "من الناتج المحلي الإجمالي تساهم فيه المشاريع الصغيرة",
               },
-              {
-                num: 11000,
-                suffix: "+",
-                desc: "مشروع تستهدف الوصول إليه ودعمه",
-              },
+
             ].map((stat, idx) => (
               <motion.div
                 key={idx}
@@ -623,13 +663,22 @@ export default function Home() {
         </div>
       </section>
 
-      {/* MOTIVATIONAL QUOTE BAND */}
-      <div className="bg-accent/10 border-y border-accent/20 py-8 px-4">
-        <div className="container mx-auto max-w-4xl text-center">
-          <p className="text-xl md:text-2xl font-bold text-foreground leading-relaxed">
-            "وقتك هو رأس مالك. دعنا نحوّل الإجراءات من رحلة مرهقة إلى مسار واضح
-            بخطوات محددة."
-          </p>
+      {/* TRUST BAR */}
+      <div className="bg-secondary border-y border-border py-7 px-4">
+        <div className="container mx-auto max-w-5xl">
+          <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-5">
+            {[
+              { icon: ShieldCheck, label: "محتوى موثوق ومحدّث", color: "text-primary" },
+              { icon: Building2, label: "يغطي جميع الأشكال القانونية", color: "text-primary" },
+              { icon: Globe, label: "شامل لجميع محافظات الأردن", color: "text-primary" },
+              { icon: CheckCircle2, label: "مراجعة من مختصين", color: "text-primary" },
+            ].map((item, i) => (
+              <div key={i} className="flex items-center gap-2.5 text-muted-foreground">
+                <item.icon className={`w-5 h-5 shrink-0 ${item.color}`} />
+                <span className="text-sm md:text-base font-semibold">{item.label}</span>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 
@@ -643,70 +692,86 @@ export default function Home() {
             variants={fadeUpVariant}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
-              ماذا يكسب مشروعك عندما يصبح منظماً؟
+            <span className="section-badge">
+              <Sparkles className="w-4 h-4" />
+              مزايا التنظيم الرسمي
+            </span>
+            <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
+              ماذا يكسب مشروعك عندما{" "}
+              <span className="gradient-text">يصبح منظماً؟</span>
             </h2>
-            <div className="h-1.5 w-24 bg-accent mx-auto rounded-full"></div>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              التنظيم ليس التزاماً فقط — هو استثمار يفتح أبواباً كانت مغلقة
+            </p>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {[
               {
-                icon: "🏢",
+                Icon: Building2,
+                color: "bg-blue-50 text-blue-600",
                 title: "اعتراف رسمي يجعل مشروعك أوضح",
                 desc: "عندما يصبح مشروعك مسجلاً، يصبح له حضور رسمي أوضح، وتصبح الملكية والإدارة والمسؤوليات معرّفة بشكل أفضل.",
               },
               {
-                icon: "🌐",
+                Icon: Globe,
+                color: "bg-cyan-50 text-cyan-600",
                 title: "وصول أوسع إلى السوق والعملاء",
-                desc: "التنظيم يساعد مشروعك على الوصول إلى الأسواق والعملاء بشكل أوسع، ويبعده عن البقاء داخل دائرة ضيقة من التعاملات المحدودة.",
+                desc: "التنظيم يساعد مشروعك على الوصول إلى الأسواق والعملاء بشكل أوسع، ويبعده عن البقاء داخل دائرة ضيقة.",
               },
               {
-                icon: "💰",
+                Icon: Banknote,
+                color: "bg-green-50 text-green-600",
                 title: "قدرة أفضل على الوصول للتمويل",
                 desc: "التسجيل يجعل المشروع أقرب إلى الخدمات المالية والتمويلية، ويعزز الشمول المالي وفرص الحصول على دعم.",
               },
               {
-                icon: "⚖️",
+                Icon: Scale,
+                color: "bg-purple-50 text-purple-600",
                 title: "تنظيم أوضح للقرارات والحقوق",
                 desc: "يوضح طريقة التملك والإدارة، وآلية اتخاذ القرار، ونطاق المسؤولية القانونية والضريبية.",
               },
               {
-                icon: "📈",
+                Icon: TrendingUp,
+                color: "bg-emerald-50 text-emerald-600",
                 title: "تحسين الإنتاجية وظروف العمل",
                 desc: "التنظيم يحسّن الإنتاجية وظروف العمل، ويدخل العاملين ضمن مظلة أكثر حماية وأماناً واستقراراً.",
               },
               {
-                icon: "🛡️",
+                Icon: ShieldCheck,
+                color: "bg-orange-50 text-orange-600",
                 title: "حماية أكبر من كلفة البقاء غير الرسمي",
-                desc: "عدم التسجيل ليس وضعاً محايداً. هو قد يعني غياب الحماية القانونية وضعف الوصول إلى الخدمات في وقت الحاجة.",
+                desc: "عدم التسجيل ليس وضعاً محايداً. هو قد يعني غياب الحماية القانونية وضعف الوصول إلى الخدمات.",
               },
               {
-                icon: "💡",
+                Icon: Lightbulb,
+                color: "bg-yellow-50 text-yellow-600",
                 title: "اختبار أفكارك بمخاطرة أقل",
-                desc: "التسجيل يتيح لك تجربة أفكارك التجارية بشكل رسمي ومنظم، مما يساعدك على تحديد جدواها قبل الاستثمار الكبير.",
+                desc: "التسجيل يتيح لك تجربة أفكارك التجارية بشكل رسمي ومنظم، مما يساعدك على تحديد جدواها مبكراً.",
               },
               {
-                icon: "🕐",
+                Icon: Clock,
+                color: "bg-sky-50 text-sky-600",
                 title: "مرونة أكبر في إدارة وقتك",
-                desc: "المشروع المنظم يمنحك صلاحيات أوسع في التعامل مع العملاء والشركاء، وأساساً أقوى لتنظيم ساعات عملك وأولوياتك.",
+                desc: "المشروع المنظم يمنحك صلاحيات أوسع في التعامل مع العملاء والشركاء، وأساساً أقوى لتنظيم أولوياتك.",
               },
               {
-                icon: "📊",
+                Icon: BarChart3,
+                color: "bg-accent/10 text-accent",
                 title: "نمو مهني حقيقي وملموس",
-                desc: "التسجيل يحوّلك من موظف إلى صاحب عمل فعلي. تكتسب خبرة في التسويق والمحاسبة وإدارة الأعمال، مما يزيد قيمتك في السوق.",
+                desc: "التسجيل يحوّلك إلى صاحب عمل فعلي. تكتسب خبرة في التسويق والمحاسبة وإدارة الأعمال، مما يزيد قيمتك.",
               },
             ].map((benefit, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 24 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-card rounded-2xl p-8 shadow-sm border border-border/50 hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 group"
+                transition={{ duration: 0.5, delay: index * 0.08 }}
+                className="bg-card rounded-2xl p-8 border border-border/60 glow-card group"
               >
-                <div className="text-5xl mb-6 transform group-hover:scale-110 transition-transform duration-300 origin-bottom-right">
-                  {benefit.icon}
+                <div className={`w-14 h-14 rounded-2xl ${benefit.color} flex items-center justify-center mb-6 transition-transform duration-300 group-hover:scale-110`}>
+                  <benefit.Icon className="w-7 h-7" />
                 </div>
                 <h3 className="text-xl md:text-2xl font-bold text-foreground mb-4 leading-snug">
                   {benefit.title}
@@ -730,8 +795,12 @@ export default function Home() {
             variants={fadeUpVariant}
             className="text-center mb-12 md:mb-16"
           >
+            <span className="section-badge">
+              <Compass className="w-4 h-4" />
+              اختبار تشخيصي
+            </span>
             <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
-              اكتشف المسار المناسب لمشروعك
+              اكتشف المسار <span className="gradient-text">المناسب لمشروعك</span>
             </h2>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
               أجب على 4 أسئلة بسيطة واحصل على توصية مخصصة لحالتك
@@ -766,28 +835,12 @@ export default function Home() {
                   </h3>
                   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                     {[
-                      {
-                        icon: "🍳",
-                        label: "مشروع طعام وتموينات",
-                        value: "food",
-                      },
-                      { icon: "🛍️", label: "تجارة وبيع مباشر", value: "trade" },
-                      {
-                        icon: "💻",
-                        label: "خدمات رقمية وتقنية",
-                        value: "digital",
-                      },
-                      {
-                        icon: "✂️",
-                        label: "حرفة أو خدمة يدوية",
-                        value: "craft",
-                      },
-                      { icon: "🏠", label: "مشروع منزلي", value: "home" },
-                      {
-                        icon: "📦",
-                        label: "تصنيع أو إنتاج",
-                        value: "manufacturing",
-                      },
+                      { Icon: Utensils, iconBg: "bg-orange-50 text-orange-600", label: "مشروع طعام وتموينات", value: "food" },
+                      { Icon: ShoppingBag, iconBg: "bg-blue-50 text-blue-600", label: "تجارة وبيع مباشر", value: "trade" },
+                      { Icon: Monitor, iconBg: "bg-cyan-50 text-cyan-600", label: "خدمات رقمية وتقنية", value: "digital" },
+                      { Icon: Scissors, iconBg: "bg-purple-50 text-purple-600", label: "حرفة أو خدمة يدوية", value: "craft" },
+                      { Icon: HomeIcon, iconBg: "bg-green-50 text-green-600", label: "مشروع منزلي", value: "home" },
+                      { Icon: Package, iconBg: "bg-amber-50 text-amber-600", label: "تصنيع أو إنتاج", value: "manufacturing" },
                     ].map((opt) => (
                       <button
                         key={opt.value}
@@ -795,7 +848,9 @@ export default function Home() {
                         className={`p-6 rounded-2xl border-2 transition-all flex flex-col items-center gap-4 text-center hover:shadow-md
                           ${quizAnswers.type === opt.value ? "border-accent bg-accent/5" : "border-border bg-background hover:border-accent/50"}`}
                       >
-                        <span className="text-4xl">{opt.icon}</span>
+                        <div className={`w-12 h-12 rounded-xl flex items-center justify-center ${opt.iconBg}`}>
+                        <opt.Icon className="w-6 h-6" />
+                      </div>
                         <span className="font-bold text-lg">{opt.label}</span>
                       </button>
                     ))}
@@ -1035,7 +1090,7 @@ export default function Home() {
               viewport={{ once: true }}
               className="bg-white/10 backdrop-blur-md rounded-3xl p-8 md:p-12 border border-white/20"
             >
-              <div className="text-6xl mb-6">📜</div>
+              <div className="w-16 h-16 rounded-2xl bg-white/15 flex items-center justify-center mb-6"><FileCheck2 className="w-8 h-8 text-primary-foreground" /></div>
               <h3 className="text-3xl font-bold mb-4">الترخيص</h3>
               <p className="text-lg md:text-xl leading-relaxed text-primary-foreground/90">
                 إذن العمل المطلوب لبعض الأنشطة من الجهات المختصة. قد يشمل رخصة
@@ -1062,10 +1117,10 @@ export default function Home() {
                   <tr className="bg-secondary text-lg md:text-xl border-b border-border">
                     <th className="p-4 md:p-6 font-bold w-1/3">المعيار</th>
                     <th className="p-4 md:p-6 font-bold w-1/3 text-destructive border-r border-border">
-                      بدون تسجيل ❌
+                      بدون تسجيل
                     </th>
                     <th className="p-4 md:p-6 font-bold w-1/3 text-success border-r border-border">
-                      مع التسجيل ✅
+                      مع التسجيل
                     </th>
                   </tr>
                 </thead>
@@ -1127,9 +1182,7 @@ export default function Home() {
             variants={fadeUpVariant}
             className="text-center mb-16"
           >
-            <span className="inline-block bg-primary/10 text-primary font-bold text-sm px-4 py-1.5 rounded-full mb-4">
-              📋 دليل الأشكال القانونية
-            </span>
+            <span className="section-badge-primary"><Scale className="w-4 h-4" />دليل الأشكال القانونية</span>
             <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
               ما الشكل القانوني المناسب لمشروعك؟
             </h2>
@@ -1141,7 +1194,8 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
-                icon: "👤",
+                Icon: User,
+                iconBg: "bg-green-50 text-green-600",
                 title: "المؤسسة الفردية",
                 badge: "الأبسط والأسرع",
                 badgeColor: "bg-green-100 text-green-700",
@@ -1149,7 +1203,8 @@ export default function Home() {
                 detail: "صاحبها يتحمل المسؤولية الشخصية الكاملة",
               },
               {
-                icon: "🤝",
+                Icon: Users,
+                iconBg: "bg-blue-50 text-blue-600",
                 title: "شركة التضامن / التوصية البسيطة",
                 badge: "للمشاريع المشتركة",
                 badgeColor: "bg-blue-100 text-blue-700",
@@ -1157,7 +1212,8 @@ export default function Home() {
                 detail: "قواعد خاصة لتسمية الشركة وتوزيع المسؤوليات",
               },
               {
-                icon: "🏬",
+                Icon: Store,
+                iconBg: "bg-accent/10 text-accent",
                 title: "الشركة ذات المسؤولية المحدودة",
                 badge: "الأكثر شيوعاً",
                 badgeColor: "bg-accent/15 text-accent",
@@ -1165,7 +1221,8 @@ export default function Home() {
                 detail: "تفصل بين مسؤولية الشركة ومسؤولية صاحبها",
               },
               {
-                icon: "🏛️",
+                Icon: Building2,
+                iconBg: "bg-purple-50 text-purple-600",
                 title: "الشركة المساهمة الخاصة",
                 badge: "للمشاريع المتوسطة",
                 badgeColor: "bg-purple-100 text-purple-700",
@@ -1173,7 +1230,8 @@ export default function Home() {
                 detail: "يجوز تأسيسها من شخص واحد بتنسيب مبرر",
               },
               {
-                icon: "📈",
+                Icon: TrendingUp,
+                iconBg: "bg-red-50 text-red-600",
                 title: "الشركة المساهمة العامة",
                 badge: "للمشاريع الكبيرة",
                 badgeColor: "bg-red-100 text-red-700",
@@ -1181,7 +1239,8 @@ export default function Home() {
                 detail: "أكثر من مؤسس، مع إمكانية التأسيس من شخص واحد بشروط",
               },
               {
-                icon: "🌍",
+                Icon: Globe,
+                iconBg: "bg-gray-100 text-gray-600",
                 title: "فرع الشركة الأجنبية",
                 badge: "للشركات الخارجية",
                 badgeColor: "bg-gray-100 text-gray-700",
@@ -1198,7 +1257,9 @@ export default function Home() {
                 className="bg-card rounded-2xl p-7 shadow-sm border border-border hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col gap-4"
               >
                 <div className="flex items-start justify-between gap-3">
-                  <span className="text-4xl">{form.icon}</span>
+                  <div className={`w-12 h-12 rounded-xl flex items-center justify-center ${form.iconBg}`}>
+                    <form.Icon className="w-6 h-6" />
+                  </div>
                   <span className={`text-xs font-bold px-3 py-1.5 rounded-full shrink-0 ${form.badgeColor}`}>
                     {form.badge}
                   </span>
@@ -1206,7 +1267,7 @@ export default function Home() {
                 <h3 className="text-xl font-bold text-foreground leading-snug">{form.title}</h3>
                 <p className="text-muted-foreground text-base leading-relaxed flex-grow">{form.desc}</p>
                 <div className="border-t border-border pt-4 text-sm text-primary font-medium flex items-center gap-2">
-                  <span className="text-accent">ℹ️</span>
+                  <Info className="w-4 h-4 text-accent shrink-0" />
                   {form.detail}
                 </div>
               </motion.div>
@@ -1237,10 +1298,10 @@ export default function Home() {
               viewport={{ once: true }}
               className="w-full md:w-1/3 flex justify-center"
             >
-              <div className="relative">
+              <div className="relative flex items-center justify-center">
                 <div className="absolute inset-0 bg-accent/20 rounded-full blur-3xl animate-pulse"></div>
-                <div className="text-[120px] md:text-[180px] relative z-10 drop-shadow-2xl">
-                  🏠
+                <div className="relative z-10 w-52 h-52 md:w-72 md:h-72 rounded-3xl bg-gradient-to-br from-accent/20 to-primary/20 flex items-center justify-center border border-accent/30 shadow-2xl">
+                  <HomeIcon className="w-24 h-24 md:w-36 md:h-36 text-accent" />
                 </div>
               </div>
             </motion.div>
@@ -1304,7 +1365,7 @@ export default function Home() {
                 variants={fadeUpVariant}
                 className="mt-6 p-6 bg-primary/5 border border-primary/20 rounded-2xl flex gap-4 items-start"
               >
-                <div className="text-3xl shrink-0">👩‍💼</div>
+                <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center shrink-0"><User className="w-5 h-5 text-primary" /></div>
                 <div>
                   <h4 className="text-lg font-bold text-foreground mb-2">
                     لصاحبة المشروع المنزلي
@@ -1331,28 +1392,37 @@ export default function Home() {
             variants={fadeUpVariant}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              قصص واقعية
+            <span className="section-badge">
+              <Star className="w-4 h-4 fill-current" />
+              تجارب حقيقية
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              أصحاب مشاريع <span className="gradient-text">شاركوا تجربتهم</span>
             </h2>
-            <div className="h-1.5 w-24 bg-accent mx-auto rounded-full"></div>
+            <p className="text-muted-foreground text-lg max-w-xl mx-auto">
+              كل قصة فيها درس — واكتشاف مبكر يوفر وقتاً وجهداً كثيراً
+            </p>
           </motion.div>
 
           <div className="flex overflow-x-auto pb-8 snap-x snap-mandatory hide-scrollbar md:grid md:grid-cols-3 md:gap-8 gap-4 md:overflow-visible pr-4 md:pr-0">
             {[
               {
-                quote:
-                  "بدأت مشروعي من المطبخ ولم أكن أعرف أنه يحتاج ترخيص منفصل عن التسجيل. لما اتضح لي الفرق، توفر علي وقت وجهد كثير.",
+                quote: "بدأت مشروعي من المطبخ ولم أكن أعرف أنه يحتاج ترخيص منفصل عن التسجيل. لما اتضح لي الفرق، توفر علي وقت وجهد كثير.",
                 author: "صاحبة مشروع حلويات منزلية",
+                initial: "ح",
+                color: "bg-pink-100 text-pink-700",
               },
               {
-                quote:
-                  "كنت خايف التسجيل يضيف عليي أعباء ما أقدر عليها. لما فهمت إيش يلزمني تحديداً، اتضح أن الخطوة أبسط مما توقعت.",
+                quote: "كنت خايف التسجيل يضيف عليي أعباء ما أقدر عليها. لما فهمت إيش يلزمني تحديداً، اتضح أن الخطوة أبسط مما توقعت.",
                 author: "صاحب مشروع خدمات تقنية صغير",
+                initial: "خ",
+                color: "bg-blue-100 text-blue-700",
               },
               {
-                quote:
-                  "التسجيل خلّى عملائي يثقوا فيني أكثر. صارت عندي فاتورة رسمية وهذا غير كل شي.",
+                quote: "التسجيل خلّى عملائي يثقوا فيني أكثر. صارت عندي فاتورة رسمية وهذا غير كل شي في تعاملاتي.",
                 author: "صاحب ورشة حرفية",
+                initial: "و",
+                color: "bg-amber-100 text-amber-700",
               },
             ].map((testimonial, idx) => (
               <motion.div
@@ -1360,17 +1430,31 @@ export default function Home() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: idx * 0.1, duration: 0.5 }}
-                className="bg-white rounded-3xl p-8 shadow-sm border border-accent/10 min-w-[300px] snap-center shrink-0 flex flex-col relative"
+                transition={{ delay: idx * 0.12, duration: 0.5 }}
+                className="bg-white rounded-3xl p-8 border border-accent/10 min-w-[300px] snap-center shrink-0 flex flex-col relative glow-card"
+                style={{ boxShadow: "0 4px 24px rgba(0,0,0,0.06)" }}
               >
-                <div className="text-6xl text-accent/20 absolute top-4 right-6 font-serif h-10 leading-none">
+                {/* نجوم التقييم */}
+                <div className="flex gap-1 mb-5">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-4 h-4 fill-accent text-accent" />
+                  ))}
+                </div>
+
+                {/* علامة الاقتباس الكبيرة */}
+                <div className="text-7xl text-accent/15 absolute top-3 left-6 font-serif leading-none select-none">
                   "
                 </div>
-                <p className="text-lg md:text-xl text-foreground/80 italic leading-relaxed mb-8 mt-6 flex-grow relative z-10">
+
+                <p className="text-lg text-foreground/80 leading-relaxed mb-8 flex-grow relative z-10">
                   {testimonial.quote}
                 </p>
-                <div className="border-t border-border pt-4 mt-auto">
-                  <p className="font-bold text-primary">{testimonial.author}</p>
+
+                <div className="flex items-center gap-3 border-t border-border pt-5 mt-auto">
+                  <div className={`w-10 h-10 rounded-full flex items-center justify-center font-bold text-base shrink-0 ${testimonial.color}`}>
+                    {testimonial.initial}
+                  </div>
+                  <p className="font-bold text-primary text-sm">{testimonial.author}</p>
                 </div>
               </motion.div>
             ))}
@@ -1402,22 +1486,22 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
-                icon: "💸",
+                Icon: TrendingDown,
                 title: "تمويل يصعب الوصول إليه",
                 desc: "البنوك والجهات التمويلية تشترط وضعاً رسمياً. كل يوم تأجيل يبعدك عن فرص تمويل قد تغير مسار مشروعك.",
               },
               {
-                icon: "📉",
+                Icon: ArrowDownRight,
                 title: "سوق أضيق",
                 desc: "الشركات الأكبر والجهات الرسمية تتعامل مع مشاريع مسجلة. أنت تبقى محصوراً في دائرة محدودة من الزبائن.",
               },
               {
-                icon: "⚠️",
+                Icon: AlertTriangle,
                 title: "مخاطر بلا مظلة حماية",
                 desc: "أي نزاع تجاري أو شكوى أو تفتيش مفاجئ قد يوقف نشاطك بالكامل لأن وضعك غير منظم.",
               },
               {
-                icon: "🚫",
+                Icon: Ban,
                 title: "سقف نمو منخفض",
                 desc: "مهما كانت جودة منتجك، يبقى نموك محدوداً بشبكتك الشخصية فقط بدلاً من الأسواق الأوسع.",
               },
@@ -1428,9 +1512,11 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.1, duration: 0.5 }}
-                className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:bg-white/15 transition-colors"
+                className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/15 hover:bg-white/15 transition-all duration-300 group"
               >
-                <div className="text-4xl mb-4">{cost.icon}</div>
+                <div className="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center mb-5 group-hover:bg-accent/20 transition-colors">
+                  <cost.Icon className="w-6 h-6 text-accent" />
+                </div>
                 <h3 className="text-xl font-bold mb-3 text-accent">
                   {cost.title}
                 </h3>
@@ -1563,22 +1649,26 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
-                icon: "🏛️",
+                Icon: Landmark,
+                color: "bg-blue-50 text-blue-600",
                 name: "وزارة الصناعة والتجارة",
                 desc: "تسجيل المنشآت التجارية والصناعية والأسماء التجارية",
               },
               {
-                icon: "🏘️",
+                Icon: MapPin,
+                color: "bg-green-50 text-green-600",
                 name: "أمانة عمان الكبرى والبلديات",
                 desc: "رخص المهن ومتطلبات الموقع والنشاط",
               },
               {
-                icon: "🧾",
+                Icon: Receipt,
+                color: "bg-orange-50 text-orange-600",
                 name: "دائرة ضريبة الدخل والمبيعات",
                 desc: "التسجيل الضريبي والامتثال للمتطلبات الضريبية",
               },
               {
-                icon: "🤝",
+                Icon: HandshakeIcon,
+                color: "bg-purple-50 text-purple-600",
                 name: "الضمان الاجتماعي",
                 desc: "اشتراكات العمال وشمولهم بالمظلة الاجتماعية",
               },
@@ -1589,9 +1679,11 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.1, duration: 0.5 }}
-                className="bg-card rounded-2xl p-6 shadow-sm border border-border hover:-translate-y-1 transition-transform"
+                className="bg-card rounded-2xl p-6 border border-border glow-card"
               >
-                <div className="text-4xl mb-4">{body.icon}</div>
+                <div className={`w-12 h-12 rounded-xl ${body.color} flex items-center justify-center mb-4`}>
+                  <body.Icon className="w-6 h-6" />
+                </div>
                 <h3 className="text-xl font-bold text-foreground mb-3">
                   {body.name}
                 </h3>
@@ -1704,9 +1796,7 @@ export default function Home() {
             variants={fadeUpVariant}
             className="text-center mb-14"
           >
-            <span className="inline-block bg-accent/10 text-accent font-bold text-sm px-4 py-1.5 rounded-full mb-4">
-              📊 استبيان قصير
-            </span>
+            <span className="section-badge"><BarChart3 className="w-4 h-4" />استبيان قصير</span>
             <h2 className="text-3xl md:text-5xl font-extrabold text-foreground mb-5 leading-tight">
               رأيك يصنع الفرق
             </h2>
@@ -1716,12 +1806,12 @@ export default function Home() {
             </p>
             <div className="flex items-center justify-center gap-6 mt-6 text-sm text-muted-foreground">
               <span className="flex items-center gap-1.5">
-                ⏱️ أقل من دقيقتين
+                <Clock className="w-4 h-4" /> أقل من دقيقتين
               </span>
               <span className="flex items-center gap-1.5">
-                🔒 مجهول الهوية تماماً
+                <Lock className="w-4 h-4" /> مجهول الهوية تماماً
               </span>
-              <span className="flex items-center gap-1.5">💡 بدون تسجيل</span>
+              <span className="flex items-center gap-1.5"><CheckCircle2 className="w-4 h-4" /> بدون تسجيل</span>
             </div>
           </motion.div>
 

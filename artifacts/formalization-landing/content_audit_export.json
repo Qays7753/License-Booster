@@ -1,0 +1,3041 @@
+{
+  "scanned_files": [
+    "index.html",
+    "src/App.tsx",
+    "src/main.tsx",
+    "src/index.css",
+    "src/pages/Home.tsx",
+    "src/pages/not-found.tsx",
+    "requirements.yaml",
+    "public/License-Booster-Code.md"
+  ],
+  "content_items": [
+    {
+      "id": 1,
+      "file": "index.html",
+      "line": "6",
+      "component": "Head/Title",
+      "content_type": "Meta title",
+      "raw_text": "صفحة الترخيص والتسجيل",
+      "notes": ""
+    },
+    {
+      "id": 2,
+      "file": "src/pages/not-found.tsx",
+      "line": "11",
+      "component": "NotFound",
+      "content_type": "Heading",
+      "raw_text": "404 Page Not Found",
+      "notes": ""
+    },
+    {
+      "id": 3,
+      "file": "src/pages/not-found.tsx",
+      "line": "14-15",
+      "component": "NotFound",
+      "content_type": "Paragraph",
+      "raw_text": "Did you forget to add the page to the router?",
+      "notes": ""
+    },
+    {
+      "id": 4,
+      "file": "src/pages/Home.tsx",
+      "line": "73",
+      "component": "SurveySection/ENCOURAGEMENTS",
+      "content_type": "Label",
+      "raw_text": "رائع! إجابتك مهمة جداً",
+      "notes": ""
+    },
+    {
+      "id": 5,
+      "file": "src/pages/Home.tsx",
+      "line": "74",
+      "component": "SurveySection/ENCOURAGEMENTS",
+      "content_type": "Label",
+      "raw_text": "ممتاز! استمر، أنت في منتصف الطريق",
+      "notes": ""
+    },
+    {
+      "id": 6,
+      "file": "src/pages/Home.tsx",
+      "line": "75",
+      "component": "SurveySection/ENCOURAGEMENTS",
+      "content_type": "Label",
+      "raw_text": "أحسنت! كل خطوة تقربك أكثر",
+      "notes": ""
+    },
+    {
+      "id": 7,
+      "file": "src/pages/Home.tsx",
+      "line": "76",
+      "component": "SurveySection/ENCOURAGEMENTS",
+      "content_type": "Label",
+      "raw_text": "جيد جداً! سؤال واحد فقط تبقى",
+      "notes": ""
+    },
+    {
+      "id": 8,
+      "file": "src/pages/Home.tsx",
+      "line": "77",
+      "component": "SurveySection/ENCOURAGEMENTS",
+      "content_type": "Label",
+      "raw_text": "تقريباً انتهينا!",
+      "notes": ""
+    },
+    {
+      "id": 9,
+      "file": "src/pages/Home.tsx",
+      "line": "93",
+      "component": "SurveySection/Q1",
+      "content_type": "FAQ Question",
+      "raw_text": "هل تعرف الفرق بين تسجيل المشروع وترخيصه؟",
+      "notes": ""
+    },
+    {
+      "id": 10,
+      "file": "src/pages/Home.tsx",
+      "line": "94",
+      "component": "SurveySection/Q1",
+      "content_type": "Label",
+      "raw_text": "لا يوجد إجابة خاطئة — فقط أخبرنا بصدق",
+      "notes": ""
+    },
+    {
+      "id": 11,
+      "file": "src/pages/Home.tsx",
+      "line": "96",
+      "component": "SurveySection/Q1",
+      "content_type": "Label",
+      "raw_text": "نعم، واضح لديّ الفرق تماماً",
+      "notes": ""
+    },
+    {
+      "id": 12,
+      "file": "src/pages/Home.tsx",
+      "line": "97",
+      "component": "SurveySection/Q1",
+      "content_type": "Label",
+      "raw_text": "أعرف بشكل عام لكن ليس بالتفصيل",
+      "notes": ""
+    },
+    {
+      "id": 13,
+      "file": "src/pages/Home.tsx",
+      "line": "98",
+      "component": "SurveySection/Q1",
+      "content_type": "Label",
+      "raw_text": "لا أعرف الفرق",
+      "notes": ""
+    },
+    {
+      "id": 14,
+      "file": "src/pages/Home.tsx",
+      "line": "102",
+      "component": "SurveySection/Q2",
+      "content_type": "FAQ Question",
+      "raw_text": "ما أكبر عائق يمنعك من تسجيل مشروعك؟",
+      "notes": ""
+    },
+    {
+      "id": 15,
+      "file": "src/pages/Home.tsx",
+      "line": "103",
+      "component": "SurveySection/Q2",
+      "content_type": "Label",
+      "raw_text": "اختر الأقرب لواقعك",
+      "notes": ""
+    },
+    {
+      "id": 16,
+      "file": "src/pages/Home.tsx",
+      "line": "105",
+      "component": "SurveySection/Q2",
+      "content_type": "Label",
+      "raw_text": "التكلفة والرسوم",
+      "notes": ""
+    },
+    {
+      "id": 17,
+      "file": "src/pages/Home.tsx",
+      "line": "106",
+      "component": "SurveySection/Q2",
+      "content_type": "Label",
+      "raw_text": "تعقيد الإجراءات وكثرة الجهات",
+      "notes": ""
+    },
+    {
+      "id": 18,
+      "file": "src/pages/Home.tsx",
+      "line": "107",
+      "component": "SurveySection/Q2",
+      "content_type": "Label",
+      "raw_text": "لا أعرف من أين أبدأ",
+      "notes": ""
+    },
+    {
+      "id": 19,
+      "file": "src/pages/Home.tsx",
+      "line": "108",
+      "component": "SurveySection/Q2",
+      "content_type": "Label",
+      "raw_text": "الخوف من الالتزامات الضريبية",
+      "notes": ""
+    },
+    {
+      "id": 20,
+      "file": "src/pages/Home.tsx",
+      "line": "109",
+      "component": "SurveySection/Q2",
+      "content_type": "Label",
+      "raw_text": "أعتقد أن مشروعي لا يحتاج تسجيلاً",
+      "notes": ""
+    },
+    {
+      "id": 21,
+      "file": "src/pages/Home.tsx",
+      "line": "113",
+      "component": "SurveySection/Q3",
+      "content_type": "FAQ Question",
+      "raw_text": "هل فكرت في تسجيل مشروعك خلال السنة الماضية؟",
+      "notes": ""
+    },
+    {
+      "id": 22,
+      "file": "src/pages/Home.tsx",
+      "line": "114",
+      "component": "SurveySection/Q3",
+      "content_type": "Label",
+      "raw_text": "إجابتك تساعدنا نفهم أين أنت في المسار",
+      "notes": ""
+    },
+    {
+      "id": 23,
+      "file": "src/pages/Home.tsx",
+      "line": "116",
+      "component": "SurveySection/Q3",
+      "content_type": "Label",
+      "raw_text": "نعم وبدأت بالفعل",
+      "notes": ""
+    },
+    {
+      "id": 24,
+      "file": "src/pages/Home.tsx",
+      "line": "117",
+      "component": "SurveySection/Q3",
+      "content_type": "Label",
+      "raw_text": "نعم لكن لم أبدأ بعد",
+      "notes": ""
+    },
+    {
+      "id": 25,
+      "file": "src/pages/Home.tsx",
+      "line": "118",
+      "component": "SurveySection/Q3",
+      "content_type": "Label",
+      "raw_text": "لم أفكر في ذلك",
+      "notes": ""
+    },
+    {
+      "id": 26,
+      "file": "src/pages/Home.tsx",
+      "line": "122-123",
+      "component": "SurveySection/Q4",
+      "content_type": "FAQ Question",
+      "raw_text": "بعد اطلاعك على هذه المعلومات، ما احتمال أن تتخذ خطوة نحو التسجيل؟",
+      "notes": ""
+    },
+    {
+      "id": 27,
+      "file": "src/pages/Home.tsx",
+      "line": "124",
+      "component": "SurveySection/Q4",
+      "content_type": "Label",
+      "raw_text": "صراحتك تساعدنا نحسّن المحتوى",
+      "notes": ""
+    },
+    {
+      "id": 28,
+      "file": "src/pages/Home.tsx",
+      "line": "126",
+      "component": "SurveySection/Q4",
+      "content_type": "Label",
+      "raw_text": "مرتفع جداً — سأبدأ قريباً",
+      "notes": ""
+    },
+    {
+      "id": 29,
+      "file": "src/pages/Home.tsx",
+      "line": "127",
+      "component": "SurveySection/Q4",
+      "content_type": "Label",
+      "raw_text": "مرتفع — أفكر جدياً",
+      "notes": ""
+    },
+    {
+      "id": 30,
+      "file": "src/pages/Home.tsx",
+      "line": "128",
+      "component": "SurveySection/Q4",
+      "content_type": "Label",
+      "raw_text": "غير متأكد بعد",
+      "notes": ""
+    },
+    {
+      "id": 31,
+      "file": "src/pages/Home.tsx",
+      "line": "129",
+      "component": "SurveySection/Q4",
+      "content_type": "Label",
+      "raw_text": "منخفض — ما زلت أتردد",
+      "notes": ""
+    },
+    {
+      "id": 32,
+      "file": "src/pages/Home.tsx",
+      "line": "133",
+      "component": "SurveySection/Q5",
+      "content_type": "FAQ Question",
+      "raw_text": "ما الذي تغيّر في فهمك بعد زيارة هذه الصفحة؟",
+      "notes": ""
+    },
+    {
+      "id": 33,
+      "file": "src/pages/Home.tsx",
+      "line": "134",
+      "component": "SurveySection/Q5",
+      "content_type": "Label",
+      "raw_text": "رأيك يُشكّل المحتوى القادم",
+      "notes": ""
+    },
+    {
+      "id": 34,
+      "file": "src/pages/Home.tsx",
+      "line": "136",
+      "component": "SurveySection/Q5",
+      "content_type": "Label",
+      "raw_text": "فهمت الفرق بين التسجيل والترخيص",
+      "notes": ""
+    },
+    {
+      "id": 35,
+      "file": "src/pages/Home.tsx",
+      "line": "137",
+      "component": "SurveySection/Q5",
+      "content_type": "Label",
+      "raw_text": "عرفت من أين أبدأ",
+      "notes": ""
+    },
+    {
+      "id": 36,
+      "file": "src/pages/Home.tsx",
+      "line": "138",
+      "component": "SurveySection/Q5",
+      "content_type": "Label",
+      "raw_text": "شعرت أن الخطوة ممكنة وأبسط مما توقعت",
+      "notes": ""
+    },
+    {
+      "id": 37,
+      "file": "src/pages/Home.tsx",
+      "line": "139",
+      "component": "SurveySection/Q5",
+      "content_type": "Label",
+      "raw_text": "لم يتغير شيء كبير",
+      "notes": ""
+    },
+    {
+      "id": 38,
+      "file": "src/pages/Home.tsx",
+      "line": "143",
+      "component": "SurveySection/Q6",
+      "content_type": "FAQ Question",
+      "raw_text": "كيف تصف وضع مشروعك حالياً؟",
+      "notes": ""
+    },
+    {
+      "id": 39,
+      "file": "src/pages/Home.tsx",
+      "line": "144",
+      "component": "SurveySection/Q6",
+      "content_type": "Label",
+      "raw_text": "آخر سؤال — شكراً على صبرك!",
+      "notes": ""
+    },
+    {
+      "id": 40,
+      "file": "src/pages/Home.tsx",
+      "line": "146",
+      "component": "SurveySection/Q6",
+      "content_type": "Label",
+      "raw_text": "مسجل ومرخص بالكامل",
+      "notes": ""
+    },
+    {
+      "id": 41,
+      "file": "src/pages/Home.tsx",
+      "line": "147",
+      "component": "SurveySection/Q6",
+      "content_type": "Label",
+      "raw_text": "مسجل جزئياً والملف غير مكتمل",
+      "notes": ""
+    },
+    {
+      "id": 42,
+      "file": "src/pages/Home.tsx",
+      "line": "148",
+      "component": "SurveySection/Q6",
+      "content_type": "Label",
+      "raw_text": "غير مسجل وأعمل حالياً",
+      "notes": ""
+    },
+    {
+      "id": 43,
+      "file": "src/pages/Home.tsx",
+      "line": "149",
+      "component": "SurveySection/Q6",
+      "content_type": "Label",
+      "raw_text": "ما زلت في مرحلة التفكير والتخطيط",
+      "notes": ""
+    },
+    {
+      "id": 44,
+      "file": "src/pages/Home.tsx",
+      "line": "211",
+      "component": "SurveySection/Completed",
+      "content_type": "Heading",
+      "raw_text": "شكراً جزيلاً على مشاركتك!",
+      "notes": ""
+    },
+    {
+      "id": 45,
+      "file": "src/pages/Home.tsx",
+      "line": "213-215",
+      "component": "SurveySection/Completed",
+      "content_type": "Paragraph",
+      "raw_text": "إجاباتك وصلت بنجاح وستساعدنا على تقديم محتوى أفضل وأكثر فائدة لأصحاب المشاريع في الأردن.",
+      "notes": ""
+    },
+    {
+      "id": 46,
+      "file": "src/pages/Home.tsx",
+      "line": "218",
+      "component": "SurveySection/Completed",
+      "content_type": "Paragraph",
+      "raw_text": "أنت جزء من التغيير",
+      "notes": ""
+    },
+    {
+      "id": 47,
+      "file": "src/pages/Home.tsx",
+      "line": "225",
+      "component": "SurveySection/Completed",
+      "content_type": "CTA",
+      "raw_text": "اكتشف مسارك المناسب ←",
+      "notes": ""
+    },
+    {
+      "id": 48,
+      "file": "src/pages/Home.tsx",
+      "line": "256",
+      "component": "SurveySection/Progress",
+      "content_type": "Label",
+      "raw_text": "سؤال {surveyStep} من {questions.length}",
+      "notes": "Dynamic: surveyStep and questions.length are runtime values"
+    },
+    {
+      "id": 49,
+      "file": "src/pages/Home.tsx",
+      "line": "264",
+      "component": "SurveySection/Navigation",
+      "content_type": "Label",
+      "raw_text": "رجوع",
+      "notes": ""
+    },
+    {
+      "id": 50,
+      "file": "src/pages/Home.tsx",
+      "line": "330",
+      "component": "SurveySection/Instruction",
+      "content_type": "Label",
+      "raw_text": "اضغط على أي خيار للانتقال للسؤال التالي تلقائياً",
+      "notes": ""
+    },
+    {
+      "id": 51,
+      "file": "src/pages/Home.tsx",
+      "line": "422",
+      "component": "QuizResult/formal",
+      "content_type": "Heading",
+      "raw_text": "مشروعك في المسار الصحيح!",
+      "notes": ""
+    },
+    {
+      "id": 52,
+      "file": "src/pages/Home.tsx",
+      "line": "423",
+      "component": "QuizResult/formal",
+      "content_type": "Paragraph",
+      "raw_text": "تأكد من تجديد تراخيصك وتحديث بياناتك دورياً.",
+      "notes": ""
+    },
+    {
+      "id": 53,
+      "file": "src/pages/Home.tsx",
+      "line": "427",
+      "component": "QuizResult/partial",
+      "content_type": "Heading",
+      "raw_text": "أنت في منتصف الطريق.",
+      "notes": ""
+    },
+    {
+      "id": 54,
+      "file": "src/pages/Home.tsx",
+      "line": "428",
+      "component": "QuizResult/partial",
+      "content_type": "Paragraph",
+      "raw_text": "الخطوة التالية هي مراجعة ما تبقى من متطلبات الترخيص لنشاطك.",
+      "notes": ""
+    },
+    {
+      "id": 55,
+      "file": "src/pages/Home.tsx",
+      "line": "432",
+      "component": "QuizResult/planning+home",
+      "content_type": "Heading",
+      "raw_text": "تخطيط سليم لمشروع منزلي مستقبلي",
+      "notes": ""
+    },
+    {
+      "id": 56,
+      "file": "src/pages/Home.tsx",
+      "line": "433-434",
+      "component": "QuizResult/planning+home",
+      "content_type": "Paragraph",
+      "raw_text": "مشروعك المنزلي المستقبلي يحتاج إلى فهم مسار الرخصة المنزلية أولاً قبل البدء.",
+      "notes": ""
+    },
+    {
+      "id": 57,
+      "file": "src/pages/Home.tsx",
+      "line": "438",
+      "component": "QuizResult/informal",
+      "content_type": "Heading",
+      "raw_text": "مشروعك يحتاج إلى تسجيل رسمي",
+      "notes": ""
+    },
+    {
+      "id": 58,
+      "file": "src/pages/Home.tsx",
+      "line": "439-440",
+      "component": "QuizResult/informal",
+      "content_type": "Paragraph",
+      "raw_text": "مشروعك يحتاج إلى تسجيل رسمي. ابدأ بتحديد الشكل القانوني المناسب لنشاطك.",
+      "notes": ""
+    },
+    {
+      "id": 59,
+      "file": "src/pages/Home.tsx",
+      "line": "444",
+      "component": "QuizResult/default",
+      "content_type": "Heading",
+      "raw_text": "التسجيل هو أول خطوة",
+      "notes": ""
+    },
+    {
+      "id": 60,
+      "file": "src/pages/Home.tsx",
+      "line": "445-446",
+      "component": "QuizResult/default",
+      "content_type": "Paragraph",
+      "raw_text": "التسجيل هو أول خطوة. حدد شكلك القانوني المناسب وتأكد من متطلبات ترخيص نشاطك.",
+      "notes": ""
+    },
+    {
+      "id": 61,
+      "file": "src/pages/Home.tsx",
+      "line": "467",
+      "component": "QuizResult",
+      "content_type": "CTA",
+      "raw_text": "افهم الخطوات التفصيلية",
+      "notes": ""
+    },
+    {
+      "id": 62,
+      "file": "src/pages/Home.tsx",
+      "line": "475",
+      "component": "QuizResult",
+      "content_type": "CTA",
+      "raw_text": "أعد الاختبار",
+      "notes": ""
+    },
+    {
+      "id": 63,
+      "file": "src/pages/Home.tsx",
+      "line": "496-497",
+      "component": "Hero",
+      "content_type": "Alt text",
+      "raw_text": "Hero Background",
+      "notes": "img alt attribute"
+    },
+    {
+      "id": 64,
+      "file": "src/pages/Home.tsx",
+      "line": "547",
+      "component": "Hero/Badge",
+      "content_type": "Badge/tag",
+      "raw_text": "دليلك نحو مشروع منظم ومحمي في الأردن",
+      "notes": ""
+    },
+    {
+      "id": 65,
+      "file": "src/pages/Home.tsx",
+      "line": "555-558",
+      "component": "Hero",
+      "content_type": "Heading",
+      "raw_text": "مشروعك يستحق أن يكون واضحاً ومحميّاً وقابلاً للنمو",
+      "notes": ""
+    },
+    {
+      "id": 66,
+      "file": "src/pages/Home.tsx",
+      "line": "565-566",
+      "component": "Hero",
+      "content_type": "Subheading",
+      "raw_text": "التسجيل والترخيص ليسا عبئاً — إنهما الخطوة التي تنظّم شغلك وتفتح لك أسواقاً وفرصاً أوسع بكثير.",
+      "notes": ""
+    },
+    {
+      "id": 67,
+      "file": "src/pages/Home.tsx",
+      "line": "579",
+      "component": "Hero",
+      "content_type": "CTA",
+      "raw_text": "اكتشف مسارك المناسب ←",
+      "notes": ""
+    },
+    {
+      "id": 68,
+      "file": "src/pages/Home.tsx",
+      "line": "585",
+      "component": "Hero",
+      "content_type": "CTA",
+      "raw_text": "افهم الفرق بين التسجيل والترخيص",
+      "notes": ""
+    },
+    {
+      "id": 69,
+      "file": "src/pages/Home.tsx",
+      "line": "595",
+      "component": "Hero/Trust",
+      "content_type": "Label",
+      "raw_text": "محتوى إرشادي مجاني",
+      "notes": ""
+    },
+    {
+      "id": 70,
+      "file": "src/pages/Home.tsx",
+      "line": "596",
+      "component": "Hero/Trust",
+      "content_type": "Label",
+      "raw_text": "بدون تسجيل",
+      "notes": ""
+    },
+    {
+      "id": 71,
+      "file": "src/pages/Home.tsx",
+      "line": "597",
+      "component": "Hero/Trust",
+      "content_type": "Label",
+      "raw_text": "مخصص للسوق الأردني",
+      "notes": ""
+    },
+    {
+      "id": 72,
+      "file": "src/pages/Home.tsx",
+      "line": "632",
+      "component": "Stats",
+      "content_type": "Statistic",
+      "raw_text": "من مشاريع الأردن مشاريع صغيرة أو متناهية الصغر",
+      "notes": "98%"
+    },
+    {
+      "id": 73,
+      "file": "src/pages/Home.tsx",
+      "line": "637",
+      "component": "Stats",
+      "content_type": "Statistic",
+      "raw_text": "من القطاع الخاص الأردني يعمل في هذه المشاريع",
+      "notes": "60%"
+    },
+    {
+      "id": 74,
+      "file": "src/pages/Home.tsx",
+      "line": "642",
+      "component": "Stats",
+      "content_type": "Statistic",
+      "raw_text": "من الناتج المحلي الإجمالي تساهم فيه المشاريع الصغيرة",
+      "notes": "50%"
+    },
+    {
+      "id": 75,
+      "file": "src/pages/Home.tsx",
+      "line": "671",
+      "component": "TrustBar",
+      "content_type": "Label",
+      "raw_text": "محتوى موثوق ومحدّث",
+      "notes": ""
+    },
+    {
+      "id": 76,
+      "file": "src/pages/Home.tsx",
+      "line": "672",
+      "component": "TrustBar",
+      "content_type": "Label",
+      "raw_text": "يغطي جميع الأشكال القانونية",
+      "notes": ""
+    },
+    {
+      "id": 77,
+      "file": "src/pages/Home.tsx",
+      "line": "673",
+      "component": "TrustBar",
+      "content_type": "Label",
+      "raw_text": "شامل لجميع محافظات الأردن",
+      "notes": ""
+    },
+    {
+      "id": 78,
+      "file": "src/pages/Home.tsx",
+      "line": "674",
+      "component": "TrustBar",
+      "content_type": "Label",
+      "raw_text": "مراجعة من مختصين",
+      "notes": ""
+    },
+    {
+      "id": 79,
+      "file": "src/pages/Home.tsx",
+      "line": "697",
+      "component": "Benefits/Badge",
+      "content_type": "Badge/tag",
+      "raw_text": "مزايا التنظيم الرسمي",
+      "notes": ""
+    },
+    {
+      "id": 80,
+      "file": "src/pages/Home.tsx",
+      "line": "700-701",
+      "component": "Benefits",
+      "content_type": "Heading",
+      "raw_text": "ماذا يكسب مشروعك عندما يصبح منظماً؟",
+      "notes": ""
+    },
+    {
+      "id": 81,
+      "file": "src/pages/Home.tsx",
+      "line": "704",
+      "component": "Benefits",
+      "content_type": "Subheading",
+      "raw_text": "التنظيم ليس التزاماً فقط — هو استثمار يفتح أبواباً كانت مغلقة",
+      "notes": ""
+    },
+    {
+      "id": 82,
+      "file": "src/pages/Home.tsx",
+      "line": "713",
+      "component": "Benefits/Card",
+      "content_type": "Card text",
+      "raw_text": "اعتراف رسمي يجعل مشروعك أوضح",
+      "notes": "Card title"
+    },
+    {
+      "id": 83,
+      "file": "src/pages/Home.tsx",
+      "line": "713",
+      "component": "Benefits/Card",
+      "content_type": "Card text",
+      "raw_text": "عندما يصبح مشروعك مسجلاً، يصبح له حضور رسمي أوضح، وتصبح الملكية والإدارة والمسؤوليات معرّفة بشكل أفضل.",
+      "notes": "Card description"
+    },
+    {
+      "id": 84,
+      "file": "src/pages/Home.tsx",
+      "line": "719",
+      "component": "Benefits/Card",
+      "content_type": "Card text",
+      "raw_text": "وصول أوسع إلى السوق والعملاء",
+      "notes": "Card title"
+    },
+    {
+      "id": 85,
+      "file": "src/pages/Home.tsx",
+      "line": "719",
+      "component": "Benefits/Card",
+      "content_type": "Card text",
+      "raw_text": "التنظيم يساعد مشروعك على الوصول إلى الأسواق والعملاء بشكل أوسع، ويبعده عن البقاء داخل دائرة ضيقة.",
+      "notes": "Card description"
+    },
+    {
+      "id": 86,
+      "file": "src/pages/Home.tsx",
+      "line": "725",
+      "component": "Benefits/Card",
+      "content_type": "Card text",
+      "raw_text": "قدرة أفضل على الوصول للتمويل",
+      "notes": "Card title"
+    },
+    {
+      "id": 87,
+      "file": "src/pages/Home.tsx",
+      "line": "725",
+      "component": "Benefits/Card",
+      "content_type": "Card text",
+      "raw_text": "التسجيل يجعل المشروع أقرب إلى الخدمات المالية والتمويلية، ويعزز الشمول المالي وفرص الحصول على دعم.",
+      "notes": "Card description"
+    },
+    {
+      "id": 88,
+      "file": "src/pages/Home.tsx",
+      "line": "731",
+      "component": "Benefits/Card",
+      "content_type": "Card text",
+      "raw_text": "تنظيم أوضح للقرارات والحقوق",
+      "notes": "Card title"
+    },
+    {
+      "id": 89,
+      "file": "src/pages/Home.tsx",
+      "line": "731",
+      "component": "Benefits/Card",
+      "content_type": "Card text",
+      "raw_text": "يوضح طريقة التملك والإدارة، وآلية اتخاذ القرار، ونطاق المسؤولية القانونية والضريبية.",
+      "notes": "Card description"
+    },
+    {
+      "id": 90,
+      "file": "src/pages/Home.tsx",
+      "line": "737",
+      "component": "Benefits/Card",
+      "content_type": "Card text",
+      "raw_text": "تحسين الإنتاجية وظروف العمل",
+      "notes": "Card title"
+    },
+    {
+      "id": 91,
+      "file": "src/pages/Home.tsx",
+      "line": "737",
+      "component": "Benefits/Card",
+      "content_type": "Card text",
+      "raw_text": "التنظيم يحسّن الإنتاجية وظروف العمل، ويدخل العاملين ضمن مظلة أكثر حماية وأماناً واستقراراً.",
+      "notes": "Card description"
+    },
+    {
+      "id": 92,
+      "file": "src/pages/Home.tsx",
+      "line": "743",
+      "component": "Benefits/Card",
+      "content_type": "Card text",
+      "raw_text": "حماية أكبر من كلفة البقاء غير الرسمي",
+      "notes": "Card title"
+    },
+    {
+      "id": 93,
+      "file": "src/pages/Home.tsx",
+      "line": "743",
+      "component": "Benefits/Card",
+      "content_type": "Card text",
+      "raw_text": "عدم التسجيل ليس وضعاً محايداً. هو قد يعني غياب الحماية القانونية وضعف الوصول إلى الخدمات.",
+      "notes": "Card description"
+    },
+    {
+      "id": 94,
+      "file": "src/pages/Home.tsx",
+      "line": "749",
+      "component": "Benefits/Card",
+      "content_type": "Card text",
+      "raw_text": "اختبار أفكارك بمخاطرة أقل",
+      "notes": "Card title"
+    },
+    {
+      "id": 95,
+      "file": "src/pages/Home.tsx",
+      "line": "749",
+      "component": "Benefits/Card",
+      "content_type": "Card text",
+      "raw_text": "التسجيل يتيح لك تجربة أفكارك التجارية بشكل رسمي ومنظم، مما يساعدك على تحديد جدواها مبكراً.",
+      "notes": "Card description"
+    },
+    {
+      "id": 96,
+      "file": "src/pages/Home.tsx",
+      "line": "755",
+      "component": "Benefits/Card",
+      "content_type": "Card text",
+      "raw_text": "مرونة أكبر في إدارة وقتك",
+      "notes": "Card title"
+    },
+    {
+      "id": 97,
+      "file": "src/pages/Home.tsx",
+      "line": "755",
+      "component": "Benefits/Card",
+      "content_type": "Card text",
+      "raw_text": "المشروع المنظم يمنحك صلاحيات أوسع في التعامل مع العملاء والشركاء، وأساساً أقوى لتنظيم أولوياتك.",
+      "notes": "Card description"
+    },
+    {
+      "id": 98,
+      "file": "src/pages/Home.tsx",
+      "line": "761",
+      "component": "Benefits/Card",
+      "content_type": "Card text",
+      "raw_text": "نمو مهني حقيقي وملموس",
+      "notes": "Card title"
+    },
+    {
+      "id": 99,
+      "file": "src/pages/Home.tsx",
+      "line": "761",
+      "component": "Benefits/Card",
+      "content_type": "Card text",
+      "raw_text": "التسجيل يحوّلك إلى صاحب عمل فعلي. تكتسب خبرة في التسويق والمحاسبة وإدارة الأعمال، مما يزيد قيمتك.",
+      "notes": "Card description"
+    },
+    {
+      "id": 100,
+      "file": "src/pages/Home.tsx",
+      "line": "800",
+      "component": "Quiz/Badge",
+      "content_type": "Badge/tag",
+      "raw_text": "اختبار تشخيصي",
+      "notes": ""
+    },
+    {
+      "id": 101,
+      "file": "src/pages/Home.tsx",
+      "line": "803",
+      "component": "Quiz",
+      "content_type": "Heading",
+      "raw_text": "اكتشف المسار المناسب لمشروعك",
+      "notes": ""
+    },
+    {
+      "id": 102,
+      "file": "src/pages/Home.tsx",
+      "line": "806",
+      "component": "Quiz",
+      "content_type": "Subheading",
+      "raw_text": "أجب على 4 أسئلة بسيطة واحصل على توصية مخصصة لحالتك",
+      "notes": ""
+    },
+    {
+      "id": 103,
+      "file": "src/pages/Home.tsx",
+      "line": "822",
+      "component": "Quiz/Progress",
+      "content_type": "Label",
+      "raw_text": "الخطوة {quizStep} من 4",
+      "notes": "Dynamic runtime value"
+    },
+    {
+      "id": 104,
+      "file": "src/pages/Home.tsx",
+      "line": "834",
+      "component": "Quiz/Q1",
+      "content_type": "Heading",
+      "raw_text": "ما وصف مشروعك الأقرب؟",
+      "notes": ""
+    },
+    {
+      "id": 105,
+      "file": "src/pages/Home.tsx",
+      "line": "838",
+      "component": "Quiz/Q1",
+      "content_type": "Label",
+      "raw_text": "مشروع طعام وتموينات",
+      "notes": ""
+    },
+    {
+      "id": 106,
+      "file": "src/pages/Home.tsx",
+      "line": "839",
+      "component": "Quiz/Q1",
+      "content_type": "Label",
+      "raw_text": "تجارة وبيع مباشر",
+      "notes": ""
+    },
+    {
+      "id": 107,
+      "file": "src/pages/Home.tsx",
+      "line": "840",
+      "component": "Quiz/Q1",
+      "content_type": "Label",
+      "raw_text": "خدمات رقمية وتقنية",
+      "notes": ""
+    },
+    {
+      "id": 108,
+      "file": "src/pages/Home.tsx",
+      "line": "841",
+      "component": "Quiz/Q1",
+      "content_type": "Label",
+      "raw_text": "حرفة أو خدمة يدوية",
+      "notes": ""
+    },
+    {
+      "id": 109,
+      "file": "src/pages/Home.tsx",
+      "line": "842",
+      "component": "Quiz/Q1",
+      "content_type": "Label",
+      "raw_text": "مشروع منزلي",
+      "notes": ""
+    },
+    {
+      "id": 110,
+      "file": "src/pages/Home.tsx",
+      "line": "843",
+      "component": "Quiz/Q1",
+      "content_type": "Label",
+      "raw_text": "تصنيع أو إنتاج",
+      "notes": ""
+    },
+    {
+      "id": 111,
+      "file": "src/pages/Home.tsx",
+      "line": "870",
+      "component": "Quiz/Navigation",
+      "content_type": "Label",
+      "raw_text": "رجوع",
+      "notes": ""
+    },
+    {
+      "id": 112,
+      "file": "src/pages/Home.tsx",
+      "line": "873",
+      "component": "Quiz/Q2",
+      "content_type": "Heading",
+      "raw_text": "هل مشروعك يعمل من المنزل؟",
+      "notes": ""
+    },
+    {
+      "id": 113,
+      "file": "src/pages/Home.tsx",
+      "line": "877",
+      "component": "Quiz/Q2",
+      "content_type": "Label",
+      "raw_text": "نعم، من المنزل بالكامل",
+      "notes": ""
+    },
+    {
+      "id": 114,
+      "file": "src/pages/Home.tsx",
+      "line": "878",
+      "component": "Quiz/Q2",
+      "content_type": "Label",
+      "raw_text": "لديّ موقع خارج البيت",
+      "notes": ""
+    },
+    {
+      "id": 115,
+      "file": "src/pages/Home.tsx",
+      "line": "879",
+      "component": "Quiz/Q2",
+      "content_type": "Label",
+      "raw_text": "أعمل من الاثنين",
+      "notes": ""
+    },
+    {
+      "id": 116,
+      "file": "src/pages/Home.tsx",
+      "line": "903",
+      "component": "Quiz/Navigation",
+      "content_type": "Label",
+      "raw_text": "رجوع",
+      "notes": ""
+    },
+    {
+      "id": 117,
+      "file": "src/pages/Home.tsx",
+      "line": "906",
+      "component": "Quiz/Q3",
+      "content_type": "Heading",
+      "raw_text": "هل لديك موظفون أو شركاء؟",
+      "notes": ""
+    },
+    {
+      "id": 118,
+      "file": "src/pages/Home.tsx",
+      "line": "910",
+      "component": "Quiz/Q3",
+      "content_type": "Label",
+      "raw_text": "أعمل وحدي بالكامل",
+      "notes": ""
+    },
+    {
+      "id": 119,
+      "file": "src/pages/Home.tsx",
+      "line": "911",
+      "component": "Quiz/Q3",
+      "content_type": "Label",
+      "raw_text": "أحياناً أستعين بمساعدة",
+      "notes": ""
+    },
+    {
+      "id": 120,
+      "file": "src/pages/Home.tsx",
+      "line": "912",
+      "component": "Quiz/Q3",
+      "content_type": "Label",
+      "raw_text": "لدي موظفون بشكل دائم",
+      "notes": ""
+    },
+    {
+      "id": 121,
+      "file": "src/pages/Home.tsx",
+      "line": "913",
+      "component": "Quiz/Q3",
+      "content_type": "Label",
+      "raw_text": "لدي شركاء في المشروع",
+      "notes": ""
+    },
+    {
+      "id": 122,
+      "file": "src/pages/Home.tsx",
+      "line": "937",
+      "component": "Quiz/Navigation",
+      "content_type": "Label",
+      "raw_text": "رجوع",
+      "notes": ""
+    },
+    {
+      "id": 123,
+      "file": "src/pages/Home.tsx",
+      "line": "940",
+      "component": "Quiz/Q4",
+      "content_type": "Heading",
+      "raw_text": "ما المرحلة التي أنت فيها؟",
+      "notes": ""
+    },
+    {
+      "id": 124,
+      "file": "src/pages/Home.tsx",
+      "line": "944",
+      "component": "Quiz/Q4",
+      "content_type": "Label",
+      "raw_text": "أفكر في بدء مشروع جديد",
+      "notes": ""
+    },
+    {
+      "id": 125,
+      "file": "src/pages/Home.tsx",
+      "line": "945",
+      "component": "Quiz/Q4",
+      "content_type": "Label",
+      "raw_text": "أعمل بالفعل دون تسجيل",
+      "notes": ""
+    },
+    {
+      "id": 126,
+      "file": "src/pages/Home.tsx",
+      "line": "946",
+      "component": "Quiz/Q4",
+      "content_type": "Label",
+      "raw_text": "مسجل جزئياً لكن ناقص",
+      "notes": ""
+    },
+    {
+      "id": 127,
+      "file": "src/pages/Home.tsx",
+      "line": "947",
+      "component": "Quiz/Q4",
+      "content_type": "Label",
+      "raw_text": "مسجل ومرخص بالكامل",
+      "notes": ""
+    },
+    {
+      "id": 128,
+      "file": "src/pages/Home.tsx",
+      "line": "978-979",
+      "component": "Concerns",
+      "content_type": "Heading",
+      "raw_text": "نسمع مخاوفك ونجيب عليها",
+      "notes": ""
+    },
+    {
+      "id": 129,
+      "file": "src/pages/Home.tsx",
+      "line": "982-983",
+      "component": "Concerns",
+      "content_type": "Subheading",
+      "raw_text": "لسنا هنا لتخويفك، بل لمساعدتك على فهم الطريق بوضوح وتقليل مساحة المجهول.",
+      "notes": ""
+    },
+    {
+      "id": 130,
+      "file": "src/pages/Home.tsx",
+      "line": "996-997",
+      "component": "Concerns/FAQ",
+      "content_type": "FAQ Question",
+      "raw_text": "أنا أبيع الآن، فلماذا أغيّر شيئاً؟",
+      "notes": ""
+    },
+    {
+      "id": 131,
+      "file": "src/pages/Home.tsx",
+      "line": "996-997",
+      "component": "Concerns/FAQ",
+      "content_type": "FAQ Answer",
+      "raw_text": "صحيح أنك قد تبيع اليوم بدون تسجيل، لكن هذا يبقي مشروعك داخل سقف منخفض. التنظيم لا يغيّر اسمك فقط؛ بل يفتح لك فرص بيع أوسع، ويقربك من تعاملات أكبر.",
+      "notes": ""
+    },
+    {
+      "id": 132,
+      "file": "src/pages/Home.tsx",
+      "line": "1000-1001",
+      "component": "Concerns/FAQ",
+      "content_type": "FAQ Question",
+      "raw_text": "البداية مكلفة وأنا بالكاد ألحق",
+      "notes": ""
+    },
+    {
+      "id": 133,
+      "file": "src/pages/Home.tsx",
+      "line": "1000-1001",
+      "component": "Concerns/FAQ",
+      "content_type": "FAQ Answer",
+      "raw_text": "نعم، الرسوم والتكاليف والإجراءات قد تكون عبئاً حقيقياً. لكن التأجيل له كلفة أيضاً: صفقات لا تدخلها، وتمويل أصعب، وسوق أضيق. الفكرة أن ترى الصورة كاملة قبل أن تؤجل قرارك.",
+      "notes": ""
+    },
+    {
+      "id": 134,
+      "file": "src/pages/Home.tsx",
+      "line": "1004-1005",
+      "component": "Concerns/FAQ",
+      "content_type": "FAQ Question",
+      "raw_text": "أخاف أن أدخل في التزامات كثيرة",
+      "notes": ""
+    },
+    {
+      "id": 135,
+      "file": "src/pages/Home.tsx",
+      "line": "1004-1005",
+      "component": "Concerns/FAQ",
+      "content_type": "FAQ Answer",
+      "raw_text": "الفرق بين القلق والاطمئنان هو الوضوح. التنظيم لا يعني أن كل المشاريع تتحمل الالتزامات نفسها، بل يعني أن تعرف ما الذي ينطبق على حالتك أنت تحديداً لتتمكن من التخطيط براحة.",
+      "notes": ""
+    },
+    {
+      "id": 136,
+      "file": "src/pages/Home.tsx",
+      "line": "1008-1009",
+      "component": "Concerns/FAQ",
+      "content_type": "FAQ Question",
+      "raw_text": "أنا لا أفهم الفرق بين التسجيل والترخيص",
+      "notes": ""
+    },
+    {
+      "id": 137,
+      "file": "src/pages/Home.tsx",
+      "line": "1008-1009",
+      "component": "Concerns/FAQ",
+      "content_type": "FAQ Answer",
+      "raw_text": "هذا التباس شائع وأنت لست وحدك فيه. التسجيل خطوة مهمة لكنه لا يكفي وحده دائماً. بعض الأنشطة تحتاج أيضاً إلى رخصة مهن أو موافقات إضافية، وسنوضح ذلك في القسم التالي.",
+      "notes": ""
+    },
+    {
+      "id": 138,
+      "file": "src/pages/Home.tsx",
+      "line": "1012-1013",
+      "component": "Concerns/FAQ",
+      "content_type": "FAQ Question",
+      "raw_text": "الإجراءات طويلة والوقت ليس في صالحي",
+      "notes": ""
+    },
+    {
+      "id": 139,
+      "file": "src/pages/Home.tsx",
+      "line": "1012-1013",
+      "component": "Concerns/FAQ",
+      "content_type": "FAQ Answer",
+      "raw_text": "وقتك رأس مالك فعلاً. ما نعرفه أن التعقيد وكثرة الجهات من أسباب العزوف، لذلك تهدف هذه الصفحة إلى اختصار الالتباس، لا زيادته، لتبدأ من النقطة الصحيحة.",
+      "notes": ""
+    },
+    {
+      "id": 140,
+      "file": "src/pages/Home.tsx",
+      "line": "1016-1017",
+      "component": "Concerns/FAQ",
+      "content_type": "FAQ Question",
+      "raw_text": "أخاف أن التسجيل يعني رقابة دائمة وتدقيق مستمر",
+      "notes": ""
+    },
+    {
+      "id": 141,
+      "file": "src/pages/Home.tsx",
+      "line": "1016-1017",
+      "component": "Concerns/FAQ",
+      "content_type": "FAQ Answer",
+      "raw_text": "هذا قلق شائع جداً. لكن الحقيقة أن الرقابة موجودة حتى بدون تسجيل، والفرق أن التسجيل يعطيك وضوحاً يحميك: تعرف التزاماتك من البداية، وتتعامل مع المتطلبات بثقة بدلاً من القلق الدائم. التنظيم لا يعني مطاردة — يعني حماية وحق.",
+      "notes": ""
+    },
+    {
+      "id": 142,
+      "file": "src/pages/Home.tsx",
+      "line": "1020-1021",
+      "component": "Concerns/FAQ",
+      "content_type": "FAQ Question",
+      "raw_text": "أنا خارج عمان، هل تنطبق عليّ نفس الإجراءات؟",
+      "notes": ""
+    },
+    {
+      "id": 143,
+      "file": "src/pages/Home.tsx",
+      "line": "1020-1021",
+      "component": "Concerns/FAQ",
+      "content_type": "FAQ Answer",
+      "raw_text": "المسار الأساسي متشابه لكن بعض التفاصيل تختلف حسب المحافظة والبلدية المختصة. مكانك لا يجب أن يحدد سقف مشروعك. ابدأ بالمعلومات المتاحة وتواصل مع الجهة المختصة في منطقتك لمعرفة الخصوصيات المحلية.",
+      "notes": ""
+    },
+    {
+      "id": 144,
+      "file": "src/pages/Home.tsx",
+      "line": "1024-1025",
+      "component": "Concerns/FAQ",
+      "content_type": "FAQ Question",
+      "raw_text": "أخاف أن التسجيل يؤثر على المساعدات التي أتلقاها",
+      "notes": ""
+    },
+    {
+      "id": 145,
+      "file": "src/pages/Home.tsx",
+      "line": "1024-1025",
+      "component": "Concerns/FAQ",
+      "content_type": "FAQ Answer",
+      "raw_text": "هذا مخاوف حقيقية تستحق الاهتمام. الأهم هو أن تفهم القواعد بدقة قبل اتخاذ القرار. الأمان الحقيقي هو دخل مستقل ومستقر من مشروع يكبر — ابحث عن المسار الذي يضمن انتقالاً آمناً يناسب وضعك.",
+      "notes": ""
+    },
+    {
+      "id": 146,
+      "file": "src/pages/Home.tsx",
+      "line": "1060",
+      "component": "RegVsLicense",
+      "content_type": "Heading",
+      "raw_text": "ما الفرق بين التسجيل والترخيص؟",
+      "notes": ""
+    },
+    {
+      "id": 147,
+      "file": "src/pages/Home.tsx",
+      "line": "1063-1064",
+      "component": "RegVsLicense",
+      "content_type": "Subheading",
+      "raw_text": "هذه من أهم الرسائل التي يجب أن تتذكرها: التسجيل بداية، والترخيص استكمال ضروري لبعض الأنشطة.",
+      "notes": ""
+    },
+    {
+      "id": 148,
+      "file": "src/pages/Home.tsx",
+      "line": "1076",
+      "component": "RegVsLicense/Registration",
+      "content_type": "Heading",
+      "raw_text": "التسجيل",
+      "notes": ""
+    },
+    {
+      "id": 149,
+      "file": "src/pages/Home.tsx",
+      "line": "1078-1083",
+      "component": "RegVsLicense/Registration",
+      "content_type": "Paragraph",
+      "raw_text": "خطوة قانونية تمنح مشروعك هوية رسمية. تحدد الشكل القانوني، والملكية، والمسؤوليات. هي البداية، لكنها ليست النهاية.",
+      "notes": ""
+    },
+    {
+      "id": 150,
+      "file": "src/pages/Home.tsx",
+      "line": "1094",
+      "component": "RegVsLicense/Licensing",
+      "content_type": "Heading",
+      "raw_text": "الترخيص",
+      "notes": ""
+    },
+    {
+      "id": 151,
+      "file": "src/pages/Home.tsx",
+      "line": "1096-1102",
+      "component": "RegVsLicense/Licensing",
+      "content_type": "Paragraph",
+      "raw_text": "إذن العمل المطلوب لبعض الأنشطة من الجهات المختصة. قد يشمل رخصة مهن، أو موافقات إضافية. يُطلب بحسب نوع النشاط والموقع.",
+      "notes": ""
+    },
+    {
+      "id": 152,
+      "file": "src/pages/Home.tsx",
+      "line": "1118",
+      "component": "ComparisonTable",
+      "content_type": "Label",
+      "raw_text": "المعيار",
+      "notes": ""
+    },
+    {
+      "id": 153,
+      "file": "src/pages/Home.tsx",
+      "line": "1120",
+      "component": "ComparisonTable",
+      "content_type": "Label",
+      "raw_text": "بدون تسجيل",
+      "notes": ""
+    },
+    {
+      "id": 154,
+      "file": "src/pages/Home.tsx",
+      "line": "1123",
+      "component": "ComparisonTable",
+      "content_type": "Label",
+      "raw_text": "مع التسجيل",
+      "notes": ""
+    },
+    {
+      "id": 155,
+      "file": "src/pages/Home.tsx",
+      "line": "1130-1133",
+      "component": "ComparisonTable",
+      "content_type": "Card text",
+      "raw_text": "الهوية القانونية",
+      "notes": "Row label"
+    },
+    {
+      "id": 156,
+      "file": "src/pages/Home.tsx",
+      "line": "1130-1133",
+      "component": "ComparisonTable",
+      "content_type": "Card text",
+      "raw_text": "غير معترف بك رسمياً",
+      "notes": "Without registration"
+    },
+    {
+      "id": 157,
+      "file": "src/pages/Home.tsx",
+      "line": "1130-1133",
+      "component": "ComparisonTable",
+      "content_type": "Card text",
+      "raw_text": "مشروعك له كيان رسمي",
+      "notes": "With registration"
+    },
+    {
+      "id": 158,
+      "file": "src/pages/Home.tsx",
+      "line": "1134-1137",
+      "component": "ComparisonTable",
+      "content_type": "Card text",
+      "raw_text": "الوصول للتمويل",
+      "notes": "Row label"
+    },
+    {
+      "id": 159,
+      "file": "src/pages/Home.tsx",
+      "line": "1134-1137",
+      "component": "ComparisonTable",
+      "content_type": "Card text",
+      "raw_text": "صعب جداً",
+      "notes": "Without registration"
+    },
+    {
+      "id": 160,
+      "file": "src/pages/Home.tsx",
+      "line": "1134-1137",
+      "component": "ComparisonTable",
+      "content_type": "Card text",
+      "raw_text": "أسهل بكثير",
+      "notes": "With registration"
+    },
+    {
+      "id": 161,
+      "file": "src/pages/Home.tsx",
+      "line": "1140-1143",
+      "component": "ComparisonTable",
+      "content_type": "Card text",
+      "raw_text": "التعامل مع الجهات",
+      "notes": "Row label"
+    },
+    {
+      "id": 162,
+      "file": "src/pages/Home.tsx",
+      "line": "1140-1143",
+      "component": "ComparisonTable",
+      "content_type": "Card text",
+      "raw_text": "محدود",
+      "notes": "Without registration"
+    },
+    {
+      "id": 163,
+      "file": "src/pages/Home.tsx",
+      "line": "1140-1143",
+      "component": "ComparisonTable",
+      "content_type": "Card text",
+      "raw_text": "مفتوح وواسع",
+      "notes": "With registration"
+    },
+    {
+      "id": 164,
+      "file": "src/pages/Home.tsx",
+      "line": "1144-1148",
+      "component": "ComparisonTable",
+      "content_type": "Card text",
+      "raw_text": "حماية الحقوق",
+      "notes": "Row label"
+    },
+    {
+      "id": 165,
+      "file": "src/pages/Home.tsx",
+      "line": "1144-1148",
+      "component": "ComparisonTable",
+      "content_type": "Card text",
+      "raw_text": "ضعيفة",
+      "notes": "Without registration"
+    },
+    {
+      "id": 166,
+      "file": "src/pages/Home.tsx",
+      "line": "1144-1148",
+      "component": "ComparisonTable",
+      "content_type": "Card text",
+      "raw_text": "أوضح وأكثر أماناً",
+      "notes": "With registration"
+    },
+    {
+      "id": 167,
+      "file": "src/pages/Home.tsx",
+      "line": "1149-1153",
+      "component": "ComparisonTable",
+      "content_type": "Card text",
+      "raw_text": "فرص النمو",
+      "notes": "Row label"
+    },
+    {
+      "id": 168,
+      "file": "src/pages/Home.tsx",
+      "line": "1149-1153",
+      "component": "ComparisonTable",
+      "content_type": "Card text",
+      "raw_text": "محدودة بالشبكة الشخصية",
+      "notes": "Without registration"
+    },
+    {
+      "id": 169,
+      "file": "src/pages/Home.tsx",
+      "line": "1149-1153",
+      "component": "ComparisonTable",
+      "content_type": "Card text",
+      "raw_text": "الأسواق الرسمية مفتوحة",
+      "notes": "With registration"
+    },
+    {
+      "id": 170,
+      "file": "src/pages/Home.tsx",
+      "line": "1185",
+      "component": "LegalForms/Badge",
+      "content_type": "Badge/tag",
+      "raw_text": "دليل الأشكال القانونية",
+      "notes": ""
+    },
+    {
+      "id": 171,
+      "file": "src/pages/Home.tsx",
+      "line": "1187",
+      "component": "LegalForms",
+      "content_type": "Heading",
+      "raw_text": "ما الشكل القانوني المناسب لمشروعك؟",
+      "notes": ""
+    },
+    {
+      "id": 172,
+      "file": "src/pages/Home.tsx",
+      "line": "1190",
+      "component": "LegalForms",
+      "content_type": "Subheading",
+      "raw_text": "لا يوجد شكل قانوني واحد يناسب الجميع. اختيار الشكل الصحيح منذ البداية يوفر عليك وقتاً وجهداً كبيراً لاحقاً.",
+      "notes": ""
+    },
+    {
+      "id": 173,
+      "file": "src/pages/Home.tsx",
+      "line": "1199-1203",
+      "component": "LegalForms/Card",
+      "content_type": "Card text",
+      "raw_text": "المؤسسة الفردية",
+      "notes": "Card title"
+    },
+    {
+      "id": 174,
+      "file": "src/pages/Home.tsx",
+      "line": "1199-1203",
+      "component": "LegalForms/Card",
+      "content_type": "Badge/tag",
+      "raw_text": "الأبسط والأسرع",
+      "notes": ""
+    },
+    {
+      "id": 175,
+      "file": "src/pages/Home.tsx",
+      "line": "1199-1203",
+      "component": "LegalForms/Card",
+      "content_type": "Card text",
+      "raw_text": "مسجّلة باسم شخص طبيعي واحد. الأنسب للبدايات الصغيرة والأنشطة الفردية. يشترط أن يكون صاحبها قد أتم الثامنة عشرة.",
+      "notes": "Card description"
+    },
+    {
+      "id": 176,
+      "file": "src/pages/Home.tsx",
+      "line": "1199-1203",
+      "component": "LegalForms/Card",
+      "content_type": "Card text",
+      "raw_text": "صاحبها يتحمل المسؤولية الشخصية الكاملة",
+      "notes": "Card detail"
+    },
+    {
+      "id": 177,
+      "file": "src/pages/Home.tsx",
+      "line": "1206-1212",
+      "component": "LegalForms/Card",
+      "content_type": "Card text",
+      "raw_text": "شركة التضامن / التوصية البسيطة",
+      "notes": "Card title"
+    },
+    {
+      "id": 178,
+      "file": "src/pages/Home.tsx",
+      "line": "1206-1212",
+      "component": "LegalForms/Card",
+      "content_type": "Badge/tag",
+      "raw_text": "للمشاريع المشتركة",
+      "notes": ""
+    },
+    {
+      "id": 179,
+      "file": "src/pages/Home.tsx",
+      "line": "1206-1212",
+      "component": "LegalForms/Card",
+      "content_type": "Card text",
+      "raw_text": "تفتح المجال لتسجيل المشروع مع شركاء. عدد الشركاء من 2 إلى 20. لا يشترط قانون الشركات حداً أدنى لرأس المال.",
+      "notes": "Card description"
+    },
+    {
+      "id": 180,
+      "file": "src/pages/Home.tsx",
+      "line": "1206-1212",
+      "component": "LegalForms/Card",
+      "content_type": "Card text",
+      "raw_text": "قواعد خاصة لتسمية الشركة وتوزيع المسؤوليات",
+      "notes": "Card detail"
+    },
+    {
+      "id": 181,
+      "file": "src/pages/Home.tsx",
+      "line": "1215-1221",
+      "component": "LegalForms/Card",
+      "content_type": "Card text",
+      "raw_text": "الشركة ذات المسؤولية المحدودة",
+      "notes": "Card title"
+    },
+    {
+      "id": 182,
+      "file": "src/pages/Home.tsx",
+      "line": "1215-1221",
+      "component": "LegalForms/Card",
+      "content_type": "Badge/tag",
+      "raw_text": "الأكثر شيوعاً",
+      "notes": ""
+    },
+    {
+      "id": 183,
+      "file": "src/pages/Home.tsx",
+      "line": "1215-1221",
+      "component": "LegalForms/Card",
+      "content_type": "Card text",
+      "raw_text": "يمكن تأسيسها من شريك واحد أو أكثر. الحد الأدنى لرأس المال دينار واحد ما لم يتطلب النشاط أكثر. مسؤولية الشركاء بحدود مساهمتهم فقط.",
+      "notes": "Card description"
+    },
+    {
+      "id": 184,
+      "file": "src/pages/Home.tsx",
+      "line": "1215-1221",
+      "component": "LegalForms/Card",
+      "content_type": "Card text",
+      "raw_text": "تفصل بين مسؤولية الشركة ومسؤولية صاحبها",
+      "notes": "Card detail"
+    },
+    {
+      "id": 185,
+      "file": "src/pages/Home.tsx",
+      "line": "1224-1230",
+      "component": "LegalForms/Card",
+      "content_type": "Card text",
+      "raw_text": "الشركة المساهمة الخاصة",
+      "notes": "Card title"
+    },
+    {
+      "id": 186,
+      "file": "src/pages/Home.tsx",
+      "line": "1224-1230",
+      "component": "LegalForms/Card",
+      "content_type": "Badge/tag",
+      "raw_text": "للمشاريع المتوسطة",
+      "notes": ""
+    },
+    {
+      "id": 187,
+      "file": "src/pages/Home.tsx",
+      "line": "1224-1230",
+      "component": "LegalForms/Card",
+      "content_type": "Card text",
+      "raw_text": "تتألف من شخصين أو أكثر. رأس المال المصرح والمكتتب به لا يقل عن 50,000 دينار أردني.",
+      "notes": "Card description"
+    },
+    {
+      "id": 188,
+      "file": "src/pages/Home.tsx",
+      "line": "1224-1230",
+      "component": "LegalForms/Card",
+      "content_type": "Card text",
+      "raw_text": "يجوز تأسيسها من شخص واحد بتنسيب مبرر",
+      "notes": "Card detail"
+    },
+    {
+      "id": 189,
+      "file": "src/pages/Home.tsx",
+      "line": "1233-1239",
+      "component": "LegalForms/Card",
+      "content_type": "Card text",
+      "raw_text": "الشركة المساهمة العامة",
+      "notes": "Card title"
+    },
+    {
+      "id": 190,
+      "file": "src/pages/Home.tsx",
+      "line": "1233-1239",
+      "component": "LegalForms/Card",
+      "content_type": "Badge/tag",
+      "raw_text": "للمشاريع الكبيرة",
+      "notes": ""
+    },
+    {
+      "id": 191,
+      "file": "src/pages/Home.tsx",
+      "line": "1233-1239",
+      "component": "LegalForms/Card",
+      "content_type": "Card text",
+      "raw_text": "رأس المال المصرح به لا يقل عن 500,000 دينار. رأس المال المكتتب به لا يقل عن 100,000 دينار أو 20% من المصرح به أيهما أكثر.",
+      "notes": "Card description"
+    },
+    {
+      "id": 192,
+      "file": "src/pages/Home.tsx",
+      "line": "1233-1239",
+      "component": "LegalForms/Card",
+      "content_type": "Card text",
+      "raw_text": "أكثر من مؤسس، مع إمكانية التأسيس من شخص واحد بشروط",
+      "notes": "Card detail"
+    },
+    {
+      "id": 193,
+      "file": "src/pages/Home.tsx",
+      "line": "1242-1248",
+      "component": "LegalForms/Card",
+      "content_type": "Card text",
+      "raw_text": "فرع الشركة الأجنبية",
+      "notes": "Card title"
+    },
+    {
+      "id": 194,
+      "file": "src/pages/Home.tsx",
+      "line": "1242-1248",
+      "component": "LegalForms/Card",
+      "content_type": "Badge/tag",
+      "raw_text": "للشركات الخارجية",
+      "notes": ""
+    },
+    {
+      "id": 195,
+      "file": "src/pages/Home.tsx",
+      "line": "1242-1248",
+      "component": "LegalForms/Card",
+      "content_type": "Card text",
+      "raw_text": "مخصص للشركات المسجلة خارج المملكة. الشركة العاملة تُسجّل بموجب عطاء أو ترخيص. الشركة غير العاملة لا تمارس أي نشاط داخل المملكة.",
+      "notes": "Card description"
+    },
+    {
+      "id": 196,
+      "file": "src/pages/Home.tsx",
+      "line": "1242-1248",
+      "component": "LegalForms/Card",
+      "content_type": "Card text",
+      "raw_text": "مسار مختلف عن مسار الشركات المحلية",
+      "notes": "Card detail"
+    },
+    {
+      "id": 197,
+      "file": "src/pages/Home.tsx",
+      "line": "1284-1285",
+      "component": "LegalForms/Note",
+      "content_type": "Paragraph",
+      "raw_text": "اختيار الشكل القانوني يعتمد على طبيعة نشاطك وحجمه ووجود شركاء ومستوى المخاطرة التي تتحملها. لا يوجد خيار \"أفضل\" بشكل مطلق — يوجد خيار \"أنسب\" لحالتك.",
+      "notes": ""
+    },
+    {
+      "id": 198,
+      "file": "src/pages/Home.tsx",
+      "line": "1320-1322",
+      "component": "HomeBased",
+      "content_type": "Heading",
+      "raw_text": "بدأت من البيت؟ هذا لا يجعل مشروعك أقل جدية",
+      "notes": ""
+    },
+    {
+      "id": 199,
+      "file": "src/pages/Home.tsx",
+      "line": "1329-1331",
+      "component": "HomeBased",
+      "content_type": "Paragraph",
+      "raw_text": "الأعمال المنزلية لها مزايا حقيقية: انخفاض الكلفة والمرونة وإمكانية اختبار الفكرة. لكن هذه المزايا لا تلغي الحاجة إلى فهم المسار الصحيح لتطويرها.",
+      "notes": ""
+    },
+    {
+      "id": 200,
+      "file": "src/pages/Home.tsx",
+      "line": "1339",
+      "component": "HomeBased/Questions",
+      "content_type": "Label",
+      "raw_text": "هل نشاطك يدخل ضمن الرخصة المنزلية؟",
+      "notes": ""
+    },
+    {
+      "id": 201,
+      "file": "src/pages/Home.tsx",
+      "line": "1340",
+      "component": "HomeBased/Questions",
+      "content_type": "Label",
+      "raw_text": "ما الشروط المطلوبة تحديداً؟",
+      "notes": ""
+    },
+    {
+      "id": 202,
+      "file": "src/pages/Home.tsx",
+      "line": "1341",
+      "component": "HomeBased/Questions",
+      "content_type": "Label",
+      "raw_text": "ما الذي يجب استكماله قبل التوسع؟",
+      "notes": ""
+    },
+    {
+      "id": 203,
+      "file": "src/pages/Home.tsx",
+      "line": "1359-1360",
+      "component": "HomeBased/Callout",
+      "content_type": "Paragraph",
+      "raw_text": "مشروعك ليس أقل قيمة لأنه بدأ من البيت. المهم أن تعرف المسار الذي يناسبه حتى يتحرك بأمان ويكبر بدون تعطيل.",
+      "notes": ""
+    },
+    {
+      "id": 204,
+      "file": "src/pages/Home.tsx",
+      "line": "1371",
+      "component": "HomeBased/WomenNote",
+      "content_type": "Heading",
+      "raw_text": "لصاحبة المشروع المنزلي",
+      "notes": ""
+    },
+    {
+      "id": 205,
+      "file": "src/pages/Home.tsx",
+      "line": "1374-1376",
+      "component": "HomeBased/WomenNote",
+      "content_type": "Paragraph",
+      "raw_text": "مشروعك ليس هواية — هو مستقبل. القيود الاجتماعية والأعباء اليومية حقيقية، لكن التسجيل يحمي جهدك ويفتح لك فرصاً بشروط تناسب واقعك. ابدئي بخطوات صغيرة ومحسوبة.",
+      "notes": ""
+    },
+    {
+      "id": 206,
+      "file": "src/pages/Home.tsx",
+      "line": "1397",
+      "component": "Testimonials/Badge",
+      "content_type": "Badge/tag",
+      "raw_text": "تجارب حقيقية",
+      "notes": ""
+    },
+    {
+      "id": 207,
+      "file": "src/pages/Home.tsx",
+      "line": "1400",
+      "component": "Testimonials",
+      "content_type": "Heading",
+      "raw_text": "أصحاب مشاريع شاركوا تجربتهم",
+      "notes": ""
+    },
+    {
+      "id": 208,
+      "file": "src/pages/Home.tsx",
+      "line": "1403",
+      "component": "Testimonials",
+      "content_type": "Subheading",
+      "raw_text": "كل قصة فيها درس — واكتشاف مبكر يوفر وقتاً وجهداً كثيراً",
+      "notes": ""
+    },
+    {
+      "id": 209,
+      "file": "src/pages/Home.tsx",
+      "line": "1410",
+      "component": "Testimonials/1",
+      "content_type": "Testimonial",
+      "raw_text": "بدأت مشروعي من المطبخ ولم أكن أعرف أنه يحتاج ترخيص منفصل عن التسجيل. لما اتضح لي الفرق، توفر علي وقت وجهد كثير.",
+      "notes": ""
+    },
+    {
+      "id": 210,
+      "file": "src/pages/Home.tsx",
+      "line": "1411",
+      "component": "Testimonials/1",
+      "content_type": "Label",
+      "raw_text": "صاحبة مشروع حلويات منزلية",
+      "notes": "Testimonial author"
+    },
+    {
+      "id": 211,
+      "file": "src/pages/Home.tsx",
+      "line": "1416",
+      "component": "Testimonials/2",
+      "content_type": "Testimonial",
+      "raw_text": "كنت خايف التسجيل يضيف عليي أعباء ما أقدر عليها. لما فهمت إيش يلزمني تحديداً، اتضح أن الخطوة أبسط مما توقعت.",
+      "notes": ""
+    },
+    {
+      "id": 212,
+      "file": "src/pages/Home.tsx",
+      "line": "1417",
+      "component": "Testimonials/2",
+      "content_type": "Label",
+      "raw_text": "صاحب مشروع خدمات تقنية صغير",
+      "notes": "Testimonial author"
+    },
+    {
+      "id": 213,
+      "file": "src/pages/Home.tsx",
+      "line": "1422",
+      "component": "Testimonials/3",
+      "content_type": "Testimonial",
+      "raw_text": "التسجيل خلّى عملائي يثقوا فيني أكثر. صارت عندي فاتورة رسمية وهذا غير كل شي في تعاملاتي.",
+      "notes": ""
+    },
+    {
+      "id": 214,
+      "file": "src/pages/Home.tsx",
+      "line": "1423",
+      "component": "Testimonials/3",
+      "content_type": "Label",
+      "raw_text": "صاحب ورشة حرفية",
+      "notes": "Testimonial author"
+    },
+    {
+      "id": 215,
+      "file": "src/pages/Home.tsx",
+      "line": "1479",
+      "component": "HiddenCost",
+      "content_type": "Heading",
+      "raw_text": "التأجيل ليس قراراً محايداً",
+      "notes": ""
+    },
+    {
+      "id": 216,
+      "file": "src/pages/Home.tsx",
+      "line": "1482",
+      "component": "HiddenCost",
+      "content_type": "Subheading",
+      "raw_text": "كل يوم يمضي خارج التنظيم له ثمن حقيقي، حتى لو لم تشعر به الآن",
+      "notes": ""
+    },
+    {
+      "id": 217,
+      "file": "src/pages/Home.tsx",
+      "line": "1490-1491",
+      "component": "HiddenCost/Card",
+      "content_type": "Card text",
+      "raw_text": "تمويل يصعب الوصول إليه",
+      "notes": "Card title"
+    },
+    {
+      "id": 218,
+      "file": "src/pages/Home.tsx",
+      "line": "1490-1491",
+      "component": "HiddenCost/Card",
+      "content_type": "Card text",
+      "raw_text": "البنوك والجهات التمويلية تشترط وضعاً رسمياً. كل يوم تأجيل يبعدك عن فرص تمويل قد تغير مسار مشروعك.",
+      "notes": "Card description"
+    },
+    {
+      "id": 219,
+      "file": "src/pages/Home.tsx",
+      "line": "1495-1496",
+      "component": "HiddenCost/Card",
+      "content_type": "Card text",
+      "raw_text": "سوق أضيق",
+      "notes": "Card title"
+    },
+    {
+      "id": 220,
+      "file": "src/pages/Home.tsx",
+      "line": "1495-1496",
+      "component": "HiddenCost/Card",
+      "content_type": "Card text",
+      "raw_text": "الشركات الأكبر والجهات الرسمية تتعامل مع مشاريع مسجلة. أنت تبقى محصوراً في دائرة محدودة من الزبائن.",
+      "notes": "Card description"
+    },
+    {
+      "id": 221,
+      "file": "src/pages/Home.tsx",
+      "line": "1500-1501",
+      "component": "HiddenCost/Card",
+      "content_type": "Card text",
+      "raw_text": "مخاطر بلا مظلة حماية",
+      "notes": "Card title"
+    },
+    {
+      "id": 222,
+      "file": "src/pages/Home.tsx",
+      "line": "1500-1501",
+      "component": "HiddenCost/Card",
+      "content_type": "Card text",
+      "raw_text": "أي نزاع تجاري أو شكوى أو تفتيش مفاجئ قد يوقف نشاطك بالكامل لأن وضعك غير منظم.",
+      "notes": "Card description"
+    },
+    {
+      "id": 223,
+      "file": "src/pages/Home.tsx",
+      "line": "1505-1506",
+      "component": "HiddenCost/Card",
+      "content_type": "Card text",
+      "raw_text": "سقف نمو منخفض",
+      "notes": "Card title"
+    },
+    {
+      "id": 224,
+      "file": "src/pages/Home.tsx",
+      "line": "1505-1506",
+      "component": "HiddenCost/Card",
+      "content_type": "Card text",
+      "raw_text": "مهما كانت جودة منتجك، يبقى نموك محدوداً بشبكتك الشخصية فقط بدلاً من الأسواق الأوسع.",
+      "notes": "Card description"
+    },
+    {
+      "id": 225,
+      "file": "src/pages/Home.tsx",
+      "line": "1537",
+      "component": "HiddenCost/Closing",
+      "content_type": "Paragraph",
+      "raw_text": "لا تدع تكلفة البداية تحرمك من مكاسب الاستقرار.",
+      "notes": ""
+    },
+    {
+      "id": 226,
+      "file": "src/pages/Home.tsx",
+      "line": "1540-1541",
+      "component": "HiddenCost/Closing",
+      "content_type": "Paragraph",
+      "raw_text": "خطوة منظمة اليوم ولو كانت صغيرة تفتح أبواباً لا يصل إليها العمل غير الرسمي.",
+      "notes": ""
+    },
+    {
+      "id": 227,
+      "file": "src/pages/Home.tsx",
+      "line": "1558",
+      "component": "WhatChanges",
+      "content_type": "Heading",
+      "raw_text": "ماذا يتغير عملياً بعد التنظيم؟",
+      "notes": ""
+    },
+    {
+      "id": 228,
+      "file": "src/pages/Home.tsx",
+      "line": "1561",
+      "component": "WhatChanges",
+      "content_type": "Subheading",
+      "raw_text": "التنظيم لا يعني متاهة مجهولة، لكنه أيضاً ليس خطوة واحدة للجميع.",
+      "notes": ""
+    },
+    {
+      "id": 229,
+      "file": "src/pages/Home.tsx",
+      "line": "1568-1569",
+      "component": "WhatChanges/Step",
+      "content_type": "Heading",
+      "raw_text": "تسجيل الشكل القانوني",
+      "notes": ""
+    },
+    {
+      "id": 230,
+      "file": "src/pages/Home.tsx",
+      "line": "1568-1569",
+      "component": "WhatChanges/Step",
+      "content_type": "Paragraph",
+      "raw_text": "الخطوة الأولى هي تحديد الشكل القانوني المناسب لمشروعك (مؤسسة فردية، شركة ذات مسؤولية محدودة، أو غيرها) وتسجيله لدى الجهة المختصة. هذا يمنح مشروعك هويته الرسمية.",
+      "notes": ""
+    },
+    {
+      "id": 231,
+      "file": "src/pages/Home.tsx",
+      "line": "1572-1573",
+      "component": "WhatChanges/Step",
+      "content_type": "Heading",
+      "raw_text": "خدمات ما بعد التسجيل",
+      "notes": ""
+    },
+    {
+      "id": 232,
+      "file": "src/pages/Home.tsx",
+      "line": "1572-1573",
+      "component": "WhatChanges/Step",
+      "content_type": "Paragraph",
+      "raw_text": "بعد تسجيل الكيان قد تكون هناك خطوات تكميلية مطلوبة حسب نشاطك: كالانتساب لغرفة التجارة أو الصناعة، والتسجيل لدى الضمان الاجتماعي، والتسجيل الضريبي، وتسجيل الاسم التجاري عند الحاجة.",
+      "notes": ""
+    },
+    {
+      "id": 233,
+      "file": "src/pages/Home.tsx",
+      "line": "1576-1577",
+      "component": "WhatChanges/Step",
+      "content_type": "Heading",
+      "raw_text": "موافقات الموقع",
+      "notes": ""
+    },
+    {
+      "id": 234,
+      "file": "src/pages/Home.tsx",
+      "line": "1576-1577",
+      "component": "WhatChanges/Step",
+      "content_type": "Paragraph",
+      "raw_text": "التأكد من أن الموقع الذي ستعمل منه مناسب للنشاط: هل تصنيف الأرض أو المبنى يسمح بهذا النوع من الأعمال؟ وهل يحتاج موافقة بيئية أو تنظيمية؟ الموقع يؤثر مباشرة على المسار وعدد الخطوات.",
+      "notes": ""
+    },
+    {
+      "id": 235,
+      "file": "src/pages/Home.tsx",
+      "line": "1580-1581",
+      "component": "WhatChanges/Step",
+      "content_type": "Heading",
+      "raw_text": "الموافقات القطاعية",
+      "notes": ""
+    },
+    {
+      "id": 236,
+      "file": "src/pages/Home.tsx",
+      "line": "1580-1581",
+      "component": "WhatChanges/Step",
+      "content_type": "Paragraph",
+      "raw_text": "بعض الأنشطة تحتاج موافقة من الجهة المختصة بالقطاع قبل الانتهاء من الترخيص، مثل الصحة للأنشطة الغذائية، أو جهات تقنية لأنشطة الاتصالات. هذه الموافقات تأتي في الغالب بعد التسجيل وقبل رخصة المهن.",
+      "notes": ""
+    },
+    {
+      "id": 237,
+      "file": "src/pages/Home.tsx",
+      "line": "1584-1585",
+      "component": "WhatChanges/Step",
+      "content_type": "Heading",
+      "raw_text": "رخصة المهن",
+      "notes": ""
+    },
+    {
+      "id": 238,
+      "file": "src/pages/Home.tsx",
+      "line": "1584-1585",
+      "component": "WhatChanges/Step",
+      "content_type": "Paragraph",
+      "raw_text": "المحطة الأخيرة هي رخصة مزاولة النشاط من الموقع. داخل حدود أمانة عمان تصدر من الأمانة، وخارجها من البلدية المعنية. هذه هي الرخصة التي تسمح لك بالعمل فعلياً ضمن الإطار القانوني الكامل.",
+      "notes": ""
+    },
+    {
+      "id": 239,
+      "file": "src/pages/Home.tsx",
+      "line": "1621-1622",
+      "component": "WhatChanges/Note",
+      "content_type": "Paragraph",
+      "raw_text": "ملاحظة: ما يتغير يختلف بحسب شكلك القانوني ورأس مالك ووجود عمال وطبيعة نشاطك.",
+      "notes": ""
+    },
+    {
+      "id": 240,
+      "file": "src/pages/Home.tsx",
+      "line": "1642",
+      "component": "Entities",
+      "content_type": "Heading",
+      "raw_text": "الجهات الرئيسية المتعلقة بالتسجيل والترخيص",
+      "notes": ""
+    },
+    {
+      "id": 241,
+      "file": "src/pages/Home.tsx",
+      "line": "1645",
+      "component": "Entities",
+      "content_type": "Subheading",
+      "raw_text": "معرفة الجهة المختصة بنشاطك خطوة مهمة في بداية المسار",
+      "notes": ""
+    },
+    {
+      "id": 242,
+      "file": "src/pages/Home.tsx",
+      "line": "1654-1655",
+      "component": "Entities/Card",
+      "content_type": "Card text",
+      "raw_text": "وزارة الصناعة والتجارة",
+      "notes": "Entity name"
+    },
+    {
+      "id": 243,
+      "file": "src/pages/Home.tsx",
+      "line": "1654-1655",
+      "component": "Entities/Card",
+      "content_type": "Card text",
+      "raw_text": "تسجيل المنشآت التجارية والصناعية والأسماء التجارية",
+      "notes": "Entity description"
+    },
+    {
+      "id": 244,
+      "file": "src/pages/Home.tsx",
+      "line": "1660-1661",
+      "component": "Entities/Card",
+      "content_type": "Card text",
+      "raw_text": "أمانة عمان الكبرى والبلديات",
+      "notes": "Entity name"
+    },
+    {
+      "id": 245,
+      "file": "src/pages/Home.tsx",
+      "line": "1660-1661",
+      "component": "Entities/Card",
+      "content_type": "Card text",
+      "raw_text": "رخص المهن ومتطلبات الموقع والنشاط",
+      "notes": "Entity description"
+    },
+    {
+      "id": 246,
+      "file": "src/pages/Home.tsx",
+      "line": "1666-1667",
+      "component": "Entities/Card",
+      "content_type": "Card text",
+      "raw_text": "دائرة ضريبة الدخل والمبيعات",
+      "notes": "Entity name"
+    },
+    {
+      "id": 247,
+      "file": "src/pages/Home.tsx",
+      "line": "1666-1667",
+      "component": "Entities/Card",
+      "content_type": "Card text",
+      "raw_text": "التسجيل الضريبي والامتثال للمتطلبات الضريبية",
+      "notes": "Entity description"
+    },
+    {
+      "id": 248,
+      "file": "src/pages/Home.tsx",
+      "line": "1672-1673",
+      "component": "Entities/Card",
+      "content_type": "Card text",
+      "raw_text": "الضمان الاجتماعي",
+      "notes": "Entity name"
+    },
+    {
+      "id": 249,
+      "file": "src/pages/Home.tsx",
+      "line": "1672-1673",
+      "component": "Entities/Card",
+      "content_type": "Card text",
+      "raw_text": "اشتراكات العمال وشمولهم بالمظلة الاجتماعية",
+      "notes": "Entity description"
+    },
+    {
+      "id": 250,
+      "file": "src/pages/Home.tsx",
+      "line": "1704-1706",
+      "component": "Entities/Disclaimer",
+      "content_type": "Paragraph",
+      "raw_text": "الجهة المختصة بمشروعك تعتمد على نوع نشاطك وموقعه. هذه الصفحة لا تحل محل الاستشارة القانونية أو المراجعة المباشرة مع الجهات المختصة.",
+      "notes": ""
+    },
+    {
+      "id": 251,
+      "file": "src/pages/Home.tsx",
+      "line": "1723",
+      "component": "FAQ",
+      "content_type": "Heading",
+      "raw_text": "أسئلة شائعة",
+      "notes": ""
+    },
+    {
+      "id": 252,
+      "file": "src/pages/Home.tsx",
+      "line": "1736-1737",
+      "component": "FAQ",
+      "content_type": "FAQ Question",
+      "raw_text": "هل التسجيل وحده يكفي حتى أبدأ العمل؟",
+      "notes": ""
+    },
+    {
+      "id": 253,
+      "file": "src/pages/Home.tsx",
+      "line": "1736-1737",
+      "component": "FAQ",
+      "content_type": "FAQ Answer",
+      "raw_text": "ليس دائماً. التسجيل يمنح المشروع هوية قانونية، لكن بعض الأنشطة تحتاج أيضاً إلى رخصة مهن أو موافقات إضافية. الأمر يعتمد على نوع نشاطك وموقعه والجهة المختصة.",
+      "notes": ""
+    },
+    {
+      "id": 254,
+      "file": "src/pages/Home.tsx",
+      "line": "1740-1741",
+      "component": "FAQ",
+      "content_type": "FAQ Question",
+      "raw_text": "ما الفرق بين المنشأة الفردية والشركة ذات المسؤولية المحدودة؟",
+      "notes": ""
+    },
+    {
+      "id": 255,
+      "file": "src/pages/Home.tsx",
+      "line": "1740-1741",
+      "component": "FAQ",
+      "content_type": "FAQ Answer",
+      "raw_text": "المنشأة الفردية أبسط وأقل تكلفة في البداية، لكن صاحبها يتحمل المسؤولية الكاملة شخصياً. الشركة ذات المسؤولية المحدودة تفصل بين مسؤولية الشركة ومسؤولية صاحبها، لكنها تتطلب إجراءات أكثر. الخيار يعتمد على طبيعة نشاطك وحجمه ومستوى المخاطرة.",
+      "notes": ""
+    },
+    {
+      "id": 256,
+      "file": "src/pages/Home.tsx",
+      "line": "1744-1745",
+      "component": "FAQ",
+      "content_type": "FAQ Question",
+      "raw_text": "هل المشروع المنزلي يمكن ترخيصه؟",
+      "notes": ""
+    },
+    {
+      "id": 257,
+      "file": "src/pages/Home.tsx",
+      "line": "1744-1745",
+      "component": "FAQ",
+      "content_type": "FAQ Answer",
+      "raw_text": "بعض الأنشطة المنزلية لها مسار ترخيص خاص، لكن الأهلية والشروط تختلف بحسب نوع النشاط والموقع والضوابط المعمول بها. لا يمكن الجزم بأن كل نشاط منزلي يمكن ترخيصه من المنزل دون التحقق من الشروط المحددة.",
+      "notes": ""
+    },
+    {
+      "id": 258,
+      "file": "src/pages/Home.tsx",
+      "line": "1748-1749",
+      "component": "FAQ",
+      "content_type": "FAQ Question",
+      "raw_text": "ماذا يحدث إذا بقيت بدون تسجيل؟",
+      "notes": ""
+    },
+    {
+      "id": 259,
+      "file": "src/pages/Home.tsx",
+      "line": "1748-1749",
+      "component": "FAQ",
+      "content_type": "FAQ Answer",
+      "raw_text": "عدم التسجيل ليس وضعاً محايداً. قد يعني صعوبة في الوصول إلى الخدمات المالية، وضعف في التعامل مع جهات أكبر، وغياب للحماية القانونية عند أي خلاف، واستبعاداً من بعض الفرص والخدمات الرسمية.",
+      "notes": ""
+    },
+    {
+      "id": 260,
+      "file": "src/pages/Home.tsx",
+      "line": "1752-1753",
+      "component": "FAQ",
+      "content_type": "FAQ Question",
+      "raw_text": "هل التسجيل يضمن حصولي على تمويل؟",
+      "notes": ""
+    },
+    {
+      "id": 261,
+      "file": "src/pages/Home.tsx",
+      "line": "1752-1753",
+      "component": "FAQ",
+      "content_type": "FAQ Answer",
+      "raw_text": "لا يضمن ذلك تلقائياً، لكنه يجعل مشروعك أقرب إلى الخدمات المالية والتمويلية ويعزز شمولك المالي. المشروع المنظم يكون في موقع أفضل للطلب والتقدم للتمويل مقارنة بمشروع يعمل في الظل.",
+      "notes": ""
+    },
+    {
+      "id": 262,
+      "file": "src/pages/Home.tsx",
+      "line": "1756-1757",
+      "component": "FAQ",
+      "content_type": "FAQ Question",
+      "raw_text": "من أين أبدأ إذا أردت تنظيم مشروعي؟",
+      "notes": ""
+    },
+    {
+      "id": 263,
+      "file": "src/pages/Home.tsx",
+      "line": "1756-1757",
+      "component": "FAQ",
+      "content_type": "FAQ Answer",
+      "raw_text": "الخطوة الأولى هي تحديد نوع نشاطك والشكل القانوني المناسب له، ثم التعرف على الجهة المختصة بنشاطك سواء كانت وزارة الصناعة والتجارة أو البلدية أو غيرها. من المهم أن تسير في المسار الصحيح منذ البداية لتجنب التعقيدات اللاحقة.",
+      "notes": ""
+    },
+    {
+      "id": 264,
+      "file": "src/pages/Home.tsx",
+      "line": "1760-1761",
+      "component": "FAQ",
+      "content_type": "FAQ Question",
+      "raw_text": "هل استخراج السجل يعني أنني جاهز للعمل فوراً؟",
+      "notes": ""
+    },
+    {
+      "id": 265,
+      "file": "src/pages/Home.tsx",
+      "line": "1760-1761",
+      "component": "FAQ",
+      "content_type": "FAQ Answer",
+      "raw_text": "ليس بالضرورة. التسجيل يمنح مشروعك الهوية القانونية، لكن قد تبقى خطوات لازمة قبل الممارسة الفعلية: كالانتساب لغرفة التجارة أو الصناعة بحسب النشاط، والتسجيل في الضمان الاجتماعي، والتسجيل الضريبي، وأحياناً موافقات الموقع أو موافقات قطاعية، ثم رخصة المهن. التسجيل خطوة أولى مهمة لكنها ليست الأخيرة.",
+      "notes": ""
+    },
+    {
+      "id": 266,
+      "file": "src/pages/Home.tsx",
+      "line": "1764-1765",
+      "component": "FAQ",
+      "content_type": "FAQ Question",
+      "raw_text": "ما الفرق بين موافقات الموقع والموافقات القطاعية؟",
+      "notes": ""
+    },
+    {
+      "id": 267,
+      "file": "src/pages/Home.tsx",
+      "line": "1764-1765",
+      "component": "FAQ",
+      "content_type": "FAQ Answer",
+      "raw_text": "موافقات الموقع تتعلق بالمكان نفسه: هل تصنيف الأرض أو المبنى يسمح بهذا النشاط؟ وهل يحتاج موافقة بيئية؟ أما الموافقات القطاعية فتأتي من الجهة المختصة بالنشاط ذاته، مثل وزارة الصحة للأنشطة الغذائية أو الطبية. الموافقتان مستقلتان وقد تحتاج إلى كليهما أو أحدهما فقط، وذلك يعتمد على طبيعة نشاطك.",
+      "notes": ""
+    },
+    {
+      "id": 268,
+      "file": "src/pages/Home.tsx",
+      "line": "1799",
+      "component": "Survey/Badge",
+      "content_type": "Badge/tag",
+      "raw_text": "استبيان قصير",
+      "notes": ""
+    },
+    {
+      "id": 269,
+      "file": "src/pages/Home.tsx",
+      "line": "1801",
+      "component": "Survey",
+      "content_type": "Heading",
+      "raw_text": "رأيك يصنع الفرق",
+      "notes": ""
+    },
+    {
+      "id": 270,
+      "file": "src/pages/Home.tsx",
+      "line": "1804-1805",
+      "component": "Survey",
+      "content_type": "Subheading",
+      "raw_text": "6 أسئلة بسيطة — إجاباتك تساعدنا نفهم واقع أصحاب المشاريع ونطور محتوى أفيد لك ولغيرك",
+      "notes": ""
+    },
+    {
+      "id": 271,
+      "file": "src/pages/Home.tsx",
+      "line": "1809",
+      "component": "Survey/Trust",
+      "content_type": "Label",
+      "raw_text": "أقل من دقيقتين",
+      "notes": ""
+    },
+    {
+      "id": 272,
+      "file": "src/pages/Home.tsx",
+      "line": "1812",
+      "component": "Survey/Trust",
+      "content_type": "Label",
+      "raw_text": "مجهول الهوية تماماً",
+      "notes": ""
+    },
+    {
+      "id": 273,
+      "file": "src/pages/Home.tsx",
+      "line": "1814",
+      "component": "Survey/Trust",
+      "content_type": "Label",
+      "raw_text": "بدون تسجيل",
+      "notes": ""
+    },
+    {
+      "id": 274,
+      "file": "src/pages/Home.tsx",
+      "line": "1846",
+      "component": "CTA",
+      "content_type": "Heading",
+      "raw_text": "الخطوة الأولى أسهل مما تتخيل",
+      "notes": ""
+    },
+    {
+      "id": 275,
+      "file": "src/pages/Home.tsx",
+      "line": "1853-1854",
+      "component": "CTA",
+      "content_type": "Paragraph",
+      "raw_text": "المهم ليس أن تبدأ بسرعة فقط، بل أن تبدأ بشكل صحيح يناسب نشاطك وموقعك وطبيعة مشروعك.",
+      "notes": ""
+    },
+    {
+      "id": 276,
+      "file": "src/pages/Home.tsx",
+      "line": "1863",
+      "component": "CTA",
+      "content_type": "CTA",
+      "raw_text": "ابدأ مسارك الآن",
+      "notes": ""
+    },
+    {
+      "id": 277,
+      "file": "src/pages/Home.tsx",
+      "line": "1872-1875",
+      "component": "CTA/Disclaimer",
+      "content_type": "Paragraph",
+      "raw_text": "هذه الصفحة إرشادية وتعليمية. التفاصيل القانونية والإجرائية الدقيقة تختلف بحسب نوع النشاط والموقع والشكل القانوني ووجود عمّال أو شركاء. يُنصح بمراجعة الجهات الرسمية المختصة للحصول على معلومات دقيقة تناسب حالتك.",
+      "notes": ""
+    },
+    {
+      "id": 278,
+      "file": "src/pages/Home.tsx",
+      "line": "1893",
+      "component": "MobileCTA",
+      "content_type": "CTA",
+      "raw_text": "اكتشف مسارك",
+      "notes": ""
+    }
+  ],
+  "numeric_items": [
+    {
+      "id": "N1",
+      "rawText": "98%",
+      "value": "98",
+      "unit": "Percentage",
+      "file": "src/pages/Home.tsx",
+      "line": "630-632",
+      "component": "Stats",
+      "context": "من مشاريع الأردن مشاريع صغيرة أو متناهية الصغر",
+      "category": "Public statistic"
+    },
+    {
+      "id": "N2",
+      "rawText": "60%",
+      "value": "60",
+      "unit": "Percentage",
+      "file": "src/pages/Home.tsx",
+      "line": "636-637",
+      "component": "Stats",
+      "context": "من القطاع الخاص الأردني يعمل في هذه المشاريع",
+      "category": "Public statistic"
+    },
+    {
+      "id": "N3",
+      "rawText": "50%",
+      "value": "50",
+      "unit": "Percentage",
+      "file": "src/pages/Home.tsx",
+      "line": "641-642",
+      "component": "Stats",
+      "context": "من الناتج المحلي الإجمالي تساهم فيه المشاريع الصغيرة",
+      "category": "Public statistic"
+    },
+    {
+      "id": "N4",
+      "rawText": "4 أسئلة",
+      "value": "4",
+      "unit": "Count",
+      "file": "src/pages/Home.tsx",
+      "line": "806",
+      "component": "Quiz",
+      "context": "أجب على 4 أسئلة بسيطة واحصل على توصية مخصصة لحالتك",
+      "category": "Pure UI number"
+    },
+    {
+      "id": "N5",
+      "rawText": "6 أسئلة بسيطة",
+      "value": "6",
+      "unit": "Count",
+      "file": "src/pages/Home.tsx",
+      "line": "1804",
+      "component": "Survey",
+      "context": "6 أسئلة بسيطة — إجاباتك تساعدنا نفهم واقع أصحاب المشاريع",
+      "category": "Pure UI number"
+    },
+    {
+      "id": "N6",
+      "rawText": "الثامنة عشرة",
+      "value": "18",
+      "unit": "Count",
+      "file": "src/pages/Home.tsx",
+      "line": "1202",
+      "component": "LegalForms/المؤسسة الفردية",
+      "context": "يشترط أن يكون صاحبها قد أتم الثامنة عشرة",
+      "category": "Legal/financial threshold"
+    },
+    {
+      "id": "N7",
+      "rawText": "من 2 إلى 20",
+      "value": "2-20",
+      "unit": "Range",
+      "file": "src/pages/Home.tsx",
+      "line": "1211",
+      "component": "LegalForms/شركة التضامن",
+      "context": "عدد الشركاء من 2 إلى 20",
+      "category": "Legal/financial threshold"
+    },
+    {
+      "id": "N8",
+      "rawText": "دينار واحد",
+      "value": "1",
+      "unit": "Currency",
+      "file": "src/pages/Home.tsx",
+      "line": "1220",
+      "component": "LegalForms/ذات المسؤولية المحدودة",
+      "context": "الحد الأدنى لرأس المال دينار واحد ما لم يتطلب النشاط أكثر",
+      "category": "Legal/financial threshold"
+    },
+    {
+      "id": "N9",
+      "rawText": "50,000 دينار أردني",
+      "value": "50000",
+      "unit": "Currency",
+      "file": "src/pages/Home.tsx",
+      "line": "1229",
+      "component": "LegalForms/المساهمة الخاصة",
+      "context": "رأس المال المصرح والمكتتب به لا يقل عن 50,000 دينار أردني",
+      "category": "Legal/financial threshold"
+    },
+    {
+      "id": "N10",
+      "rawText": "500,000 دينار",
+      "value": "500000",
+      "unit": "Currency",
+      "file": "src/pages/Home.tsx",
+      "line": "1238",
+      "component": "LegalForms/المساهمة العامة",
+      "context": "رأس المال المصرح به لا يقل عن 500,000 دينار",
+      "category": "Legal/financial threshold"
+    },
+    {
+      "id": "N11",
+      "rawText": "100,000 دينار أو 20%",
+      "value": "100000 / 20%",
+      "unit": "Currency / Percentage",
+      "file": "src/pages/Home.tsx",
+      "line": "1238",
+      "component": "LegalForms/المساهمة العامة",
+      "context": "رأس المال المكتتب به لا يقل عن 100,000 دينار أو 20% من المصرح به أيهما أكثر",
+      "category": "Legal/financial threshold"
+    },
+    {
+      "id": "N12",
+      "rawText": "أقل من دقيقتين",
+      "value": "<2",
+      "unit": "Duration",
+      "file": "src/pages/Home.tsx",
+      "line": "1809",
+      "component": "Survey/Trust",
+      "context": "⏱️ أقل من دقيقتين",
+      "category": "Pure UI number"
+    }
+  ],
+  "factual_claims": [
+    {
+      "id": "C1",
+      "text": "98% من مشاريع الأردن مشاريع صغيرة أو متناهية الصغر",
+      "file": "src/pages/Home.tsx",
+      "line": "630-632",
+      "component": "Stats",
+      "category": "Economic/statistical"
+    },
+    {
+      "id": "C2",
+      "text": "60% من القطاع الخاص الأردني يعمل في هذه المشاريع",
+      "file": "src/pages/Home.tsx",
+      "line": "636-637",
+      "component": "Stats",
+      "category": "Economic/statistical"
+    },
+    {
+      "id": "C3",
+      "text": "50% من الناتج المحلي الإجمالي تساهم فيه المشاريع الصغيرة",
+      "file": "src/pages/Home.tsx",
+      "line": "641-642",
+      "component": "Stats",
+      "category": "Economic/statistical"
+    },
+    {
+      "id": "C4",
+      "text": "التسجيل يجعل المشروع أقرب إلى الخدمات المالية والتمويلية، ويعزز الشمول المالي وفرص الحصول على دعم.",
+      "file": "src/pages/Home.tsx",
+      "line": "726",
+      "component": "Benefits",
+      "category": "Benefit/outcome"
+    },
+    {
+      "id": "C5",
+      "text": "عدم التسجيل ليس وضعاً محايداً. هو قد يعني غياب الحماية القانونية وضعف الوصول إلى الخدمات.",
+      "file": "src/pages/Home.tsx",
+      "line": "744",
+      "component": "Benefits",
+      "category": "Risk/warning"
+    },
+    {
+      "id": "C6",
+      "text": "التنظيم يحسّن الإنتاجية وظروف العمل، ويدخل العاملين ضمن مظلة أكثر حماية وأماناً واستقراراً.",
+      "file": "src/pages/Home.tsx",
+      "line": "738",
+      "component": "Benefits",
+      "category": "Benefit/outcome"
+    },
+    {
+      "id": "C7",
+      "text": "يشترط أن يكون صاحبها قد أتم الثامنة عشرة.",
+      "file": "src/pages/Home.tsx",
+      "line": "1202",
+      "component": "LegalForms",
+      "category": "Legal/regulatory"
+    },
+    {
+      "id": "C8",
+      "text": "عدد الشركاء من 2 إلى 20. لا يشترط قانون الشركات حداً أدنى لرأس المال.",
+      "file": "src/pages/Home.tsx",
+      "line": "1211",
+      "component": "LegalForms",
+      "category": "Legal/regulatory"
+    },
+    {
+      "id": "C9",
+      "text": "الحد الأدنى لرأس المال دينار واحد ما لم يتطلب النشاط أكثر. مسؤولية الشركاء بحدود مساهمتهم فقط.",
+      "file": "src/pages/Home.tsx",
+      "line": "1220",
+      "component": "LegalForms",
+      "category": "Legal/regulatory"
+    },
+    {
+      "id": "C10",
+      "text": "رأس المال المصرح والمكتتب به لا يقل عن 50,000 دينار أردني.",
+      "file": "src/pages/Home.tsx",
+      "line": "1229",
+      "component": "LegalForms",
+      "category": "Legal/regulatory"
+    },
+    {
+      "id": "C11",
+      "text": "رأس المال المصرح به لا يقل عن 500,000 دينار. رأس المال المكتتب به لا يقل عن 100,000 دينار أو 20% من المصرح به أيهما أكثر.",
+      "file": "src/pages/Home.tsx",
+      "line": "1238",
+      "component": "LegalForms",
+      "category": "Legal/regulatory"
+    },
+    {
+      "id": "C12",
+      "text": "البنوك والجهات التمويلية تشترط وضعاً رسمياً.",
+      "file": "src/pages/Home.tsx",
+      "line": "1491",
+      "component": "HiddenCost",
+      "category": "Economic/statistical"
+    },
+    {
+      "id": "C13",
+      "text": "داخل حدود أمانة عمان تصدر من الأمانة، وخارجها من البلدية المعنية.",
+      "file": "src/pages/Home.tsx",
+      "line": "1585",
+      "component": "WhatChanges",
+      "category": "Process/procedure"
+    },
+    {
+      "id": "C14",
+      "text": "هذه الصفحة إرشادية وتعليمية. التفاصيل القانونية والإجرائية الدقيقة تختلف بحسب نوع النشاط والموقع والشكل القانوني ووجود عمّال أو شركاء.",
+      "file": "src/pages/Home.tsx",
+      "line": "1872-1875",
+      "component": "CTA/Disclaimer",
+      "category": "Legal/regulatory"
+    },
+    {
+      "id": "C15",
+      "text": "الجهة المختصة بمشروعك تعتمد على نوع نشاطك وموقعه. هذه الصفحة لا تحل محل الاستشارة القانونية أو المراجعة المباشرة مع الجهات المختصة.",
+      "file": "src/pages/Home.tsx",
+      "line": "1704-1706",
+      "component": "Entities/Disclaimer",
+      "category": "Legal/regulatory"
+    },
+    {
+      "id": "C16",
+      "text": "محتوى موثوق ومحدّث",
+      "file": "src/pages/Home.tsx",
+      "line": "671",
+      "component": "TrustBar",
+      "category": "Benefit/outcome"
+    },
+    {
+      "id": "C17",
+      "text": "مراجعة من مختصين",
+      "file": "src/pages/Home.tsx",
+      "line": "674",
+      "component": "TrustBar",
+      "category": "Benefit/outcome"
+    },
+    {
+      "id": "C18",
+      "text": "شامل لجميع محافظات الأردن",
+      "file": "src/pages/Home.tsx",
+      "line": "673",
+      "component": "TrustBar",
+      "category": "Comparative claim"
+    }
+  ],
+  "duplicates_or_conflicts": [
+    {
+      "id": "DUP1",
+      "items_involved": [
+        "Hero CTA (line 579)",
+        "Mobile CTA (line 1893)",
+        "Survey completed CTA (line 225)"
+      ],
+      "files": [
+        "src/pages/Home.tsx"
+      ],
+      "raw_text_versions": [
+        "اكتشف مسارك المناسب ←",
+        "اكتشف مسارك",
+        "اكتشف مسارك المناسب ←"
+      ],
+      "note": "Slightly different variants of the same CTA across hero, mobile sticky bar, and survey completion"
+    },
+    {
+      "id": "DUP2",
+      "items_involved": [
+        "CTA heading (line 1846)",
+        "CTA heading in License-Booster-Code.md (line 585)"
+      ],
+      "files": [
+        "src/pages/Home.tsx",
+        "public/License-Booster-Code.md"
+      ],
+      "raw_text_versions": [
+        "الخطوة الأولى أسهل مما تتخيل"
+      ],
+      "note": "Same heading in both source code and the bundled code markdown"
+    },
+    {
+      "id": "DUP3",
+      "items_involved": [
+        "Hero trust signal (line 596)",
+        "Survey trust signal (line 1814)"
+      ],
+      "files": [
+        "src/pages/Home.tsx"
+      ],
+      "raw_text_versions": [
+        "بدون تسجيل"
+      ],
+      "note": "Same text appears in both hero trust signals and survey trust signals"
+    },
+    {
+      "id": "DUP4",
+      "items_involved": [
+        "CTA footer (line 1863)",
+        "CTA footer in License-Booster-Code.md (line 592)"
+      ],
+      "files": [
+        "src/pages/Home.tsx",
+        "public/License-Booster-Code.md"
+      ],
+      "raw_text_versions": [
+        "ابدأ مسارك الآن"
+      ],
+      "note": "Same CTA button text"
+    },
+    {
+      "id": "DUP5",
+      "items_involved": [
+        "Quiz result (line 947)",
+        "Survey Q6 option (line 146)"
+      ],
+      "files": [
+        "src/pages/Home.tsx"
+      ],
+      "raw_text_versions": [
+        "مسجل ومرخص بالكامل"
+      ],
+      "note": "Same text used as both quiz option and survey option"
+    },
+    {
+      "id": "DUP6",
+      "items_involved": [
+        "License-Booster-Code.md contains most of Home.tsx content"
+      ],
+      "files": [
+        "src/pages/Home.tsx",
+        "public/License-Booster-Code.md"
+      ],
+      "raw_text_versions": [
+        "Full page content duplicated"
+      ],
+      "note": "The entire Home.tsx code (older version) is duplicated inside public/License-Booster-Code.md. The .md version has emoji-style encouragements (💪🌟🎯✨🏁) while Home.tsx has them without emojis."
+    },
+    {
+      "id": "DUP7",
+      "items_involved": [
+        "Hero subheading variants"
+      ],
+      "files": [
+        "src/pages/Home.tsx",
+        "public/License-Booster-Code.md"
+      ],
+      "raw_text_versions": [
+        "التسجيل والترخيص ليسا عبئاً — إنهما الخطوة التي تنظّم شغلك وتفتح لك أسواقاً وفرصاً أوسع بكثير.",
+        "التسجيل والترخيص ليسا عبئاً إضافياً فقط. إنهما خطوة تنظّم شغلك وتفتح لك فرصاً أوسع."
+      ],
+      "note": "Different wording of the same message between Home.tsx and License-Booster-Code.md"
+    },
+    {
+      "id": "DUP8",
+      "items_involved": [
+        "Disclaimer (line 1872-1875 and line 597)"
+      ],
+      "files": [
+        "src/pages/Home.tsx",
+        "public/License-Booster-Code.md"
+      ],
+      "raw_text_versions": [
+        "هذه الصفحة إرشادية وتعليمية..."
+      ],
+      "note": "Same disclaimer appears in both files"
+    },
+    {
+      "id": "DUP9",
+      "items_involved": [
+        "Quiz Q2 رجوع buttons"
+      ],
+      "files": [
+        "src/pages/Home.tsx"
+      ],
+      "raw_text_versions": [
+        "رجوع"
+      ],
+      "note": "The word رجوع appears 6+ times across quiz and survey navigation buttons"
+    }
+  ],
+  "hidden_content": [
+    {
+      "id": "H1",
+      "type": "Alt text",
+      "file": "src/pages/Home.tsx",
+      "line": "496-497",
+      "text": "Hero Background",
+      "note": "Alt text on hero background image"
+    },
+    {
+      "id": "H2",
+      "type": "Commented-out copy",
+      "file": "src/pages/Home.tsx",
+      "line": "N/A",
+      "text": "N/A",
+      "note": "No commented-out user-facing copy found in source files"
+    },
+    {
+      "id": "H3",
+      "type": "Structured data",
+      "file": "index.html",
+      "line": "N/A",
+      "text": "N/A",
+      "note": "No JSON-LD or schema markup found in any file"
+    },
+    {
+      "id": "H4",
+      "type": "SEO meta",
+      "file": "index.html",
+      "line": "6",
+      "text": "صفحة الترخيص والتسجيل",
+      "note": "Only <title> tag exists. No <meta description>, no OG tags, no Twitter cards in index.html"
+    },
+    {
+      "id": "H5",
+      "type": "Fallback strings",
+      "file": "src/pages/not-found.tsx",
+      "line": "11,14-15",
+      "text": "404 Page Not Found / Did you forget to add the page to the router?",
+      "note": "English 404 page content - appears to be developer-facing but renders to users"
+    },
+    {
+      "id": "H6",
+      "type": "ARIA labels",
+      "file": "N/A",
+      "line": "N/A",
+      "text": "N/A",
+      "note": "No explicit ARIA labels found in any source file"
+    },
+    {
+      "id": "H7",
+      "type": "Form defaults",
+      "file": "src/pages/Home.tsx",
+      "line": "336",
+      "text": "{ type: \"\", location: \"\", team: \"\", stage: \"\" }",
+      "note": "Quiz initial state - empty strings"
+    },
+    {
+      "id": "H8",
+      "type": "OG image",
+      "file": "public/opengraph.jpg",
+      "line": "N/A",
+      "text": "opengraph.jpg exists in public folder",
+      "note": "An opengraph image exists but is not referenced in index.html meta tags"
+    },
+    {
+      "id": "H9",
+      "type": "Favicon",
+      "file": "public/favicon.svg",
+      "line": "N/A",
+      "text": "favicon.svg",
+      "note": "SVG favicon referenced in index.html"
+    }
+  ],
+  "uncertainties": [
+    {
+      "id": "U1",
+      "description": "The stat counters (98%, 60%, 50%) are rendered via the Counter component which animates from 0 to the target number. The final displayed values are the ones extracted here, but intermediate animation frames show other numbers.",
+      "file": "src/pages/Home.tsx",
+      "line": "628-661"
+    },
+    {
+      "id": "U2",
+      "description": "Survey question progress label 'سؤال {surveyStep} من {questions.length}' and quiz label 'الخطوة {quizStep} من 4' contain dynamic runtime values that change as the user interacts.",
+      "file": "src/pages/Home.tsx",
+      "line": "256,822"
+    },
+    {
+      "id": "U3",
+      "description": "The quiz result (renderQuizResult) produces different title/desc combinations based on user answers. All 5 possible outcomes have been extracted, but they are conditionally rendered.",
+      "file": "src/pages/Home.tsx",
+      "line": "414-479"
+    },
+    {
+      "id": "U4",
+      "description": "The encouragement messages are shown based on surveyStep index. ENCOURAGEMENTS[surveyStep-1] maps to specific messages at runtime.",
+      "file": "src/pages/Home.tsx",
+      "line": "72-78,184-188"
+    },
+    {
+      "id": "U5",
+      "description": "public/License-Booster-Code.md contains an older version of the full codebase. Content in it may represent a previous snapshot that differs from current Home.tsx.",
+      "file": "public/License-Booster-Code.md",
+      "line": "1-900"
+    },
+    {
+      "id": "U6",
+      "description": "The 4th stat item (num: 11000, suffix: '+', desc: 'مشروع تستهدف الوصول إليه ودعمه') exists in License-Booster-Code.md but NOT in the current Home.tsx. It was removed from the live code.",
+      "file": "public/License-Booster-Code.md vs src/pages/Home.tsx",
+      "line": "441 in .md"
+    }
+  ]
+}
