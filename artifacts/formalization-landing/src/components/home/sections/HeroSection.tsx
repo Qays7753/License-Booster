@@ -22,12 +22,12 @@ export function HeroSection({ onNavigate }: HeroSectionProps) {
             رخّص مشروعك وتوسّع
           </p>
           <h1 className="max-w-3xl text-4xl font-extrabold leading-tight md:text-6xl xl:text-7xl">
-            مشروعك موجود
-            <span className="block text-accent">بس مشروعك مو مُرخّص؟</span>
+            وضّح وضع مشروعك
+            <span className="block text-accent">قبل ما تكبر الحيرة</span>
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-primary-foreground/84 md:text-2xl">
-            الترخيص مو بس ورقة رسمية — هو اللي بيفتحلك باب التمويل، بيخلّي
-            عملاءك يثقوا أكثر، وبيخلي قراراتك أوضح.
+            التسجيل والترخيص مش عبء — هم الطريقة اللي بتخلّي وضع مشروعك أوضح
+            لك ولمن تتعامل معه.
           </p>
 
           <div className="mt-8 flex flex-col items-start gap-3">

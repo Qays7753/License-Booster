@@ -163,7 +163,7 @@ function buildQuizResult(answers: QuizAnswers): QuizResult {
   if (answers.stage === "planning" && isHomeOnly) {
     return {
       title: "أنت لسا بمرحلة التخطيط ومشروعك من البيت",
-      summary: "وهاد أحسن وقت ترتّب فيه ملفك قبل ما تكبر.",
+      summary: "وهاد أحسن وقت ترتّب فيه مشروعك قبل ما يكبر.",
       status: "تخطيط أولي",
       steps: [
         "خطوتك الأولى هي تتأكد إذا كان نشاطك ينفع يترخّص من المنزل ولا لأ.",
@@ -183,10 +183,10 @@ function buildQuizResult(answers: QuizAnswers): QuizResult {
   }
 
   return {
-    title: "أنت شغال ومبيعاتك موجودة، بس ملفك ناقص",
+    title: "أنت شغال ومبيعاتك موجودة، بس مشروعك مو مرخّص",
     summary: "والفراغ هاد بيقلقك حتى لو ما بيظهر.",
     status: "ترخيص تدريجي",
-    steps: ["خطوتك الأولى هي تعرف شو بالظبط ناقصك عشان تكمل الملف."],
+    steps: ["خطوتك الأولى هي تعرف شو بالظبط ناقصك عشان ترخّص مشروعك."],
     nextTarget: hasPartners ? "legal-forms" : "entities",
   };
 }
@@ -227,7 +227,13 @@ export function PathQuiz({ onNavigate }: PathQuizProps) {
   const result = buildQuizResult(answers);
   const primaryAction = getPrimaryAction(answers);
 
+  const hasInteracted = useRef(false);
+
   useEffect(() => {
+    if (!hasInteracted.current) {
+      return;
+    }
+
     const target =
       stepIndex < QUESTION_STEPS.length
         ? questionHeadingRef.current
@@ -254,6 +260,7 @@ export function PathQuiz({ onNavigate }: PathQuizProps) {
   }, [stepIndex]);
 
   const handleAnswer = (field: string, value: string) => {
+    hasInteracted.current = true;
     setAnswers((current) => ({ ...current, [field]: value }));
     setTimeout(() => {
       setStepIndex((current) => current + 1);

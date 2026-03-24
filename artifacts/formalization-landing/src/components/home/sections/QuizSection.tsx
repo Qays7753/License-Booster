@@ -10,12 +10,11 @@ export function QuizSection({ onNavigate }: QuizSectionProps) {
     <section id="find-path" className="bg-background py-20 md:py-28">
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
         <SectionHeader
-          eyebrow="٤ أسئلة فقط"
-          title="٤ أسئلة بتدلك على مسارك"
+          eyebrow="اكتشف وضعك"
+          title="أربع أسئلة تكشف أين أنت"
           description={
             <p>
-              ما تضيّع وقتك بالبحث العشوائي. جاوب عالأسئلة وبندلّك على خطوتك
-              الأولى والجهة اللي لازم تقصدها.
+              جاوب بصدق عن وضعك الحالي — مش عن اللي تتمنى يكون عليه.
             </p>
           }
         />
@@ -25,7 +24,7 @@ export function QuizSection({ onNavigate }: QuizSectionProps) {
         </div>
 
         <p className="mx-auto mt-10 max-w-2xl text-center text-lg font-semibold leading-relaxed text-foreground/70">
-          بعدما صار مسارك أقرب، طبيعي يبقى عندك تردد عملي قبل أن تتحرك.
+          وأنت عارف وين واقف، خلينا نفك أي تردد عندك قبل ما تبدأ.
         </p>
       </div>
     </section>

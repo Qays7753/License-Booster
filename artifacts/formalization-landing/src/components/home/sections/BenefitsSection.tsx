@@ -23,7 +23,7 @@ const benefits: BenefitItem[] = [
     Icon: ShieldCheck,
     title: "الصورة تصبح أوضح",
     description:
-      "عندما يترخّص الملف، تصبح الملكية والمسؤولية والتعاملات أقل غموضاً من قبل.",
+      "عندما يترخّص المشروع، تصبح الملكية والمسؤولية والتعاملات أقل غموضاً من قبل.",
     example:
       "مثال: خلاف صغير مع شريك أو مورد يختلف كثيراً عندما تكون الأدوار والصفة القانونية واضحة من البداية.",
     tone: "primary",
@@ -45,7 +45,7 @@ const benefits: BenefitItem[] = [
     description:
       "التسجيل لا يضمن تمويلاً، لكنه يضع المشروع في موقع أفضل للتقديم على خدمة مالية أو برنامج دعم.",
     example:
-      "مثال: برنامج تمويلي يطلب ملفاً واضحاً قبل دراسة الطلب، لا مجرد نشاط شغّال على الأرض.",
+      "مثال: برنامج تمويلي يطلب مشروعاً مرخّصاً قبل دراسة الطلب، لا مجرد نشاط شغّال على الأرض.",
     tone: "emerald",
   },
   {
@@ -90,8 +90,8 @@ export function BenefitsSection() {
     <section id="benefits" className="bg-[#f2ede3] py-20 md:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeader
-          eyebrow="ماذا يتغير؟"
-          title="شو بيتغير لما يصير ملفك مُرخّص؟"
+          eyebrow="لأن الوضوح يصنع فرقاً"
+          title="ستة أشياء بتتغير لمّا مشروعك يصير مرخّص"
           description={
             <p>
               ستة تغييرات بسيطة بس تأثيرها كبير على قرارك اليومي: صورتك عند
@@ -148,8 +148,7 @@ export function BenefitsSection() {
         </div>
 
         <p className="mx-auto mt-10 max-w-2xl text-center text-lg font-semibold leading-relaxed text-foreground/70">
-          هذا الفرق يبان أكثر لحظة يطلع مشروعك من دائرة المعرفة الشخصية إلى
-          التعامل المهني.
+          صار الوقت تعرف بالضبط أين يقف مشروعك اليوم.
         </p>
       </div>
     </section>

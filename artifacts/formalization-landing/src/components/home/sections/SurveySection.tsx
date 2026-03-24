@@ -14,11 +14,11 @@ export function SurveySectionBlock({ onNavigate }: SurveySectionBlockProps) {
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
         <SectionHeader
           eyebrow="رأيك بيهمنا"
-          title="قل لنا أين علّقت معك الصفحة"
+          title="٦ أسئلة سريعة تساعدنا نحسّن"
           description={
             <p>
-              إجابتك السريعة تساعدنا نبسّط اللغة، ونوضح الخطوات، ونقرب المسار
-              أكثر لمن يريد يبدأ بترخيص مشروعه.
+              بدون بيانات شخصية. بس نبي نعرف إذا المعلومات وصلتك بوضوح، وشو
+              أول خطوة ناوي عليها.
             </p>
           }
         />
