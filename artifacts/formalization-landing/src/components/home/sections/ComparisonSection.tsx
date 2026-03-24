@@ -3,29 +3,6 @@ import { FileCheck2, FileText } from "lucide-react";
 
 import { SectionHeader } from "@/components/home/SectionHeader";
 
-const comparisonRows = [
-  {
-    label: "الهوية",
-    without: "اسم موجود في السوق، لكن بلا ملف واضح يعرّف المشروع عند الحاجة.",
-    with: "الكيان والمسؤولية وحدود النشاط أوضح عند التعامل مع الآخرين.",
-  },
-  {
-    label: "التمويل",
-    without: "الخيارات أضيق، وإثبات الجدية أصعب عادة.",
-    with: "تظهر فرصة أكبر للتقديم على خدمات مالية أو برامج دعم عندما تنطبق الشروط.",
-  },
-  {
-    label: "العقود والفوترة",
-    without: "كل شيء يعتمد أكثر على المعرفة الشخصية أو الترتيبات غير الرسمية.",
-    with: "إصدار مستندات واضحة يصبح أسهل في المراجعة والاعتماد.",
-  },
-  {
-    label: "التوسع",
-    without: "كل خطوة جديدة تبدأ وكأنها من الصفر.",
-    with: "التوسع يصبح مبنياً على ملف يمكن مراجعته وتطويره بدل بقائه ضبابياً.",
-  },
-];
-
 export function ComparisonSection() {
   return (
     <section
@@ -35,12 +12,12 @@ export function ComparisonSection() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeader
           tone="light"
-          eyebrow="قبل أن تبدأ"
-          title="أين يختلط التسجيل بالترخيص؟"
+          eyebrow="فك الاشتباك"
+          title="التسجيل والترخيص.. فك الاشتباك"
           description={
             <p>
-              التسجيل يعرّف الكيان، والترخيص يسمح بالمزاولة. كثير من التعطيل
-              يبدأ عندما تتعامل مع الخطوتين كأنهما شيء واحد.
+              باختصار: التسجيل هو إنك تعطي مشروعك اسم وهوية رسمية. والترخيص هو
+              الإذن اللي بخليك تشتغل عالأرض قانونياً.
             </p>
           }
         />
@@ -91,37 +68,14 @@ export function ComparisonSection() {
           </motion.article>
         </div>
 
-        <div className="mt-10 space-y-4">
-          {comparisonRows.map((row) => (
-            <div
-              key={row.label}
-              className="grid gap-3 rounded-3xl border border-white/10 bg-white/8 p-4 md:grid-cols-[1fr_220px_1fr]"
-            >
-              <div className="rounded-2xl border border-white/12 bg-white/8 p-4">
-                <p className="text-sm font-semibold text-primary-foreground/80">
-                  بدون تنظيم مكتمل
-                </p>
-                <p className="mt-2 text-justify-ar text-base leading-relaxed text-primary-foreground/84">
-                  {row.without}
-                </p>
-              </div>
-
-              <div className="flex items-center justify-center rounded-2xl border border-white/12 bg-primary/45 px-4 py-6 text-center text-base font-bold">
-                {row.label}
-              </div>
-
-              <div className="rounded-2xl bg-emerald-100/95 p-4 text-emerald-950">
-                <p className="text-sm font-semibold">عند التنظيم</p>
-                <p className="mt-2 text-justify-ar text-base leading-relaxed">{row.with}</p>
-              </div>
-            </div>
-          ))}
-        </div>
       </div>
 
       <div className="px-4 py-16 text-center sm:px-6 md:py-20 lg:px-8">
         <p className="mx-auto max-w-4xl text-2xl font-bold leading-relaxed text-white md:text-4xl">
-          أكبر تأخير لا يحدث عند الرخصة. يحدث عندما تبدأ من الخطوة الخاطئة.
+          أكبر تأخير بيصير لما تبدأ من الخطوة الغلط.
+        </p>
+        <p className="mx-auto mt-6 max-w-2xl text-center text-lg font-semibold leading-relaxed text-primary-foreground/70">
+          هلأ بعد ما وضح الفرق، خلينا نشوف أي شكل قانوني بيلبّي طبيعة شغلك.
         </p>
       </div>
     </section>

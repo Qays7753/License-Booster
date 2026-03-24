@@ -21,14 +21,14 @@ export function FooterSection({ onNavigate }: FooterSectionProps) {
         <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">
           <div>
             <p className="text-sm font-semibold text-primary-foreground/80">
-              قبل أن تغادر الصفحة
+              خطوتك الأولى
             </p>
             <h2 className="mt-3 text-3xl font-bold md:text-5xl">
-              اجعل خطوتك القادمة أوضح
+              ترخيص مشروعك يبدأ بخطوة واضحة
             </h2>
             <p className="mt-5 max-w-2xl text-justify-ar text-lg leading-relaxed text-primary-foreground/84">
-              إذا لم تكن جاهزاً تبدأ اليوم، هذا عادي. المهم أن تكون الخطوة
-              التالية مبنية على فهم أوضح، لا على تخمين أو ضغط.
+              ليس المطلوب أن تنجز كل شيء اليوم. المطلوب أن تعرف خطوتك الأولى،
+              وتذهب للجهة الصحيحة.
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">

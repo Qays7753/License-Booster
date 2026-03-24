@@ -1,7 +1,6 @@
 import { ArrowUpRight, BookOpenText, Building2, Layers3, MapPinned, Search } from "lucide-react";
 
 import { GOVERNMENT_PLATFORMS } from "@/components/home/content";
-import { SectionConnector } from "@/components/home/SectionConnector";
 import { SectionHeader } from "@/components/home/SectionHeader";
 
 const typeStyles = {
@@ -19,21 +18,17 @@ const typeStyles = {
 
 const platformIcons = [BookOpenText, Building2, MapPinned, Search, Layers3];
 
-type EntitiesSectionProps = {
-  onNavigate: (id: string) => void;
-};
-
-export function EntitiesSection({ onNavigate }: EntitiesSectionProps) {
+export function EntitiesSection() {
   return (
     <section id="entities" className="bg-secondary py-20 md:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeader
-          eyebrow="منصات حكومية"
-          title="منصات تبدأ منها مباشرة"
+          eyebrow="أبوابك الرسمية"
+          title="أبوابك الرسمية.. من وين تبدأ؟"
           description={
             <p>
-              هذه المنصات الرسمية التي يمكنك البدء منها مباشرة. كل رابط ينقلك
-              إلى الموقع الحكومي الرسمي.
+              بدل البحث المشتت، هنا تجد المنصات والجهات المرتبطة بكل خطوة في
+              المسار. ادخل على الجهة المناسبة لحالتك وخذ أول إجراء مباشر.
             </p>
           }
         />
@@ -89,12 +84,9 @@ export function EntitiesSection({ onNavigate }: EntitiesSectionProps) {
           خاصة، راجع الجهة المختصة.
         </div>
 
-        <SectionConnector
-          text="إذا أصبحت الصورة أوضح، فأعطنا دقيقة لنعرف هل أفادتك الصفحة فعلاً."
-          buttonLabel="شارك في الاستبيان"
-          targetId="survey"
-          onNavigate={onNavigate}
-        />
+        <p className="mx-auto mt-10 max-w-2xl text-center text-lg font-semibold leading-relaxed text-foreground/70">
+          جربت المنصات؟ رأيك بيهمنا عشان نحسّن التجربة إلك ولغيرك.
+        </p>
       </div>
     </section>
   );

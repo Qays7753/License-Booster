@@ -15,7 +15,7 @@ export type GovernmentPlatform = {
 };
 
 export const NAV_ITEMS = [
-  { id: "benefits", label: "لماذا التنظيم" },
+  { id: "benefits", label: "لماذا الترخيص" },
   { id: "find-path", label: "اختبار المسار" },
   { id: "reg-vs-license", label: "التسجيل والترخيص" },
   { id: "faq", label: "أسئلة ومخاوف" },

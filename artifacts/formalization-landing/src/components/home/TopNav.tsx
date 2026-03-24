@@ -112,7 +112,7 @@ export function TopNav({
               الأردن
             </span>
             <span className="block text-lg font-bold md:text-xl">
-              مسار التنظيم
+              مسار الترخيص
             </span>
           </button>
 

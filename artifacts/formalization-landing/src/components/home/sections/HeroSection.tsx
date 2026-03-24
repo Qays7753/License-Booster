@@ -19,35 +19,33 @@ export function HeroSection({ onNavigate }: HeroSectionProps) {
       <div className="relative mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:px-8">
         <div>
           <p className="mb-4 text-sm font-semibold text-primary-foreground/80">
-            إذا كان مشروعك عالقاً بين خطوة ناقصة ومعلومة ناقصة، فاجعل الصورة أوضح
-            من البداية.
+            رخّص مشروعك وتوسّع
           </p>
           <h1 className="max-w-3xl text-4xl font-extrabold leading-tight md:text-6xl xl:text-7xl">
-            رتّب ملف مشروعك
-            <span className="block text-accent">قبل أن تتّسع الحيرة</span>
+            مشروعك موجود
+            <span className="block text-accent">بس مشروعك مو مُرخّص؟</span>
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-primary-foreground/84 md:text-2xl">
-            التسجيل والترخيص ليسا عبئاً بقدر ما أنهما وسيلة تجعل وضع مشروعك
-            أوضح، وتخفف الالتباس، وتفتح باب التعامل بثقة أكبر.
+            الترخيص مو بس ورقة رسمية — هو اللي بيفتحلك باب التمويل، بيخلّي
+            عملاءك يثقوا أكثر، وبيخلي قراراتك أوضح.
           </p>
 
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+          <div className="mt-8 flex flex-col items-start gap-3">
             <Button
               size="lg"
               className="h-14 w-full rounded-full px-8 text-lg sm:w-auto"
               onClick={() => onNavigate("find-path")}
             >
-              اكتشف مسارك المناسب
+              ابدأ الاختبار
               <ArrowLeft className="ms-2 h-4 w-4" />
             </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="h-14 w-full rounded-full border-white/20 bg-white/8 px-8 text-lg text-white hover:bg-white/12 hover:text-white sm:w-auto"
-              onClick={() => onNavigate("reg-vs-license")}
+            <button
+              type="button"
+              onClick={() => onNavigate("benefits")}
+              className="text-sm font-semibold text-primary-foreground/70 underline underline-offset-4 hover:text-primary-foreground/90"
             >
-              افهم الفرق بين التسجيل والترخيص
-            </Button>
+              أو اقرأ عن الفوائد أولاً
+            </button>
           </div>
 
           <div className="mt-10 grid gap-3 sm:grid-cols-3">
@@ -84,7 +82,7 @@ export function HeroSection({ onNavigate }: HeroSectionProps) {
               >
                 <img
                   src="/images/hero-illustration.png"
-                  alt="رسم توضيحي يرمز إلى تنظيم ملفات المشروع"
+                  alt="رسم توضيحي يرمز إلى ترتيب ملف ترخيص المشروع"
                   className="h-full w-full rounded-3xl"
                   width="520"
                   height="340"

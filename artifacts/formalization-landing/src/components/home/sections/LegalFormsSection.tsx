@@ -1,7 +1,12 @@
 import { BarChart3, Building2, Globe, Landmark, User, Users } from "lucide-react";
 
-import { SectionConnector } from "@/components/home/SectionConnector";
 import { SectionHeader } from "@/components/home/SectionHeader";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 const legalForms = [
   {
@@ -32,7 +37,7 @@ const legalForms = [
     Icon: BarChart3,
     title: "الشركة المساهمة الخاصة",
     eyebrow: "للهياكل الأكبر نسبياً",
-    description: "تناسب المشاريع التي تحتاج إلى هيكل تمويلي وتنظيمي أكبر من البدايات البسيطة.",
+    description: "تناسب المشاريع التي تحتاج إلى هيكل تمويلي وإداري أكبر من البدايات البسيطة.",
     detail: "ليست المسار الأسهل للمشاريع الصغيرة جداً.",
     accent: "border-amber-500",
   },
@@ -54,54 +59,58 @@ const legalForms = [
   },
 ] as const;
 
-type LegalFormsSectionProps = {
-  onNavigate: (id: string) => void;
-};
-
-export function LegalFormsSection({ onNavigate }: LegalFormsSectionProps) {
+export function LegalFormsSection() {
   return (
     <section id="legal-forms" className="bg-background py-20 md:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeader
-          eyebrow="الأشكال القانونية"
-          title="أي شكل قانوني يشبه وضعك؟"
+          eyebrow="الشكل القانوني"
+          title="اختار الشكل القانوني اللي بريّحك"
           description={
             <p>
-              لا يوجد شكل واحد يناسب الجميع. وجود شريك، وحجم المسؤولية، وطبيعة
-              النشاط، كلها تغيّر الاختيار من البداية.
+              كل مشروع إله ثوب بيناسبه. تعرّف على الأشكال القانونية واختار اللي
+              بيعطي مشروعك المرونة والحماية.
             </p>
           }
         />
 
-        <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-          {legalForms.map((form) => (
-            <article
+        <Accordion type="single" collapsible className="mt-12 space-y-3">
+          {legalForms.map((form, index) => (
+            <AccordionItem
               key={form.title}
-              className={`rounded-3xl border border-border border-r-4 bg-card p-6 shadow-sm ${form.accent}`}
+              value={`form-${index}`}
+              className="rounded-2xl border border-border bg-card px-5"
             >
-              <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/8 text-primary">
-                <form.Icon className="h-6 w-6" />
-              </div>
-              <p className="text-sm font-semibold text-accent">{form.eyebrow}</p>
-              <h3 className="mt-2 text-2xl font-bold text-foreground">
-                {form.title}
-              </h3>
-              <p className="mt-4 text-justify-ar text-base leading-relaxed text-muted-foreground">
-                {form.description}
-              </p>
-              <div className="mt-5 rounded-2xl bg-secondary/55 p-4 text-sm leading-relaxed text-foreground/80">
-                {form.detail}
-              </div>
-            </article>
+              <AccordionTrigger className="py-5 text-right hover:no-underline">
+                <div className="flex items-center gap-3">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/8 text-primary">
+                    <form.Icon className="h-5 w-5" />
+                  </div>
+                  <div className="text-right">
+                    <p className="text-sm font-semibold text-accent">
+                      {form.eyebrow}
+                    </p>
+                    <h3 className="text-lg font-bold text-foreground">
+                      {form.title}
+                    </h3>
+                  </div>
+                </div>
+              </AccordionTrigger>
+              <AccordionContent className="pb-5">
+                <p className="text-base leading-relaxed text-muted-foreground">
+                  {form.description}
+                </p>
+                <div className="mt-3 rounded-xl bg-secondary/55 p-3 text-sm leading-relaxed text-foreground/80">
+                  {form.detail}
+                </div>
+              </AccordionContent>
+            </AccordionItem>
           ))}
-        </div>
+        </Accordion>
 
-        <SectionConnector
-          text="إذا وضحت الصورة القانونية، صارت الخطوات العملية أسهل بكثير في الترتيب."
-          buttonLabel="استعرض الطريق العملي"
-          targetId="what-changes"
-          onNavigate={onNavigate}
-        />
+        <p className="mx-auto mt-10 max-w-2xl text-center text-lg font-semibold leading-relaxed text-foreground/70">
+          وإذا كان ثوب مشروعك إنه بيبدأ من البيت.. كيف تتصرف؟
+        </p>
       </div>
     </section>
   );

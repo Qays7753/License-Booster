@@ -35,6 +35,22 @@ const OBSERVED_SECTION_IDS = [
   "footer",
 ];
 
+const PHASES = ["افهم", "قيّم وضعك", "تحرّك"] as const;
+
+const PHASE_MAP: Record<string, number> = {
+  top: 0,
+  benefits: 0,
+  "find-path": 1,
+  faq: 1,
+  "reg-vs-license": 1,
+  "legal-forms": 2,
+  "home-based": 2,
+  "what-changes": 2,
+  entities: 2,
+  survey: 2,
+  footer: 2,
+};
+
 export default function Home() {
   useEffect(() => {
     document.documentElement.dir = "rtl";
@@ -64,6 +80,7 @@ export default function Home() {
   const [showMobileCta, setShowMobileCta] = useState(false);
   const [isNavSolid, setIsNavSolid] = useState(false);
   const [activeSection, setActiveSection] = useState("top");
+  const [currentPhase, setCurrentPhase] = useState(0);
 
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
@@ -97,6 +114,7 @@ export default function Home() {
         if (visibleEntries[0]) {
           const nextId = ACTIVE_SECTION_MAP[visibleEntries[0].target.id] ?? "top";
           setActiveSection(nextId);
+          setCurrentPhase(PHASE_MAP[visibleEntries[0].target.id] ?? 0);
         }
       },
       {
@@ -128,20 +146,43 @@ export default function Home() {
         onNavigate={scrollToSection}
       />
 
-      <main>
+      <div className="fixed inset-x-0 top-[72px] z-30 border-b border-border/50 bg-background/90 px-4 py-2 backdrop-blur-md md:hidden">
+        <div className="flex items-center justify-between gap-2">
+          {PHASES.map((phase, i) => (
+            <div key={phase} className="flex flex-1 items-center gap-2">
+              <div
+                className={`h-1.5 flex-1 rounded-full transition-colors ${
+                  i <= currentPhase ? "bg-primary" : "bg-border"
+                }`}
+              />
+              <span
+                className={`whitespace-nowrap text-xs font-semibold transition-colors ${
+                  i === currentPhase
+                    ? "text-primary"
+                    : "text-muted-foreground/50"
+                }`}
+              >
+                {phase}
+              </span>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <main className="pt-[40px] md:pt-0">
         <HeroSection onNavigate={scrollToSection} />
         <StatsSection />
-        <BenefitsSection onNavigate={scrollToSection} />
+        <BenefitsSection />
         <AnchorMoment />
         <QuizSection onNavigate={scrollToSection} />
         <FaqConcernsSection />
         <ComparisonSection />
-        <LegalFormsSection onNavigate={scrollToSection} />
+        <LegalFormsSection />
         <HomeBasedSection />
         <ScenarioSection />
-        <DelayTradeoffsSection onNavigate={scrollToSection} />
-        <JourneyStepsSection onNavigate={scrollToSection} />
-        <EntitiesSection onNavigate={scrollToSection} />
+        <DelayTradeoffsSection />
+        <JourneyStepsSection />
+        <EntitiesSection />
         <SurveySectionBlock onNavigate={scrollToSection} />
       </main>
 
@@ -157,7 +198,7 @@ export default function Home() {
           className="h-12 w-full rounded-xl text-base"
           onClick={() => scrollToSection("find-path")}
         >
-          ابدأ من الاختبار التشخيصي
+          اعرف مسارك
           <ArrowLeft className="ms-2 h-4 w-4" />
         </Button>
       </motion.div>

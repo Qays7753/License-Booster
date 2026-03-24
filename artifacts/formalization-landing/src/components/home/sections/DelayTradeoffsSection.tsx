@@ -1,6 +1,5 @@
 import { Banknote, Globe, Info, ShieldCheck } from "lucide-react";
 
-import { SectionConnector } from "@/components/home/SectionConnector";
 import { SectionHeader } from "@/components/home/SectionHeader";
 
 const tradeoffs = [
@@ -38,21 +37,17 @@ const tradeoffs = [
   },
 ] as const;
 
-type DelayTradeoffsSectionProps = {
-  onNavigate: (id: string) => void;
-};
-
-export function DelayTradeoffsSection({ onNavigate }: DelayTradeoffsSectionProps) {
+export function DelayTradeoffsSection() {
   return (
     <section className="bg-secondary py-20 md:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeader
-          eyebrow="أثر التأجيل"
-          title="الفرص التي لا تنتظرك"
+          eyebrow="كلفة الانتظار"
+          title="شو بتخسر لمّا تأجل الترخيص؟"
           description={
             <p>
-              ليس المقصود التخويف، بل تذكيرك أن التأجيل المستمر له كلفة فرصة
-              حقيقية، حتى لو لم تظهر فوراً.
+              كل يوم تأخير بيعني فرصة ضايعة، أو عميل متردد، أو قلق من أي مخالفة
+              فجأة.
             </p>
           }
         />
@@ -83,12 +78,9 @@ export function DelayTradeoffsSection({ onNavigate }: DelayTradeoffsSectionProps
           </div>
         </div>
 
-        <SectionConnector
-          text="إذا أصبح أثر التأجيل أوضح، فلتكن الخطوة التالية عملية ومباشرة."
-          buttonLabel="استعرض الطريق العملي"
-          targetId="what-changes"
-          onNavigate={onNavigate}
-        />
+        <p className="mx-auto mt-10 max-w-2xl text-center text-lg font-semibold leading-relaxed text-foreground/70">
+          ولما تصير كلفة التأجيل واضحة، يصبح الطريق نفسه أبسط مما يبدو.
+        </p>
       </div>
     </section>
   );

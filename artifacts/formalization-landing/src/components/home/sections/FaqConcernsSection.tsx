@@ -43,7 +43,7 @@ const faqs = [
     a: "ابدأ بالشكل القانوني، لأن وجود الشركاء يغيّر طريقة الملكية والمسؤولية واتخاذ القرار من أول خطوة.",
   },
   {
-    q: "هل التنظيم يضمن مبيعات أو ثقة أعلى فوراً؟",
+    q: "هل الترخيص يضمن مبيعات أو ثقة أعلى فوراً؟",
     a: "لا. لكنه يجعل المشروع أكثر جاهزية للتعامل الجدي، ويزيل بعض العوائق التي تمنع العمل مع جهات وعملاء أكبر.",
   },
   {
@@ -57,12 +57,12 @@ export function FaqConcernsSection() {
     <section id="faq" className="bg-secondary py-20 md:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeader
-          eyebrow="أسئلة ومخاوف"
-          title="ما الذي يقلقك حتى الآن؟"
+          eyebrow="مخاوف وأسئلة"
+          title="الأسئلة اللي بتأخرّك"
           description={
             <p>
-              هنا تفصل بين التردد النفسي وبين السؤال العملي، حتى ما تختلط عليك
-              الأسباب والقرارات.
+              خلينا نجاوب على اللي بيقلقك قبل ما تاخد قرار، من التكاليف
+              للإجراءات للمواقع.
             </p>
           }
         />
@@ -120,6 +120,10 @@ export function FaqConcernsSection() {
             </Accordion>
           </div>
         </div>
+        <p className="mx-auto mt-10 max-w-2xl text-center text-lg font-semibold leading-relaxed text-foreground/70">
+          وبعدما يخف التردد، يبقى خلط واحد لازم ينفك بسرعة: ما الذي يبدأ
+          بالتسجيل، وما الذي يكتمل بالترخيص.
+        </p>
       </div>
     </section>
   );

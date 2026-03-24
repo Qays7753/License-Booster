@@ -8,7 +8,6 @@ import {
 } from "lucide-react";
 
 import { SectionHeader } from "@/components/home/SectionHeader";
-import { SectionConnector } from "@/components/home/SectionConnector";
 
 type BenefitItem = {
   Icon: typeof ShieldCheck;
@@ -24,7 +23,7 @@ const benefits: BenefitItem[] = [
     Icon: ShieldCheck,
     title: "الصورة تصبح أوضح",
     description:
-      "عندما يتنظّم الملف، تصبح الملكية والمسؤولية والتعاملات أقل غموضاً من قبل.",
+      "عندما يترخّص الملف، تصبح الملكية والمسؤولية والتعاملات أقل غموضاً من قبل.",
     example:
       "مثال: خلاف صغير مع شريك أو مورد يختلف كثيراً عندما تكون الأدوار والصفة القانونية واضحة من البداية.",
     tone: "primary",
@@ -34,9 +33,9 @@ const benefits: BenefitItem[] = [
     Icon: Globe,
     title: "العميل ما يعود شخصياً فقط",
     description:
-      "التنظيم يساعد مشروعك يشتغل مع جهات ما تعرفك معرفة شخصية، لكنها تحتاج جهة واضحة وفاتورة وعقداً مفهوماً.",
+      "الترخيص يساعد مشروعك يشتغل مع جهات ما تعرفك معرفة شخصية، لكنها تحتاج جهة واضحة وفاتورة وعقداً مفهوماً.",
     example:
-      "مثال: عرض توريد من شركة أكبر يحتاج فاتورة رسمية وعقداً باسم كيان واضح، وبدون تنظيم يضيع العرض قبل أن يبدأ.",
+      "مثال: عرض توريد من شركة أكبر يحتاج فاتورة رسمية وعقداً باسم كيان واضح، وبدون ترخيص يضيع العرض قبل أن يبدأ.",
     tone: "accent",
     featured: true,
   },
@@ -83,11 +82,7 @@ const toneClasses = {
     "border-amber-200 bg-amber-50 text-amber-700",
 };
 
-type BenefitsSectionProps = {
-  onNavigate: (id: string) => void;
-};
-
-export function BenefitsSection({ onNavigate }: BenefitsSectionProps) {
+export function BenefitsSection() {
   const featured = benefits.filter((item) => item.featured);
   const regular = benefits.filter((item) => !item.featured);
 
@@ -95,12 +90,13 @@ export function BenefitsSection({ onNavigate }: BenefitsSectionProps) {
     <section id="benefits" className="bg-[#f2ede3] py-20 md:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeader
-          eyebrow="قبل أي إجراء"
-          title="ما الذي يختلف عندما تنظّم ملفك؟"
+          eyebrow="ماذا يتغير؟"
+          title="شو بيتغير لما يصير ملفك مُرخّص؟"
           description={
             <p>
-              الفكرة ليست وعوداً كبيرة. الفكرة أن مشروعك يصبح أوضح، وأسهل في
-              التقديم، وأقرب للتعامل الجدي عندما يأتي الوقت المناسب.
+              ستة تغييرات بسيطة بس تأثيرها كبير على قرارك اليومي: صورتك عند
+              العميل بتصير أوضح، التمويل بيجيك أسرع، والتعاملات بتصير مهنية
+              بدون ما تتعب.
             </p>
           }
         />
@@ -151,12 +147,10 @@ export function BenefitsSection({ onNavigate }: BenefitsSectionProps) {
           ))}
         </div>
 
-        <SectionConnector
-          text="الآن بعد أن اتضح لماذا التنظيم يفرق، يبقى السؤال الأهم: أين مشروعك بالضبط؟"
-          buttonLabel="ابدأ الاختبار التشخيصي"
-          targetId="find-path"
-          onNavigate={onNavigate}
-        />
+        <p className="mx-auto mt-10 max-w-2xl text-center text-lg font-semibold leading-relaxed text-foreground/70">
+          هذا الفرق يبان أكثر لحظة يطلع مشروعك من دائرة المعرفة الشخصية إلى
+          التعامل المهني.
+        </p>
       </div>
     </section>
   );

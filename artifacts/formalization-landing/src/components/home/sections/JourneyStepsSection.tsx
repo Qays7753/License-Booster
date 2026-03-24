@@ -1,6 +1,4 @@
 import { SectionHeader } from "@/components/home/SectionHeader";
-import { SectionConnector } from "@/components/home/SectionConnector";
-import { motion } from "framer-motion";
 
 const journeySteps = [
   {
@@ -26,25 +24,21 @@ const journeySteps = [
   {
     title: "رتّب ما يستمر بعد البداية",
     description:
-      "إذا وُجد عمال أو تجديدات دورية أو متطلبات تشغيل، فهي جزء من التنظيم نفسه وليست تفصيلاً متأخراً.",
+      "إذا وُجد عمال أو تجديدات دورية أو متطلبات تشغيل، فهي جزء من الترخيص نفسه وليست تفصيلاً متأخراً.",
   },
 ] as const;
 
-type JourneyStepsSectionProps = {
-  onNavigate: (id: string) => void;
-};
-
-export function JourneyStepsSection({ onNavigate }: JourneyStepsSectionProps) {
+export function JourneyStepsSection() {
   return (
     <section id="what-changes" className="bg-background py-20 md:py-28">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <SectionHeader
-          eyebrow="الطريق العملي"
-          title="كيف يمشي الطريق عادة؟"
+          eyebrow="خطوات المسار"
+          title="كيف بيمشي المسار عادة؟"
           description={
             <p>
-              ليس كل مشروع يمر بكل المحطات بالطريقة نفسها، لكن هذا التسلسل
-              يساعدك تعرف من أين تبدأ، وماذا يأتي بعد ماذا.
+              خطوات واضحة ومجربة بتبدأ من تحديد نشاطك وبتنتهي بحصولك على رخصتك.
+              امشِها صح من البداية.
             </p>
           }
         />
@@ -52,48 +46,40 @@ export function JourneyStepsSection({ onNavigate }: JourneyStepsSectionProps) {
         <div className="mt-14">
           <img
             src="/images/journey-path.png"
-            alt="رسم توضيحي يوضح مراحل الطريق العملي لتنظيم المشروع"
+            alt="رسم توضيحي يوضح مراحل الطريق العملي لترخيص المشروع"
             className="w-full rounded-3xl"
             width="900"
             height="300"
             loading="lazy"
           />
         </div>
-        <div className="mt-6 space-y-0">
+        <div className="mt-14 space-y-0">
           {journeySteps.map((step, index) => (
-            <div key={step.title}>
-              <motion.article
-                initial={{ opacity: 0, x: 20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true, margin: "-60px" }}
-                transition={{ delay: index * 0.12, duration: 0.4, ease: "easeOut" }}
-                className="grid gap-4 rounded-3xl border border-border bg-card p-5 shadow-sm md:grid-cols-[80px_1fr] md:items-start md:p-6"
-              >
-                <div className="flex h-14 w-14 items-center justify-center rounded-full bg-primary text-xl font-bold text-primary-foreground">
-                  {index + 1}
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold text-foreground">
-                    {step.title}
-                  </h3>
-                  <p className="mt-3 text-justify-ar text-base leading-relaxed text-muted-foreground">
-                    {step.description}
-                  </p>
-                </div>
-              </motion.article>
+            <div
+              key={step.title}
+              className="relative flex gap-4 pb-8 last:pb-0 md:gap-6"
+            >
               {index < journeySteps.length - 1 && (
-                <div className="mr-[27px] hidden h-6 w-0.5 bg-primary/20 md:block" />
+                <div className="absolute bottom-0 right-[18px] top-10 w-0.5 bg-primary/15 md:right-[22px]" />
               )}
+              <div className="relative z-10 flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-primary text-sm font-bold text-primary-foreground md:h-11 md:w-11 md:text-base">
+                {index + 1}
+              </div>
+              <div className="pt-1">
+                <h3 className="text-lg font-bold text-foreground md:text-xl">
+                  {step.title}
+                </h3>
+                <p className="mt-2 text-base leading-relaxed text-muted-foreground">
+                  {step.description}
+                </p>
+              </div>
             </div>
           ))}
         </div>
 
-        <SectionConnector
-          text="إذا صارت الخطوات مرتبة، افتح المنصة الأقرب لحالتك وابدأ من المصدر الرسمي."
-          buttonLabel="استعرض المنصات الرسمية"
-          targetId="entities"
-          onNavigate={onNavigate}
-        />
+        <p className="mx-auto mt-10 max-w-2xl text-center text-lg font-semibold leading-relaxed text-foreground/70">
+          والآن لم يعد ينقصك إلا أن تعرف أين تبدأ بحسب الجهة التي تخدم حالتك.
+        </p>
       </div>
     </section>
   );

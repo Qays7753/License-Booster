@@ -22,11 +22,11 @@ export function HomeBasedSection() {
             loading="lazy"
           />
           <h3 className="mt-5 text-3xl font-bold text-foreground">
-            إذا كان مشروعك من البيت
+            مشروعك من البيت؟ إله ترخيص
           </h3>
           <p className="mt-4 text-justify-ar text-lg leading-relaxed text-muted-foreground">
-            هذا لا يقلل من جدية المشروع، لكنه يجعل سؤال الموقع حاسماً من أول
-            يوم، وليس تفصيلاً مؤجلاً.
+            شغلك من البيت ما بيمنعك تكون رسمي. في رخص مخصصة للمهن المنزلية
+            بتحميك وبتخليك تشتغل براحتك.
           </p>
 
           <div className="mt-6 space-y-3">
@@ -48,7 +48,7 @@ export function HomeBasedSection() {
           <SectionHeader
             align="start"
             eyebrow="المشروع المنزلي"
-            title="في البيت، الموقع يغيّر المسار"
+            title="إذا شغلك من البيت، اعرف ما يلزمك قبل أن تبدأ"
             description={
               <p>
                 إذا كان مشروعك من المنزل، فالسؤال الأول ليس من يديره بل أين
@@ -64,7 +64,7 @@ export function HomeBasedSection() {
               إذا كنتِ تديرين مشروعاً من المنزل
             </p>
             <p className="mt-3 text-justify-ar text-base leading-relaxed text-muted-foreground">
-              التنظيم لا ينبغي أن يُعرض عليكِ كعبء إضافي، بل كطريقة تحمي الجهد
+              الترخيص لا ينبغي أن يُعرض عليكِ كعبء إضافي، بل كطريقة تحمي الجهد
               وتعطي المشروع مساراً أوضح يمكن التعامل معه خطوة بخطوة.
             </p>
           </div>
@@ -77,6 +77,9 @@ export function HomeBasedSection() {
               منطقياً؟
             </p>
           </div>
+          <p className="mt-10 text-center text-lg font-semibold leading-relaxed text-foreground/70">
+            الموضوع مش تنظير، خلينا نشوف كيف غيرك أخد الخطوة ومشت أموره.
+          </p>
         </div>
       </div>
     </section>

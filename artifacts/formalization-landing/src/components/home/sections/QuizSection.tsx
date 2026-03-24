@@ -1,5 +1,4 @@
 import { PathQuiz } from "@/components/home/PathQuiz";
-import { SectionConnector } from "@/components/home/SectionConnector";
 import { SectionHeader } from "@/components/home/SectionHeader";
 
 type QuizSectionProps = {
@@ -11,12 +10,12 @@ export function QuizSection({ onNavigate }: QuizSectionProps) {
     <section id="find-path" className="bg-background py-20 md:py-28">
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
         <SectionHeader
-          eyebrow="اختبار تشخيصي"
-          title="أربع أسئلة تكشف أين أنت"
+          eyebrow="٤ أسئلة فقط"
+          title="٤ أسئلة بتدلك على مسارك"
           description={
             <p>
-              أجب حسب وضعك الحالي، وخذ خريطة طريق أولية تساعدك على معرفة الخطوة
-              التالية من دون تعقيد إضافي.
+              ما تضيّع وقتك بالبحث العشوائي. جاوب عالأسئلة وبندلّك على خطوتك
+              الأولى والجهة اللي لازم تقصدها.
             </p>
           }
         />
@@ -25,12 +24,9 @@ export function QuizSection({ onNavigate }: QuizSectionProps) {
           <PathQuiz onNavigate={onNavigate} />
         </div>
 
-        <SectionConnector
-          text="إذا اتضح لك مسارك، صار الوقت تفكّ الاشتباك بين التسجيل والترخيص."
-          buttonLabel="افهم الفرق الآن"
-          targetId="reg-vs-license"
-          onNavigate={onNavigate}
-        />
+        <p className="mx-auto mt-10 max-w-2xl text-center text-lg font-semibold leading-relaxed text-foreground/70">
+          بعدما صار مسارك أقرب، طبيعي يبقى عندك تردد عملي قبل أن تتحرك.
+        </p>
       </div>
     </section>
   );

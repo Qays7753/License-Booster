@@ -165,7 +165,7 @@ export default function DashboardPage() {
 
     document.documentElement.setAttribute("dir", "rtl");
     document.documentElement.setAttribute("lang", "ar");
-    document.title = "لوحة التحكم | تنظيم المشروع";
+    document.title = "لوحة التحكم | ترخيص المشروع";
 
     async function loadAnalytics() {
       setLoading(true);

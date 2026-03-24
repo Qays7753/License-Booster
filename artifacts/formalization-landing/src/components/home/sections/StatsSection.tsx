@@ -62,12 +62,12 @@ export function StatsSection() {
     <section className="bg-background py-20 md:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeader
-          eyebrow="الصورة قبل التفاصيل"
-          title="قطاع ضخم، وخطوة ناقصة"
+          eyebrow="أنت لست وحدك"
+          title="98% من المشاريع بالأردن صغيرة ومتوسطة... وأنت جزء منهم"
           description={
             <p>
-              هذه المؤشرات لا تحسم قرارك، لكنها تضعه في سياق أوضح: أنت تتعامل مع
-              سوق كبير، ومشاريع كثيرة ما تزال تبحث عن مسار أكثر ترتيباً.
+              السوق مش مليان شركات ضخمة بس، مليان ناس مثلك ابتدأت من مكان صغير
+              وبنفس التساؤلات.
             </p>
           }
         />
@@ -117,6 +117,10 @@ export function StatsSection() {
         <p className="mt-6 text-center text-sm text-muted-foreground">
           المؤشرات مبنية على مراجع منشورة في تاريخها. الأرقام قد تختلف في تقارير
           أحدث.
+        </p>
+        <p className="mx-auto mt-8 max-w-2xl text-center text-lg font-semibold leading-relaxed text-foreground/70">
+          الصورة الكبيرة مهمة، لكن الذي يفرق فعلاً هو ماذا يتغيّر في مشروعك أنت
+          عندما يصبح وضعه أوضح.
         </p>
       </div>
     </section>

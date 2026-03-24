@@ -7,11 +7,11 @@ export function ScenarioSection() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeader
           eyebrow="قصص من الواقع"
-          title="ثلاث قصص من السوق الأردني"
+          title="قصص قريبة من السوق الأردني"
           description={
             <p>
-              أحياناً توضح القصة القصيرة ما لا توضحه الفقرة العامة. هذه أمثلة
-              تقرّب لك شكل الأسئلة التي تتكرر فعلاً على الأرض.
+              مطبخ منزلي، مصمم، وورشة خياطة. هيك بدأوا، وهيك الترخيص فرّق
+              بشغلهم ونقلهم لمرحلة ثانية.
             </p>
           }
         />
@@ -19,6 +19,10 @@ export function ScenarioSection() {
         <div className="mt-12">
           <ScenarioCarousel />
         </div>
+        <p className="mx-auto mt-10 max-w-2xl text-center text-lg font-semibold leading-relaxed text-foreground/70">
+          ومن هنا تظهر كلفة التأجيل: ليس لأن الخطوة كبيرة، بل لأن الضبابية
+          تطول أكثر مما يلزم.
+        </p>
       </div>
     </section>
   );
