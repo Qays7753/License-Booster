@@ -13,12 +13,12 @@ export function SurveySectionBlock({ onNavigate }: SurveySectionBlockProps) {
     >
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
         <SectionHeader
-          eyebrow="رأيك بيهمنا"
-          title="٦ أسئلة سريعة تساعدنا نحسّن"
+          eyebrow="قبل ما تمشي"
+          title="٦ أسئلة تقيس إذا الصفحة وصّلتلك اللي تحتاجه"
           description={
             <p>
-              بدون بيانات شخصية. بس نبي نعرف إذا المعلومات وصلتك بوضوح، وشو
-              أول خطوة ناوي عليها.
+              بدون بيانات شخصية. بس نقيس إذا المعلومات كانت واضحة، وشو أول
+              خطوة ناوي عليها بعد القراءة.
             </p>
           }
         />

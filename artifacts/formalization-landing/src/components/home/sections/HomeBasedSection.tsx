@@ -78,7 +78,7 @@ export function HomeBasedSection() {
             </p>
           </div>
           <p className="mt-10 text-center text-lg font-semibold leading-relaxed text-foreground/70">
-            الموضوع مش تنظير، خلينا نشوف كيف غيرك أخد الخطوة ومشت أموره.
+            ناس مثلك بدأوا من نفس المكان — شوف كيف مشت أمورهم.
           </p>
         </div>
       </div>

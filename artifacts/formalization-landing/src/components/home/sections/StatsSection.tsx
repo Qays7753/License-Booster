@@ -1,7 +1,5 @@
 import { useEffect, useRef, useState } from "react";
 import { useInView } from "framer-motion";
-import { ExternalLink } from "lucide-react";
-
 import { SectionHeader } from "@/components/home/SectionHeader";
 import { SOURCE_FACTS } from "@/components/home/content";
 
@@ -63,7 +61,7 @@ export function StatsSection() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeader
           eyebrow="أنت لست وحدك"
-          title="98% من المشاريع بالأردن صغيرة ومتوسطة... وأنت جزء منهم"
+          title="98% من المشاريع بالأردن صغيرة ومتناهية الصغر... وأنت جزء منهم"
           description={
             <p>
               السوق مش مليان شركات ضخمة بس، مليان ناس مثلك ابتدأت من مكان صغير
@@ -78,49 +76,29 @@ export function StatsSection() {
               key={fact.title}
               className="rounded-3xl border border-border bg-card p-7 shadow-sm"
             >
-              <div className="mb-6 flex items-start justify-between gap-4">
-                <div>
-                  <div className="text-5xl font-extrabold text-primary">
-                    <Counter
-                      from={0}
-                      to={fact.value}
-                      suffix={fact.suffix}
-                      decimals={fact.decimals}
-                    />
-                  </div>
-                  <p className="mt-3 text-xl font-bold text-foreground">
-                    {fact.title}
-                  </p>
+              <div className="mb-6">
+                <div className="text-5xl font-extrabold text-primary">
+                  <Counter
+                    from={0}
+                    to={fact.value}
+                    suffix={fact.suffix}
+                    decimals={fact.decimals}
+                  />
                 </div>
-                <span className="rounded-full bg-secondary px-3 py-1 text-xs font-bold text-muted-foreground">
-                  {fact.year}
-                </span>
+                <p className="mt-3 text-xl font-bold text-foreground">
+                  {fact.title}
+                </p>
               </div>
 
               <p className="text-base leading-relaxed text-muted-foreground">
                 {fact.description}
               </p>
-
-              <a
-                href={fact.sourceUrl}
-                target="_blank"
-                rel="noreferrer"
-                className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-accent hover:text-accent/80"
-              >
-                {fact.sourceLabel}
-                <ExternalLink className="h-4 w-4" />
-              </a>
             </article>
           ))}
         </div>
 
-        <p className="mt-6 text-center text-sm text-muted-foreground">
-          المؤشرات مبنية على مراجع منشورة في تاريخها. الأرقام قد تختلف في تقارير
-          أحدث.
-        </p>
         <p className="mx-auto mt-8 max-w-2xl text-center text-lg font-semibold leading-relaxed text-foreground/70">
-          الصورة الكبيرة مهمة، لكن الذي يفرق فعلاً هو ماذا يتغيّر في مشروعك أنت
-          عندما يصبح وضعه أوضح.
+          طيب، شو بيتغير فعلاً لما وضع مشروعك يصير أوضح؟
         </p>
       </div>
     </section>

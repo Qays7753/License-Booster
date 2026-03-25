@@ -146,17 +146,17 @@ export default function Home() {
         onNavigate={scrollToSection}
       />
 
-      <div className="fixed inset-x-0 top-[72px] z-30 border-b border-border/50 bg-background/90 px-4 py-2 backdrop-blur-md md:hidden">
+      <div className="fixed inset-x-0 top-[72px] z-30 border-b border-border/50 bg-background/90 px-4 py-2 shadow-sm backdrop-blur-md md:hidden">
         <div className="flex items-center justify-between gap-2">
           {PHASES.map((phase, i) => (
             <div key={phase} className="flex flex-1 items-center gap-2">
               <div
-                className={`h-1.5 flex-1 rounded-full transition-colors ${
+                className={`h-2 flex-1 rounded-full transition-colors ${
                   i <= currentPhase ? "bg-primary" : "bg-border"
                 }`}
               />
               <span
-                className={`whitespace-nowrap text-xs font-semibold transition-colors ${
+                className={`whitespace-nowrap text-sm font-semibold transition-colors ${
                   i === currentPhase
                     ? "text-primary"
                     : "text-muted-foreground/50"
@@ -192,7 +192,7 @@ export default function Home() {
         initial={{ y: 100 }}
         animate={{ y: showMobileCta ? 0 : 100 }}
         transition={{ type: "spring", stiffness: 290, damping: 30 }}
-        className="fixed inset-x-0 bottom-0 z-30 border-t border-border bg-background/94 p-4 shadow-[0_-12px_30px_rgba(0,0,0,0.08)] backdrop-blur-xl md:hidden"
+        className="fixed inset-x-0 bottom-0 z-40 border-t border-border bg-background/94 p-4 shadow-[0_-12px_30px_rgba(0,0,0,0.08)] backdrop-blur-xl md:hidden"
       >
         <Button
           className="h-12 w-full rounded-xl text-base"

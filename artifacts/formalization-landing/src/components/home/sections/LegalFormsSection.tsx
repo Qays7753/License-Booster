@@ -109,7 +109,7 @@ export function LegalFormsSection() {
         </Accordion>
 
         <p className="mx-auto mt-10 max-w-2xl text-center text-lg font-semibold leading-relaxed text-foreground/70">
-          وإذا كان ثوب مشروعك إنه بيبدأ من البيت.. كيف تتصرف؟
+          وإذا مشروعك من البيت — وضعك مختلف شوي، وعنده مساره.
         </p>
       </div>
     </section>

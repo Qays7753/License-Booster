@@ -20,8 +20,7 @@ export function ScenarioSection() {
           <ScenarioCarousel />
         </div>
         <p className="mx-auto mt-10 max-w-2xl text-center text-lg font-semibold leading-relaxed text-foreground/70">
-          ومن هنا تظهر كلفة التأجيل: ليس لأن الخطوة كبيرة، بل لأن الضبابية
-          تطول أكثر مما يلزم.
+          وكل يوم تأخير إله ثمن — مش بالضرورة كبير، بس حقيقي.
         </p>
       </div>
     </section>

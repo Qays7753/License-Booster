@@ -7,26 +7,20 @@ const scenarios = [
   {
     title: "مطبخ منزلي في الزرقاء",
     label: "أغذية منزلية",
-    challenge:
-      "الخلط بين السجل التجاري وبين موافقات مزاولة النشاط الغذائي من المنزل.",
-    takeaway:
-      "عندما اتضحت الخطوات، صار القرار أبسط: التحقق من أهلية النشاط المنزلي أولاً، ثم ترتيب الموافقات المطلوبة قبل التوسع.",
+    summary:
+      "أم خالد بدأت تبيع معجنات من البيت وصارت تُطلب منها فاتورة رسمية. اكتشفت إن المطبخ المنزلي له مسار ترخيص خاص — بعد ما رخّصت، صارت تتعامل مع عملاء أكبر وقدرت تتوسع بشكل قانوني.",
   },
   {
     title: "خدمة تصميم رقمي في عمّان",
     label: "خدمات رقمية",
-    challenge:
-      "الاعتقاد أن العمل عبر الإنترنت لا يحتاج أي ترخيص لأن الخدمة غير مرتبطة بمحل فعلي.",
-    takeaway:
-      "التسجيل لا يجعل المشروع أكبر فوراً، لكنه يسهّل الفوترة، ويبني صورة أكثر احترافية عند التعامل مع شركات وعملاء أكبر.",
+    summary:
+      "مصمم ضاعت منه صفقة مع شركة لأنهم بعد اختياره طلبوا أوراقه الرسمية لاستكمال الإجراءات. بعد التسجيل، صار يتعامل مع عدة شركات والعلاقة أصبحت دائمة وواضحة.",
   },
   {
-    title: "ورشة خياطة صغيرة في إربد",
+    title: "ورشة خياطة في إربد",
     label: "حرفة يدوية",
-    challenge:
-      "وجود دخل قائم، لكن الملف غير مكتمل ولا توجد صورة واضحة بشأن ما يلزم بعد التسجيل.",
-    takeaway:
-      "أغلب الوقت لا تبدأ من الصفر. يكفي تحديد ما هو ناقص: موافقة موقع، رخصة مهن، أو استكمال متطلبات العمال والضمان.",
+    summary:
+      "صاحبة ورشة خياطة كانت تشتغل بدون رخصة مهن. حصلت على فرصة تمويل طلبوا منها إثبات الترخيص — بعد الترخيص قدرت تشتري المعدات التي تحتاجها وزادت حصتها السوقية.",
   },
 ];
 
@@ -66,13 +60,8 @@ export function ScenarioCarousel() {
             </div>
           </div>
 
-          <p className="mb-4 text-justify-ar text-base leading-relaxed text-foreground/80">
-            <span className="font-bold text-foreground">التحدي:</span>{" "}
-            {scenarios[activeIndex].challenge}
-          </p>
           <p className="text-justify-ar text-base leading-relaxed text-muted-foreground">
-            <span className="font-bold text-foreground">الخلاصة:</span>{" "}
-            {scenarios[activeIndex].takeaway}
+            {scenarios[activeIndex].summary}
           </p>
         </article>
 
@@ -133,13 +122,8 @@ export function ScenarioCarousel() {
               </div>
             </div>
 
-            <p className="mb-4 text-justify-ar text-base leading-relaxed text-foreground/80">
-              <span className="font-bold text-foreground">التحدي:</span>{" "}
-              {scenario.challenge}
-            </p>
             <p className="text-justify-ar text-base leading-relaxed text-muted-foreground">
-              <span className="font-bold text-foreground">الخلاصة:</span>{" "}
-              {scenario.takeaway}
+              {scenario.summary}
             </p>
           </article>
         ))}

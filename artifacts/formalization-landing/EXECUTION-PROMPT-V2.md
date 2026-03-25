@@ -127,6 +127,18 @@ with:
 طيب، شو بيتغير فعلاً لما وضع مشروعك يصير أوضح؟
 ```
 
+### Task 1.5 — BenefitsSection.tsx — Section header + red thread
+
+**SectionHeader eyebrow** — replace "ماذا يتغير؟" with "لأن الوضوح يصنع فرقاً"
+
+**SectionHeader title** — replace "شو بيتغير لما يصير ملفك مُرخّص؟"
+with "ليش يهمك تعرف وين واقف مشروعك؟"
+
+**Red thread <p> at bottom** — replace:
+"هذا الفرق يبان أكثر لحظة يطلع مشروعك من دائرة المعرفة الشخصية..."
+with:
+"صار الوقت تعرف بالضبط أين يقف مشروعك اليوم"
+
 ---
 
 ## Phase 2: Red Thread Rewrite (8 files)

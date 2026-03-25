@@ -78,7 +78,7 @@ export function JourneyStepsSection() {
         </div>
 
         <p className="mx-auto mt-10 max-w-2xl text-center text-lg font-semibold leading-relaxed text-foreground/70">
-          والآن لم يعد ينقصك إلا أن تعرف أين تبدأ بحسب الجهة التي تخدم حالتك.
+          افتح الجهة اللي بتخدم حالتك وابدأ.
         </p>
       </div>
     </section>

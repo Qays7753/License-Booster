@@ -114,8 +114,13 @@ export function SurveySection({ onNavigate }: SurveySectionProps) {
 
   const questionHeadingRef = useRef<HTMLHeadingElement>(null);
   const successHeadingRef = useRef<HTMLHeadingElement>(null);
+  const hasInteracted = useRef(false);
 
   useEffect(() => {
+    if (!hasInteracted.current) {
+      return;
+    }
+
     if (surveyCompleted) {
       successHeadingRef.current?.focus();
       return;
@@ -148,6 +153,7 @@ export function SurveySection({ onNavigate }: SurveySectionProps) {
   };
 
   const handleAnswer = async (answer: string) => {
+    hasInteracted.current = true;
     setSelectedOption(answer);
     const newAnswers = { ...surveyAnswers, [surveyStep]: answer };
     setSurveyAnswers(newAnswers);

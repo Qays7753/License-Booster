@@ -85,7 +85,7 @@ export function EntitiesSection() {
         </div>
 
         <p className="mx-auto mt-10 max-w-2xl text-center text-lg font-semibold leading-relaxed text-foreground/70">
-          جربت المنصات؟ رأيك بيهمنا عشان نحسّن التجربة إلك ولغيرك.
+          قبل ما تمشي — قلنا شو حسيت بالصفحة.
         </p>
       </div>
     </section>

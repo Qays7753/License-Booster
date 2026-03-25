@@ -19,7 +19,7 @@ export function HeroSection({ onNavigate }: HeroSectionProps) {
       <div className="relative mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:px-8">
         <div>
           <p className="mb-4 text-sm font-semibold text-primary-foreground/80">
-            رخّص مشروعك وتوسّع
+            مشروعك يستاهل يكون رسمي — اعرف خطوتك الأولى والجهة المناسبة
           </p>
           <h1 className="max-w-3xl text-4xl font-extrabold leading-tight md:text-6xl xl:text-7xl">
             وضّح وضع مشروعك
@@ -94,8 +94,8 @@ export function HeroSection({ onNavigate }: HeroSectionProps) {
             <div className="mt-5 rounded-3xl bg-white p-5 shadow-sm">
               <p className="text-sm font-semibold text-accent">الفكرة الأساسية</p>
               <p className="mt-2 text-lg font-bold leading-relaxed">
-                كثير من التعطيل يبدأ من خلط بسيط: هل المطلوب تسجيل، أم ترخيص، أم
-                الاثنان معاً؟
+                مشروعك قائم — لكن بدون ترخيص، كل فرصة جديدة تحتاج إقناعاً من
+                الصفر.
               </p>
             </div>
           </div>
